@@ -37,7 +37,7 @@ export default {
 
 
 <style scoped lang="stylus">
-@import "../styles/component"
+@import "~assets/styles/component"
 
 #oj-history
 	display: block
@@ -70,9 +70,10 @@ export default {
 		position: absolute
 		top: -.25rem
 		right: -1rem
-		z-index: 2
-		size: 1rem
-		border: .25rem solid $oj-violet
+		z-index 2
+		width 1rem
+		height 1rem
+		border .25rem solid $oj-violet
 		border-radius: 50%
 		background-color: white
 		box-shadow: 0 2px 5px rgba($oj-violet, .5)

@@ -1,0 +1,75 @@
+# Site info
+siteTitle:
+    pl: Otwarty Jazdów
+    en: Open Jazdów
+siteSubtitle:
+    en: Open Jazdów Partnership
+    pl: Partnerstwo Otwarty Jazdów
+
+# Main menu
+langs:
+    pl: Polski
+    en: English
+menu:
+    en:
+        -
+            href: "/events/"
+            title: events
+        -
+            href: "/map/"
+            title: map
+        -
+            href: "/history/"
+            title: history
+        -
+            href: "/model/"
+            title: model
+        -
+            href: "/partnership/"
+            title: partnership
+    pl:
+        -
+            href: "/wydarzenia/"
+            title: wydarzenia
+        -
+            href: "/mapa/"
+            title: mapa
+        -
+            href: "/historia/"
+            title: historia
+        -
+            href: "/model/"
+            title: model
+        -
+            href: "/partnerstwo/"
+            title: partnerstwo
+        -
+            href: "/pomoc/"
+            title: pomoc
+
+# Footer
+contact:
+    pl:
+        title: Kontakt
+        details: >
+            Otwarty Jazdów
+            [otwarty@jazdow.pl](mailto:otwarty@jazdow.pl)
+
+            This website was created thanks to support from European Cultural Foundation
+    en:
+        title: Contact
+        details: >
+            Otwarty Jazdów
+            [otwarty@jazdow.pl](mailto:otwarty@jazdow.pl)
+
+            Strona powstała dzięki wsparciu European Cultural Foundation
+social:
+    -
+        href: http://youtube.com/osiedlejazdow/
+        type: youtube
+    -
+        href: http://instagram.com/jazdow/
+        type: instagram
+    -
+        href: http://facebook.com/jazdow/
+        type: facebook

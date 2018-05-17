@@ -29,6 +29,7 @@
     "eslint-plugin-vue": "^4.0.0",
     "front-matter-loader": "^0.2.0",
     "lost": "^8.2.1",
+    "nib": "^1.1.2",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "2.1.1",
     "pug": "^2.0.1",

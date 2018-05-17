@@ -3,27 +3,30 @@
 	.inner-section
 		.contacts
 			.contact
-				h4.contact-title {{contact.title}}
-				.contact-details(v-html="md(contact.details)")
+				h4.contact-title {{contact.pl.title}}
+				.contact-details(v-html="md(contact.pl.details)")
 		.social
 			a.social-icon(v-for="item in social", :href="item.href", :title="item.type", :class="item.type")
 </template>
 
 <script>
-
+import {contact, social} from '~/data/config.yml'
 import marked from 'marked'
 marked.setOptions({breaks: true})
 
 export default {
 	name: 'oj-footer',
-	props: {
-		contact: Object,
-		social: Array
+
+	data(){
+		return {
+			contact: contact,
+			social: social
+		}
 	},
 
 	methods: {
 		md(content){
-			return marked(content);
+			return marked(content)
 		}
 	}
 }
@@ -44,7 +47,7 @@ export default {
 #oj-footer
 	display: block
 	width: 100%
-	padding: 4.5rem 0 0 0
+	padding: 4.5rem 0
 	background-image: $img-pw
 	background-position: right bottom
 	background-repeat: no-repeat
@@ -75,7 +78,6 @@ export default {
 
 	// SOCIAL
 	.social
-		margin-bottom: 6rem
 		text-align: left
 		@media print
 			display: none

@@ -1,76 +1,32 @@
 <template lang="pug">
 	#oj-menu
-		nav(:class="{fixed: isFixed}")
-			router-link#logo(:to="'/'+lang", :title="siteTitle")
+		nav
+			nuxt-link#logo(to="/", :title="siteTitle")
 			a#icon(@click="toggleMenu()", :class="{on: mobileMenu}") menu
 			#items(:class="{on: mobileMenu}")
-				nuxt-link(v-for="item in items", :key="item.href", :to="item.href", :title="item.title") {{item.title}}
-				nuxt-link#lang-switch(:to="langSwitch.toPath") {{ langs[langSwitch.toLang] }}
+				nuxt-link(v-for="item in menu.pl", :key="item.title", :to="item.href", :title="item.title") {{item.title}}
+				nuxt-link#lang-switch(:to="{params: {lang: 'en'}}") english
 </template>
 
 <script>
+import {siteTitle, menu} from '~/data/config.yml'
+
 export default {
 	name: "oj-menu",
-	props: {
-		lang: String,
-		siteTitle: String,
-		items: {
-			type: Array,
-			default() {
-				return [{title: '', href: ''}]
-			}
-		},
-		langs: {
-			type: Object,
-			default() {
-				return {
-					pl: 'Polski',
-					en: 'English'
-				}
-			}
-		}
-	},
 	data() {
 		return {
-			offset: {
-				transform: "translateY(0)"
-			},
-			isFixed: false,
 			mobileMenu: false,
-			langSwitch: {
-				toLang: 'en',
-				toPath: '/en'
-			}
+			siteTitle: siteTitle,
+			menu: menu
 		}
 	},
 
 	methods: {
-		fixMenu() {
-			const diff = window.pageYOffset - this.$el.offsetTop
-			if (diff > 0) { return this.isFixed = true } else { return this.isFixed = false }
-		},
 		toggleMenu(force){
 			return this.mobileMenu = !this.mobileMenu
 		},
-
-		setLangSwitch(newRoute){
-			const newLang = newRoute.params.lang === 'pl' ? 'en' : 'pl'
-			const newPath = newRoute.path.replace(newRoute.params.lang, newLang)
-			this.langSwitch = {toLang: newLang, toPath: newPath}
-		}
-	},
-	created() {
-		return this.setLangSwitch(this.$route)
-	},
-
-	mounted() {
-		return window.addEventListener('scroll', this.fixMenu)
 	},
 	watch: {
-		$route(next){
-			this.setLangSwitch(next)
-			return this.mobileMenu = false
-		},
 		mobileMenu(next){
 			if (next) {
 				return document.body.classList.add('menu-on')
@@ -94,6 +50,9 @@ body.menu-on
 
 #oj-menu
 	height: 5.5rem
+	position sticky
+	top -1px
+	z-index 999
 	+below(780px, true)
 		height: 0
 nav
