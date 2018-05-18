@@ -1,11 +1,11 @@
 <template lang="pug">
 	#oj-menu
 		nav
-			nuxt-link#logo(to="/", :title="siteTitle")
+			nuxt-link#logo(to="/", :title="siteTitle[$i18n.locale]")
 			a#icon(@click="toggleMenu()", :class="{on: mobileMenu}") menu
 			#items(:class="{on: mobileMenu}")
-				nuxt-link(v-for="item in menu.pl", :key="item.title", :to="item.href", :title="item.title") {{item.title}}
-				nuxt-link#lang-switch(:to="{params: {lang: 'en'}}") english
+				nuxt-link(v-for="item in menu[$i18n.locale]", :key="item.title", :to="item.href", :title="item.title") {{item.title}}
+				nuxt-link#lang-switch(:to="switchLocalePath(otherLang.code)") {{otherLang.name}}
 </template>
 
 <script>
@@ -13,11 +13,18 @@ import {siteTitle, menu} from '~/data/config.yml'
 
 export default {
 	name: "oj-menu",
+
 	data() {
 		return {
 			mobileMenu: false,
 			siteTitle: siteTitle,
 			menu: menu
+		}
+	},
+
+	computed: {
+		otherLang(){
+			return this.$i18n.locales.find( locale => locale.code !== this.$i18n.locale )
 		}
 	},
 

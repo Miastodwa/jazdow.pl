@@ -24,14 +24,13 @@ export default {
 
 	methods: {
 		md(content){
-			if (content) { return marked(content); } else { return ''; }
+			if (content) { return marked(content) } else { return '' }
 		},
 		...mapActions('pages', ['getPage'])
 	},
 
 	mounted(){
-		const lang = this.$route.params.lang || 'pl'
-		this.getPage(`/historia/${lang}`)
+		this.getPage(`/historia/${this.$i18n.locale}`)
 	}
 }
 </script>

@@ -19,13 +19,13 @@ menu:
             href: "/map/"
             title: map
         -
-            href: "/history/"
+            href: "/en/history/"
             title: history
         -
-            href: "/model/"
+            href: "/en/model/"
             title: model
         -
-            href: "/partnership/"
+            href: "/en/partnership/"
             title: partnership
     pl:
         -

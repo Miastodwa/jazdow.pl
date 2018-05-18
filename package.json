@@ -18,6 +18,7 @@
     "marked": "^0.3.19",
     "moment": "^2.22.1",
     "nuxt": "^1.0.0",
+    "nuxt-i18n": "^3.2.3",
     "smoothscroll-polyfill": "^0.4.3",
     "stickybits": "^3.2.0"
   },

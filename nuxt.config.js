@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const I18N = require('./lang')
 
 module.exports = {
 	mode: 'universal',
@@ -28,40 +29,18 @@ module.exports = {
 		}]
 	},
 
-	/*
-	 ** Customize the progress-bar color
-	 */
 	loading: {
 		color: '#FFFFFF'
 	},
 
-	/*
-	 ** Global CSS
-	 */
 	css: [],
 
-	/*
-	 ** Plugins to load before mounting the App
-	 */
 	plugins: [],
 
-	/*
-	 ** Nuxt.js modules
-	 */
 	modules: [
-		// Doc: https://github.com/nuxt-community/axios-module#usage
-		'@nuxtjs/axios'
+		['nuxt-i18n', I18N]
 	],
-	/*
-	 ** Axios module configuration
-	 */
-	axios: {
-		// See https://github.com/nuxt-community/axios-module#options
-	},
 
-	/*
-	 ** Build configuration
-	 */
 	build: {
 		vendor: ['delay', 'smoothscroll-polyfill', 'marked', 'moment', 'stickybits'],
 
