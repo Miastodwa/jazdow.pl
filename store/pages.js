@@ -21,7 +21,6 @@ export const actions = {
 		if (exists) return commit('SET_PAGE', exists)
 		const {body, attributes} = await import(`~/data${path}.md`)
 		const page = {body, ...attributes, path: path}
-		console.log(page)
 		commit('SET_PAGE', page)
 		commit('PUSH_PAGE', page)
 	}

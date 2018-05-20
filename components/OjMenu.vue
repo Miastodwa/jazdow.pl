@@ -5,11 +5,12 @@
 			a#icon(@click="toggleMenu()", :class="{on: mobileMenu}") menu
 			#items(:class="{on: mobileMenu}")
 				nuxt-link(v-for="item in menu[$i18n.locale]", :key="item.title", :to="item.href", :title="item.title") {{item.title}}
-				nuxt-link#lang-switch(:to="switchLocalePath(otherLang.code)") {{otherLang.name}}
+				nuxt-link#lang-switch(v-for="t in translations", :to="t.path", :key="t.code") {{t.name}}
 </template>
 
 <script>
 import {siteTitle, menu} from '~/data/config.yml'
+import {mapState} from 'vuex'
 
 export default {
 	name: "oj-menu",
@@ -23,14 +24,36 @@ export default {
 	},
 
 	computed: {
-		otherLang(){
-			return this.$i18n.locales.find( locale => locale.code !== this.$i18n.locale )
+		...mapState('pages', ['page']),
+
+		translations(){
+			if (this.page && this.page.langs){
+				return Object.keys(this.page.langs).map( code => {
+					return {
+						path: this.page.langs[code],
+						code: code,
+						name: this.$i18n.locales.find( locale => locale.code === code ).name
+					}
+				})
+			}
+			else {
+				return this.$i18n.locales.filter(l => l.code !== this.$i18n.locale).map( locale => {
+					return {
+						path: this.switchLocalePath(locale.code),
+						code: locale.code,
+						name: locale.name
+					}
+				})
+			}
 		}
 	},
 
 	methods: {
 		toggleMenu(force){
 			return this.mobileMenu = !this.mobileMenu
+		},
+		getLocale(code){
+			return this.$i18n.locales.find( locale => locale.code === code )
 		},
 	},
 	watch: {
