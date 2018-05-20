@@ -15,13 +15,22 @@ module.exports = {
 		'historia': {
 			en: '/history'
 		},
+
+		'mapa': {
+			en: '/map'
+		},
+
+		'wydarzenia': {
+			en: '/events'
+		},
+		
 		'pomoc': false,
 
 		'_page': {
 			en: '/:page'
 		},
 		'domki/_id': {
-			en: '/houses/:id?'
+			en: '/houses/:id'
 		}
 	},
 	defaultLocale: 'pl'
