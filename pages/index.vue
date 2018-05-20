@@ -46,7 +46,9 @@ export default {
 	},
 
 	mounted(){
-		this.getPage(`/pl`)
+		const locale = this.$i18n.defaultLocale === this.$i18n.locale ? '/pl' : ''
+		const route = this.$route.fullPath.replace(/\/$/, '') + '/index'
+		this.getPage(locale + route)
 	}
 }
 </script>

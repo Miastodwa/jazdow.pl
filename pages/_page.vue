@@ -1,22 +1,18 @@
 <template lang="pug">
-#history-view(v-if="page")
+#page-view(v-if="page")
 	.intro
 		h1.title {{page.title}}
-		#tldr(v-html="md(page.body)")
-	oj-history(:timeline="page.history")
+		#tldr(v-html="page.tldr")
+	article(v-html="md(page.body)")
 </template>
-
 
 <script>
 import {mapState, mapActions} from 'vuex'
-import OjHistory from '~/components/OjHistory'
 import marked from 'marked'
 marked.setOptions({breaks: true})
 
 export default {
-	name: "history-view",
-
-	components: {OjHistory},
+	name: "article-view",
 
 	computed: {
 		...mapState('pages', ['page'])
@@ -37,21 +33,16 @@ export default {
 </script>
 
 
-
-
-
 <style scoped lang='stylus'>
 @import '~assets/styles/component'
-#history-view
-	lost-center: $grid-width $gutter no-flex
+#page-view
+	lost-center: 800px $gutter no-flex
 	+below(800px)
 		margin-top: 8rem
-	.intro
-		margin-left: auto
-		margin-right: auto
-		text-align: center
-		max-width: 54rem
-#oj-history
-	margin: 6rem auto
-	max-width: 60rem
+	article
+		margin: 4rem auto
+		border-top: 1px solid $oj-violet
+		padding-top: 2rem
+		max-width: 800px
+		hyphens: auto
 </style>

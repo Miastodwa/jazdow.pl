@@ -1,2 +1,4 @@
-features:
-    - translations @started(18-05-18 16:17)
+translations:
+    - catch data 404
+    - move all data
+    - lang switching

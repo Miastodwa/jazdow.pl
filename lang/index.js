@@ -15,6 +15,11 @@ module.exports = {
 		'historia': {
 			en: '/history'
 		},
+		'pomoc': false,
+
+		'_page': {
+			en: '/:page'
+		},
 		'domki/_id': {
 			en: '/houses/:id?'
 		}
