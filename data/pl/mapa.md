@@ -1,5 +1,4 @@
 ---
-lang: pl
 title: Mapa osiedla domków fińskich na Jazdowie
 legend:
     title: 'Legenda:'

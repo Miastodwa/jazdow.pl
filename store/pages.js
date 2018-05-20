@@ -15,6 +15,9 @@ export const mutations = {
 
 export const actions = {
 	async getPage( {state, commit}, route ) {
+
+		commit('SET_PAGE', null)
+
 		const path = route.replace(/\/$/, '')
 		const exists = state.pages.find(page => page.path === path)
 		

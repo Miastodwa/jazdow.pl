@@ -1,5 +1,4 @@
 ---
-lang: en
 title: Map of Jazdów Finnish Houses
 legend:
     title: 'Legenda:'

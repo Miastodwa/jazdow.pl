@@ -1,13 +1,13 @@
 <template lang="pug">
 #view-house(v-if="page")
 	header#header
-		h1#org-name(v-if="page.org") {{page.org}}
-		p#house-address(v-if="page.address") {{page.address}}
+		h1#org-name {{page.org}}
+		p#house-address {{page.address}}
 	article
 		section#main
 			#image-gallery(v-if="page.images")
 				oj-slider(captions, controls, counter, loop)
-					img(v-for="image in images", :src="image.file.url", :caption="image.caption")
+					img(v-for="image in page.images", :src="image.src", :caption="image.caption")
 			#content
 				.house-body(v-html="md(page.body)")
 

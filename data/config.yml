@@ -13,10 +13,10 @@ langs:
 menu:
     en:
         -
-            href: "/events/"
+            href: "/en/events/"
             title: events
         -
-            href: "/map/"
+            href: "/en/map/"
             title: map
         -
             href: "/en/history/"

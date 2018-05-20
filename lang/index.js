@@ -23,9 +23,6 @@ module.exports = {
 		'wydarzenia': {
 			en: '/events'
 		},
-		
-		'pomoc': false,
-
 		'_page': {
 			en: '/:page'
 		},

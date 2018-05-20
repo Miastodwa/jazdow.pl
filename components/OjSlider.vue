@@ -2,7 +2,7 @@
 	#oj-slider(:loading="loading")
 		.slides-frame
 			#loader(v-if="total > 0") loading...
-			#slides(:style="{height: sliderHeight + 'px'}", v-touch:swipeleft="prev", v-touch:swiperight="next")
+			#slides(:style="{height: sliderHeight + 'px'}")
 				slot
 			#controls(v-if="controls")
 				a.prev(@click="prev()") &larr;
