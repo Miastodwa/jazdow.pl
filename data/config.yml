@@ -13,38 +13,38 @@ langs:
 menu:
     en:
         -
-            href: "/en/events/"
+            href: /en/events/
             title: events
         -
-            href: "/en/map/"
+            href: /en/map/
             title: map
         -
-            href: "/en/history/"
+            href: /en/history/
             title: history
         -
-            href: "/en/model/"
+            href: /en/model/
             title: model
         -
-            href: "/en/partnership/"
+            href: /en/partnership/
             title: partnership
     pl:
         -
-            href: "/wydarzenia/"
+            href: /wydarzenia/
             title: wydarzenia
         -
-            href: "/mapa/"
+            href: /mapa/
             title: mapa
         -
-            href: "/historia/"
+            href: /historia/
             title: historia
         -
-            href: "/model/"
+            href: /model/
             title: model
         -
-            href: "/partnerstwo/"
+            href: /partnerstwo/
             title: partnerstwo
         -
-            href: "/pomoc/"
+            href: /pomoc/
             title: pomoc
 
 # Footer

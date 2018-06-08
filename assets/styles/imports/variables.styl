@@ -1,87 +1,47 @@
-// GENERAL PRUPOSE VARIABLES
-/////////////////////////////////////////////
-
 // GRID
-$grid-width = 84rem
-$gutter = 2.4rem
-
-// BREAKPOINTS
-// width, anti-overlap, density, orientation, device
-$tablet-p = 780px, true, 'retina', 'portrait', true
+$grid-width = 1200px
+$gutter = 2rem
+$grid-color = rgba(red, .2)
+$gutter-color = transparent
 
 // COLORS
 $oj-light 		= #fafafc
 $oj-violet 		= #5200cc
+$oj-ck          = #060E9F
 $oj-red         = #e43857
 $oj-green		= #1afcaf
 $oj-palegreen	= #b6efbb
 $oj-palegreen2	= #a4d7a9
 $oj-pink 		= #FDEBE8
 $oj-yellow		= #f7e98b
-$oj-dark 		= #404040
-$oj-dark2		= #231f20
+$oj-dark 		= #333333
 $oj-grey	 	= #d8d8d8
 $oj-dim 		= #151424
 
-
-
 // FONTS
-$HK = 'HK', 'SS', 'Source Sans Pro', 'Acumin Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$HK = 'HK', system-ui, sans-serif
 $SC = 'SC', 'Monaco', monospace
-$P = 'P', 'Platform', 'Brandon', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$Lemur = 'Lemur', system-ui, sans-serif
 
 // IMAGES
 $map-marker-svg = url('~/assets/ui/map-marker.svg')
 $img-pw = url('~/assets/images/jazdow-pw.png')
 
-// EASINGS
-$easeInOutCirc= cubic-bezier(0.785, 0.135, 0.15, 0.86)
-
-
-
-// GENERIC HTML STYLES
-/////////////////////////////////////////////
-
 // BASE FONT
 $base_font_family = $HK
-$extra_font_family = $P
+$extra_font_family = $Lemur
 
 // BASE SIZES
-$base_font_size= 1.3rem
+$base_font_size= 16px
 $base_line_height= $base_font_size * 1.5
 $base_weight= 400
 
 // BASE COLORS
-$base_font_color= black
-$base_link_color= $oj-violet
-$base_hover_color= $oj-violet
+$base_font_color    = $oj-dark
+$base_link_color    = $oj-violet
+$base_hover_color   = $oj-violet
+$table_border_color = $oj-grey
 
-// LISTS
-$list_margin1= 0 0 1em 3em
-$list_margin2= 0 0 1em 2em
-
-// TABLES
-$table_border_color= #CBCBCB
-
-// PRE
-$pre_margin= 2em 0 2em 2em
-$pre_padding= 1em
-$pre_bg= #CBCBCB
-
-// ABR and ACRONYM
-$abbr_border= 1px dotted black
-
-//FORM
-$form_text_color=           black
-$form_border_color=         #CBCBCB
-$form_border_color_hover=   rgba($form_border_color, .5)
-$form_border_color_focus=   rgba($form_border_color, .5)
-$form_box_shadow=           rgba(black, .1) 0px 1px 2px 0px inset
-$form_box_shadow_focus=     none
-$form_border_radius=        3px
-$form_font_family=          $base_font_family
-$form_font_weight=           400
-
-
-// SPECIAL
-$video-ratio = 50vw
+// CUSTOM
+$video-ratio = 75vw
+$vidheight = 100vh

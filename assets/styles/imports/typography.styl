@@ -1,8 +1,6 @@
 // PLATFORM
-fontface(P, '~/assets/fonts/P/P-400', 400, normal)
-fontface(P, '~/assets/fonts/P/P-700', 700, normal)
-fontface(P, '~/assets/fonts/P/P-400i', 400, italic)
-fontface(P, '~/assets/fonts/P/P-700i', 700, italic)
+fontface(Lemur, '~/assets/fonts/LEMUR/Lemur-Regular', 400, normal)
+fontface(Lemur, '~/assets/fonts/LEMUR/Lemur-Bold', 700, normal)
 
 // HK GROTESK
 fontface(HK, '~/assets/fonts/HK/HKGrotesk-Light', 200, normal)
@@ -14,9 +12,6 @@ fontface(HK, '~/assets/fonts/HK/HKGrotesk-BoldItalic', 700, italic)
 
 // SOURCE CODE
 fontface(SC, '~/assets/fonts/SC/SC-300', 300, normal)
-
-// ICONS
-fontface(icons, '~/assets/fonts/oj-icons/oj-icons', 400, normal)
 
 *
 	/* Enable Ligatures ================ */
@@ -30,6 +25,18 @@ fontface(icons, '~/assets/fonts/oj-icons/oj-icons', 400, normal)
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
+
+html
+	font-size: $base_font_size
+	+above(1500px)
+		font-size: 1.1*$base_font_size
+	+below(1200px)
+		font-size: .9*$base_font_size
+	+below(800px)
+		font-size: .8*$base_font_size
+	+below(600px)
+		font-size: .7*$base_font_size
+
 
 body
 	color: $base_font_color
@@ -194,35 +201,35 @@ ol
 // ! MISCELLANEOUS
 
 abbr, acronym
-	border-bottom: $abbr_border
-	cursor: help
+	border-bottom $abbr_border
+	cursor help
 
 
 address
-	display: block
-	margin: 0 0 $base_line_height / 2
+	display block
+	margin 0 0 $base_line_height / 2
 
 
 hgroup
-	margin-bottom: $base_line_height / 2
+	margin-bottom $base_line_height / 2
 
 
 del
-	color: lighten $base_font_color, 15%
+	color lighten $base_font_color, 15%
 
 pre
-	overflow:auto
-	display: block
-	font-size: 1.2rem
-	line-height: 1.4em
-	font-family: monospace
-	padding: 1em
-	border-left: 1px solid $light
-	margin: 0.5em 0
-	background-color: #EEE
+	overflow auto
+	display block
+	font-size 1.2rem
+	line-height 1.4em
+	font-family monospace
+	padding 1em
+	border-left 1px solid $light
+	margin 0.5em 0
+	background-color #EEE
 
 hr
-	border-bottom: 1px solid $base_border_color
+	border-bottom 1px solid $base_border_color
 	border-left: none
 	border-right: none
 	border-top: none
@@ -234,16 +241,16 @@ hr
 // ! BLOCKQUOTE
 
 blockquote
-	font-style: italic
-	background-repeat: no-repeat
-	background-position: top left
+	font-style italic
+	background-repeat no-repeat
+	background-position top left
 
 
 cite
-	margin-top: 1em
-	display: inline-block
+	margin-top 1em
+	display inline-block
 	&:before
-		content: '\2014 \00A0'
+		content '\2014 \00A0'
 
 
 button::-moz-focus-inner,

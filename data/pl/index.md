@@ -1,7 +1,4 @@
 ---
-lang: pl
-langs:
-  en: /?lang=en
 video:
   mp4: "/videos/video.mp4"
   webm: "/videos/video.webm"
@@ -80,9 +77,3 @@ Naszą misją jest łączenie różnych grup, aby wspólnie rozwijać przestrze�
 Historia osiedla Jazdów sięga końca II Wojny Światowej. Domki fińskie, sprowadzone tu w 1945 roku, służyły za mieszkania pracownikom Biura Odbudowy Stolicy.
 
 Dziś Otwarty Jazdów łączy w sobie funkcje związane z misją publiczną i mieszkalne. W 27 domkach i przyległych ogrodach żyją i działają obok siebie mieszkańcy, organizacje pozarządowe, miejscy ogrodnicy i pszczelarze, akademicy i studenci, artyści oraz pracownicy firm, spółdzielni, ambasad i instytucji publicznych.
-
-**Chcesz uczestniczyć w wydarzeniach na Jazdowie, śledź kalendarz [wydarzeń](http://jazdow.pl/pl/events/)**
-
-**Chcesz zorganizować wydarzenie na Jazdowie, [skontaktuj się z nami](#oj-footer)**
-
-**Chcesz zorganizowac wydarzenie w konkretnym domku, wybierz go na [mapie](http://jazdow.pl/pl/map/) i skontaktuj się z koordynatorem domku**

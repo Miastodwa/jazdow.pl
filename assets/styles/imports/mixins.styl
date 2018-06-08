@@ -1,41 +1,41 @@
 // font-face – after Bourbon
 fontface($font-family, $path, $weight = 400, $fontstyle = normal)
 	@font-face
-		font-family: $font-family
-		font-weight: $weight
-		font-style: $fontstyle
-		src: url($path+'.woff') format('woff'), url($path+'.ttf') format('truetype'), url($path+'.eot?#iefix') format('embedded-opentype')
+		font-family $font-family
+		font-weight $weight
+		font-style $fontstyle
+		src url($path+'.woff') format('woff'), url($path+'.ttf') format('truetype'), url($path+'.eot?#iefix') format('embedded-opentype')
 
-grid-guide(columns = 3, gut = 1rem, wide = 80rem, pad = 2rem, cc = rgba(red, .1), gc = transparent)
+grid-guide(columns = 3, gut = 2rem, wide = 1200px, pad = 2rem, cc = rgba(black, .05), gc = transparent)
 	&:after
-		col = (100%/columns)
-		$max-width = wide + gut - 2*pad
-		position: fixed
-		display: block
-		top: 0
-		right: 0
-		left: 0
-		height: 100%
-		margin: 0 auto
-		max-width: $max-width
-		z-index: 999999
-		box-sizing: border-box
-		pointer-events: none
+		col = (100% / columns)
+		$max-width = wide + gut - 2 * pad
+		position fixed
+		display block
+		top 0
+		right 0
+		left 0
+		height 100%
+		margin 0 auto
+		max-width $max-width
+		z-index 999999
+		box-sizing border-box
+		pointer-events none
 
 		$stops = ''
 		for $num in (0..columns)
 			end = ''
 			if $num < columns
 				end = ','
-			c-edge = $num*col + gut/2
-			g-edge = ($num + 1)*col - gut/2
-			c-round = round(c-edge, 3)
-			g-round = round(g-edge, 3)
+			c-edge = $num * col + gut/2
+			g-edge = ($num + 1) * col - gut/2
+			c-round = round(c-edge, 5)
+			g-round = round(g-edge, 5)
 			$stops = $stops + ( gc c-round ',' cc c-round ',' cc g-round ',' gc g-round end)
-		background: linear-gradient(to right, unquote($stops))
-		content: join(' ', columns, ' columns | ', gut, ' gutter | ', $max-width)
-		font-family: monospace
-		font-size: .7rem
+		background linear-gradient(to right, unquote($stops))
+		content join(' ', columns, ' columns | ', gut, ' gutter | ', $max-width)
+		font-family monospace
+		font-size .7rem
 		color: rgba(black, .5)
 
 

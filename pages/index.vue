@@ -4,7 +4,7 @@
 	#oj-about
 		.inner-section
 			h1.title {{page.intro}}
-			oj-expander(:lang="page.lang", :reveal="0")
+			oj-expander(:lang="page.lang")
 				p(v-html="md(page.body)")
 	#oj-cards
 		.inner-section
@@ -60,23 +60,31 @@ export default {
 		lost-center: $grid-width $gutter flex
 		clearfix()
 	#oj-about
-		background-color: white
-		padding-top: 8rem
-		padding-bottom: 4rem
+		background-color white
+		padding-top 8rem
+		padding-bottom 6rem
+		border-bottom 1px solid rgba($oj-dark .2)
 		+below(800px, true)
-			padding-top: 6rem
-			text-align: center
+			padding-top 6rem
+			text-align center
+		.inner-section
+			display block
+			width 100%
+			max-width $grid-width * .75
 		.title
-			display: block
-			letter-spacing: .075em
-			max-width: $grid-width * .6
-			margin-left: auto
-			margin-right: auto
+			display block
+			letter-spacing .075em
+			font-size 2.2rem
+			color $oj-dark
+		.oj-expander
+			max-width $grid-width * .6
+			margin 0 auto
 	#oj-cards
-		background-color: white
-		padding-top: 8rem
-		padding-bottom: 2rem
-		border-bottom: 1px solid rgba($oj-dark, .2)
+		background-color lighten($oj-violet, 98%)
+		padding-top 8rem
+		padding-bottom 2rem
+		border-bottom 1px solid rgba($oj-dark, .2)
+		min-height 100vh
 
 	.banner
 		background-color #FEDC32
