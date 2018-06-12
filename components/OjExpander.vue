@@ -35,10 +35,6 @@ export default {
 
 <style scoped lang='stylus'>
 @import '~assets/styles/component'
-.oj-expander
-	text-align justify
-	>>> p
-		font-size 1.6rem
 .content
 	overflow hidden
 	&.open
@@ -47,10 +43,10 @@ export default {
 		animation expander-close .2s ease forwards
 .more
 	display inline-block
+	margin-left 4rem
 	font-size 1.4rem
 	font-weight 500
 	letter-spacing 0.05em
-	font-family P
 	font-weight 700
 	cursor pointer
 	color $oj-dark

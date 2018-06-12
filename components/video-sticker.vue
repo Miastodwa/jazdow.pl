@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-$letterHeight = 20%
+$letterHeight = 25%
 
 .video-sticker
 	position relative
@@ -80,7 +80,7 @@ $letterHeight = 20%
 		top 25%
 		animation c 4s linear infinite
 	&.ty
-		bottom 25%
+		bottom 20%
 		left 20%
 		animation b 5s linear infinite
 	&.jaz
@@ -93,7 +93,7 @@ $letterHeight = 20%
 		right 0
 		animation a 4s linear infinite
 	&.w
-		bottom 15%
+		bottom 5%
 		right 10%
 		animation c 2s linear infinite
 

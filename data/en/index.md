@@ -71,7 +71,10 @@ cards:
     cover: "/images/sections/partnership.png"
     title: Partnerstwo
     caption: Jazdów Partnership consists of NGOs, informal groups, public institutions and private persons.
-intro: Open Jazdów is the community of the Warsaw settlement of wooden Finnish houses, offering a social, cultural and ecological public program. 
+intro: Open Jazdów is the community of the Warsaw settlement of wooden Finnish houses, offering a social, cultural and ecological public program.
+images:
+  - /images/intro/ambasada1.jpg
+  - /images/intro/ambasada2.jpg
 ---
 
 Open Jazdów is both the name of community and actions undertaken in Jazdów settlement in Warsaw, just behind The Ujazdowski Public Garden. After The Second World War, the colony of Finnish houses, that were constructed here, served as residential area for workers of Warsaw Reconstruction Bureau. 

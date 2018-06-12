@@ -70,6 +70,9 @@ cards:
       instytucje publiczne i osoby prywatne.
 
 intro: Otwarty Jazdów to społeczność warszawskiego osiedla drewnianych domków fińskich, prowadząca ogólnodostępne działania społeczne, kulturalne, edukacyjne, artystyczne.
+images:
+  - /images/intro/ambasada1.jpg
+  - /images/intro/ambasada2.jpg
 ---
 
 Naszą misją jest łączenie różnych grup, aby wspólnie rozwijać przestrzeń publiczną, tworzyć ofertę społeczną i kulturalną dostępną dla każdego, sprawdzać w praktyce alternatywne modele finansowania i wymiany bezpieniężnej, wspólnie uprawiać ogrody i po prostu dobrze spędzać czas wolny.
