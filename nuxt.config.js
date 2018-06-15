@@ -1,5 +1,6 @@
 const pkg = require('./package')
 const I18N = require('./lang')
+const routes = require('./routes')
 
 module.exports = {
 	mode: 'universal',
@@ -40,6 +41,10 @@ module.exports = {
 	modules: [
 		['nuxt-i18n', I18N]
 	],
+
+	generate: {
+		routes: routes
+	},
 
 	build: {
 		vendor: ['delay', 'smoothscroll-polyfill', 'marked', 'moment', 'stickybits'],
