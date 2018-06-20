@@ -9,8 +9,8 @@
 <script>
 import marked from 'marked'
 
-import OjMenu from '~/components/OjMenu'
-import OjFooter from '~/components/OjFooter'
+import OjMenu from '~/components/oj-menu'
+import OjFooter from '~/components/oj-footer'
 
 marked.setOptions({breaks: true})
 

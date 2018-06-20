@@ -50,27 +50,30 @@ subs:
       - hello!
     - - 3
       - Welcome to Open Jazdów
+mapCard:
+  link: /en/map
+  title: HOUSES / MAP —
+  caption: See what's inside of each house
+eventsCard:
+  link: /events
+  title: Events —
+  caption: today
+  more: full calendar →
+  empty: Nothin's on today.
 cards:
-  - link: events
-    cover: "/images/sections/events.png"
-    title: Events
-    caption: Check out what's going on in Jazdow in coming days
-  - link: map
-    cover: "/images/sections/map.png"
-    title: Map
-    caption: Map of Jazdów. See what's going on in each house.
-  - link: history
-    cover: "/images/sections/history.png"
-    title: History
-    caption: History of Jazdów settlement.
-  - link: model
-    cover: "/images/sections/model.png"
-    title: Model
-    caption: We create a model for public management of common urban space.
-  - link: partnership
-    cover: "/images/sections/partnership.png"
-    title: Partnerstwo
-    caption: Jazdów Partnership consists of NGOs, informal groups, public institutions and private persons.
+  - link: /en/history
+    cover: /images/cards/cover-history.jpg
+    title: HISTORY —
+    caption: History of Finnish houses of Open Jazdów
+  - link: /en/model
+    cover: /images/cards/cover-model.jpg
+    title: MODEL —
+    caption: community-management of urban space
+  - link: /en/partnership
+    cover: /images/cards/cover-partnership.jpg
+    title: PARTNERSHIP —
+    caption: Jazdów Partnership
+
 intro: Open Jazdów is the community of the Warsaw settlement of wooden Finnish houses, offering a social, cultural and ecological public program.
 images:
   - /images/intro/ambasada1.jpg

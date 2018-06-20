@@ -6,13 +6,12 @@
 	.intro
 		#tldr(v-html="md(page.body)")
 	.calendar-illustration
-		img(src="/static/images/arch-duo@2x.png")
 </template>
 
 
 <script>
 import {mapState, mapActions} from 'vuex'
-import FbEvents from '~/components/FbEvents'
+import FbEvents from '~/components/fb-events'
 import marked from 'marked'
 marked.setOptions({breaks: true})
 

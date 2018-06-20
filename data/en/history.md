@@ -56,7 +56,7 @@ history:
         created the Open Jazdów initiative to defend the historic settlement and houses,
         which survived till that day. The Ambassador of Fin¬land joined the ranks of defenders.
     photo:
-        image: "/static/images/history-2.jpg"
+        image: /images/history-2.jpg
         caption: Fot. Otwarty Jazdów
     title: The Śródmiescie District Government decides to deconstruct the Finnish houses
 -
@@ -72,7 +72,7 @@ history:
         were constructed throughout the country. The Jazdów Settlement consisted of 90
         houses and was planned as a temporary solution.
     photo:
-        image: "/static/images/history-1.jpg"
+        image: /images/history-1.jpg
         caption: Fot. Narodowe Archiwum Cyfrowe
     title: Construction of the Finnish houses starts
 ---

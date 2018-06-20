@@ -46,35 +46,34 @@ subs:
       - cześć!
     - - 3
       - witamy w Otwartym Jazdowie
+mapCard:
+  link: /mapa
+  title: MAPA OSIEDLA —
+  caption: Zobacz co się mieści w domkach fińskich
+eventsCard:
+  link: /wydarzenia
+  title: WYDARZENIA —
+  caption: "dziś:"
+  more: cały kalendarz →
+  empty: Lista wydarzeń chwilowo nie jest dostępna na tej stronie.
 cards:
-  - link: events
-    cover: "/images/sections/events.png"
-    title: Wydarzenia
-    caption: Zobacz co dzieje się w Otwarym Jazdowie w najbliższych dniach.
-  - link: map
-    cover: "/images/sections/map.png"
-    title: Mapa
-    caption: Interaktywna mapa Jazdowa. Zobacz co się mieści w każdym z domków.
-  - link: history
-    cover: "/images/sections/history.png"
-    title: Historia
+  - link: /historia
+    cover: /images/cards/cover-history.jpg
+    title: HISTORIA —
     caption: Zobacz na osi czasu historię domków fińskich i Otwartego Jazdowa.
-  - link: model
-    cover: "/images/sections/model.png"
-    title: Model
+  - link: /model
+    cover: /images/cards/cover-model.jpg
+    title: MODEL —
     caption: Tworzymy model społecznościowego zarządzania przestrzenią miejską.
-  - link: partnership
-    cover: "/images/sections/partnership.png"
-    title: Partnerstwo
-    caption: Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy nieformalne,
-      instytucje publiczne i osoby prywatne.
-
+  - link: partnerstwo
+    cover: /images/cards/cover-partnership.jpg
+    title: PARTNERSTWO —
+    caption: Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy nieformalne, instytucje publiczne i osoby prywatne.
 intro: Otwarty Jazdów to społeczność warszawskiego osiedla drewnianych domków fińskich, prowadząca ogólnodostępne działania społeczne, kulturalne, edukacyjne, artystyczne.
 images:
   - /images/intro/ambasada1.jpg
   - /images/intro/ambasada2.jpg
 ---
-
 Naszą misją jest łączenie różnych grup, aby wspólnie rozwijać przestrzeń publiczną, tworzyć ofertę społeczną i kulturalną dostępną dla każdego, sprawdzać w praktyce alternatywne modele finansowania i wymiany bezpieniężnej, wspólnie uprawiać ogrody i po prostu dobrze spędzać czas wolny.
 
 Historia osiedla Jazdów sięga końca II Wojny Światowej. Domki fińskie, sprowadzone tu w 1945 roku, służyły za mieszkania pracownikom Biura Odbudowy Stolicy.

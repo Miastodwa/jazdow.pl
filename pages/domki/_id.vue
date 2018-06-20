@@ -27,7 +27,7 @@
 <script>
 import {mapState, mapActions} from 'vuex'
 
-import OjSlider from '~/components/OjSlider'
+import OjSlider from '~/components/oj-slider'
 import marked from "marked"
 marked.setOptions({breaks: true})
 

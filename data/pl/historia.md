@@ -42,7 +42,7 @@ history:
     text: Na przełomie listopada i grudnia 2012 r. 4 domki fińskie zostały zlikwidowane,
         sprzedane i wywiezione z Jazdowa.
     photo:
-        image: "/static/images/history-2.jpg"
+        image: /images/history-2.jpg
         caption: Fot. Otwarty Jazdów
     title: decyzją władz dzielnicy rozebrano 4 domki fińskie
 - 
@@ -122,7 +122,7 @@ history:
     date: 25 czerwca 1945
     text: Drewniane domy wchodzące w skład kolonii pochodziły z reparacji wojennych, jakie Finlandia była zmuszona świadczyć po II wojnie światowej na rzecz ZSRR. Oddane przez Związek Radziecki Polsce domki te wznoszono później w różnych częściach kraju, w tym w zburzonej Warszawie, gdzie palącym problemem był brak mieszkań. Osiedle Jazdów, składające się z 90 takich domków, zostało zaplanowane jako rozwiązanie tymczasowe. Przetrwało do dziś jako jedno z nielicznych tego typu, stanowiąc ciekawostkę warszawskiego Śródmieścia.
     photo:
-        image: "/static/images/history-1.jpg"
+        image: /images/history-1.jpg
         caption: Fot. Narodowe Archiwum Cyfrowe
     title: Rozpoczęcie budowy osiedla domków fińskich
 - 

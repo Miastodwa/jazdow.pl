@@ -9,7 +9,7 @@
 
 <script>
 import {mapState, mapActions} from 'vuex'
-import OjHistory from '~/components/OjHistory'
+import OjHistory from '~/components/oj-history'
 import marked from 'marked'
 marked.setOptions({breaks: true})
 
@@ -29,9 +29,9 @@ export default {
 		...mapActions('pages', ['getPage'])
 	},
 
-	mounted(){
+	async beforeMount(){
 		const locale = this.$i18n.defaultLocale === this.$i18n.locale ? '/pl' : ''
-		this.getPage(locale + this.$route.fullPath)
+		await this.getPage(locale + this.$route.fullPath)
 	}
 }
 </script>

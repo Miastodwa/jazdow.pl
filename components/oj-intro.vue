@@ -1,18 +1,18 @@
 <template lang="pug">
-.oj-intro
-	article.content
-		section.photos
-			.photo(v-for="(image, i) in page.images", :class="'p'+i", :style="styles['shift'+i]")
-				img(:src="image")
-		section.text
-			h1.title {{page.intro}}
-			oj-expander(:lang="page.lang")
-				.extended(v-html="md(page.body)")
+	.oj-intro
+		article.content
+			section.photos
+				.photo(v-for="(image, i) in page.images", :class="'p'+i", :style="styles['shift'+i]")
+					img(:src="image")
+			section.text
+				h1.title {{page.intro}}
+				oj-expander(:lang="page.lang")
+					.extended(v-html="md(page.body)")
 </template>
 
 <script>
 import {mapActions, mapState} from 'vuex'
-import OjExpander from '~/components/OjExpander'
+import OjExpander from '~/components/oj-expander'
 
 import marked from 'marked'
 marked.setOptions({breaks: true})
@@ -68,8 +68,6 @@ export default {
 	background-color white
 	padding-top 8rem
 	padding-bottom 6rem
-	border-bottom 1px solid rgba($oj-dark .2)
-
 .content
 	lost-center $grid-width $gutter
 .photos

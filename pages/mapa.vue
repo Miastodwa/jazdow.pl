@@ -12,8 +12,8 @@
 
 <script>
 import {mapState, mapActions} from 'vuex'
-import OjMap from '~/components/OjMap'
-import OjMapLegend from '~/components/OjMapLegend'
+import OjMap from '~/components/oj-map'
+import OjMapLegend from '~/components/oj-map-legend'
 import marked from 'marked'
 marked.setOptions({breaks: true})
 

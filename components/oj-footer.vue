@@ -73,7 +73,6 @@ export default {
 			font-size: 1rem
 			line-height: 1.2em
 			font-weight: 700
-			font-family: P
 			text-transform: uppercase
 
 	// SOCIAL
@@ -88,16 +87,4 @@ export default {
 		color: $oj-violet
 		font-size: 2rem
 		margin-right: $gutter
-		&.facebook:after
-			content: 'b'
-		&.google:after
-			content: 'a'
-		&.instagram:after
-			content: 'd'
-		&.youtube:after
-			content: 'p'
-		&.linkedin:after
-			content: 'o'
-		&.behance:after
-			content: 'q'
 </style>
