@@ -127,26 +127,6 @@ section#info
 	+below(800px)
 		margin-top: 4rem
 		font-size: 1.4rem
-	.detail
-		&:before
-			icon()
-			display: inline-block
-			padding-right: .5rem
-			width: 1.5rem
-		&.website:before
-			content: 'n'
-			color: $oj-violet
-		&.fb:before
-			content: 'b'
-			color: $oj-violet
-		&.email:before
-			content: 'l'
-		&.phone:before
-			content: 't'
-		&.person:before
-			content: 'u'
-		a:link
-			text-decoration: underline
 	h5
 		font-size: 1rem
 		text-transform: uppercase
