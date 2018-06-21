@@ -5,9 +5,11 @@ module.exports = [
     '/model',
     '/partnerstwo',
     '/pomoc',
+    '/polityka-prywatnosci',
     '/en/events',
     '/en/map',
     '/en/history',
     '/en/model',
-    '/en/partnership'
+    '/en/partnership',
+    '/en/privacy-policy'
 ]
