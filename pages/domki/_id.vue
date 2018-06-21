@@ -127,6 +127,9 @@ section#info
 	+below(800px)
 		margin-top: 4rem
 		font-size: 1.4rem
+	.detail
+		&.phone:before
+			content: 'tel: '
 	h5
 		font-size: 1rem
 		text-transform: uppercase
