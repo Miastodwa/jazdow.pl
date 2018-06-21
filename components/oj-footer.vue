@@ -7,10 +7,12 @@
 				.contact-details(v-html="md(contact.pl.details)")
 		.social
 			a.social-icon(v-for="item in social", :href="item.href", :title="item.type", :class="item.type")
+		.links
+			nuxt-link(v-for="link in links[$i18n.locale]" :key="link.to" :to="link.to") {{link.title}}
 </template>
 
 <script>
-import {contact, social} from '~/data/config.yml'
+import {contact, social, links} from '~/data/config.yml'
 import marked from 'marked'
 marked.setOptions({breaks: true})
 
@@ -20,7 +22,8 @@ export default {
 	data(){
 		return {
 			contact: contact,
-			social: social
+			social: social,
+			links: links
 		}
 	},
 

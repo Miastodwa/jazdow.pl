@@ -1,8 +1,8 @@
 <template lang="pug">
-#page-view(v-if="page")
+.page-view(v-if="page")
 	.intro
 		h1.title {{page.title}}
-		#tldr(v-html="page.tldr")
+		.tldr(v-html="page.tldr")
 	article(v-html="md(page.body)")
 </template>
 
@@ -35,14 +35,19 @@ export default {
 
 <style scoped lang='stylus'>
 @import '~assets/styles/component'
-#page-view
+.page-view
 	lost-center: 800px $gutter no-flex
 	+below(800px)
-		margin-top: 8rem
-	article
-		margin: 4rem auto
-		border-top: 1px solid $oj-violet
-		padding-top: 2rem
-		max-width: 800px
-		hyphens: auto
+		margin-top 8rem
+.title
+	text-align center
+.tldr
+	text-align center
+article
+	margin 4rem auto
+	border-top 1px solid $oj-violet
+	padding-top 2rem
+	max-width 800px
+	hyphens auto
+	text-align justify
 </style>

@@ -15,11 +15,9 @@ module.exports = {
 		'historia': {
 			en: '/history'
 		},
-
 		'mapa': {
 			en: '/map'
 		},
-
 		'wydarzenia': {
 			en: '/events'
 		},

@@ -55,14 +55,14 @@ contact:
             Otwarty Jazdów
             [otwarty@jazdow.pl](mailto:otwarty@jazdow.pl)
 
-            This website was created thanks to support from European Cultural Foundation
+            Strona powstała dzięki wsparciu European Cultural Foundation
     en:
         title: Contact
         details: >
             Otwarty Jazdów
             [otwarty@jazdow.pl](mailto:otwarty@jazdow.pl)
 
-            Strona powstała dzięki wsparciu European Cultural Foundation
+            This website was created thanks to support from European Cultural Foundation
 social:
     -
         href: http://youtube.com/osiedlejazdow/
@@ -73,3 +73,11 @@ social:
     -
         href: http://facebook.com/jazdow/
         type: facebook
+
+links:
+    pl:
+        - to: /polityka-prywatnosci
+          title: Polityka Prywatności
+    en:
+        - to: /en/privacy-policy
+          title: Privacy Policy
