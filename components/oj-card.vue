@@ -30,8 +30,14 @@ export default {
 	overflow hidden
 	background-size contain
 	background-repeat no-repeat
+	background-position center center
 	+above($grid-width)
 		height $grid-width * 0.2
+	+below(600px)
+		height 40vw
+		background-size cover
+	+below(500px)
+		height 50vw
 	.card-content
 		padding 1rem
 		background-color white

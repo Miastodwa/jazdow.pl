@@ -55,7 +55,7 @@ eventsCard:
   title: WYDARZENIA —
   caption: "dziś:"
   more: cały kalendarz →
-  empty: Lista wydarzeń chwilowo nie jest dostępna na tej stronie.
+  empty: Lista wydarzeń nie jest dostępna na stronie, ze względu na zmiany jakie Facebook wprowadza po ujawnionym wycieku danych.
 cards:
   - link: /historia
     cover: /images/cards/cover-history.jpg

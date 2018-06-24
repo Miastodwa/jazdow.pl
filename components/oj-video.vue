@@ -110,7 +110,7 @@ export default {
 	height 90vh
 	overflow hidden
 	+below(780px, true)
-		padding-top 5.5rem
+		padding-top 3rem
 	+above(0, true, null, 'portrait')
 		max-height 75vh
 #video-overlay

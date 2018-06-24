@@ -8,6 +8,7 @@
 			oj-events-mini
 		.row.b
 			oj-card(v-for="card in page.cards"
+			:key="card.link"
 			:title="card.title"
 			:caption="card.caption"
 			:cover="card.cover"
@@ -66,11 +67,26 @@ export default {
 	lost-center $grid-width $gutter flex
 	padding-bottom $gutter
 .oj-map-card
-	lost-column 8/12 2 $gutter
+	+above(700px)
+		lost-column 8/12 2 $gutter
+	+below(700px)
+		width 100%
+		max-width 40rem
+		margin $gutter auto
 .oj-events-mini
-	lost-column: 4/12 2 $gutter
+	+above(700px)
+		lost-column 4/12 2 $gutter
+	+below(700px)
+		width 100%
+		max-width 40rem
+		margin $gutter auto
 .oj-card
-	lost-column: 4/12 3 $gutter
+	+above(600px)
+		lost-column 4/12 3 $gutter
+	+below(600px)
+		width 100%
+		max-width 40rem
+		margin .5rem auto
 @keyframes bg-flow
 	0%
 		background-position 4rem 4rem

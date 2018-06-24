@@ -71,25 +71,30 @@ export default {
 .content
 	lost-center $grid-width $gutter
 .photos
-	lost-column 5/12 3 $gutter
 	position relative
-	min-height calc(1200px * 5 / 12 * 1.2)
-	+below($grid-width)
-		min-height calc(100vw * 5 / 12 * 1.2)
+	+above(700px)
+		lost-column 5/12 3 $gutter
+	+below(700px)
+		max-width 40rem
+		margin 0 auto
 	.photo
 		max-width 75%
-		position absolute
-		top 0
 		&.p0
 			z-index 0
-			left 20%
+			margin-left 20%
 		&.p1
+			position absolute
+			top 0
 			z-index 1
 			padding-top 20%
 			img
 				box-shadow 10px 10px 20px rgba(black .5)
 .text
-	lost-column 6/12 3 $gutter
+	+above(700px)
+		lost-column 6/12 3 $gutter
+	+below(700px)
+		max-width 40rem
+		margin 6rem auto 0
 .extended
 	display block
 	hyphens auto
