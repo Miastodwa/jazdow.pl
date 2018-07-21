@@ -1,9 +1,9 @@
 <template lang="pug">
-	#oj-menu
-		a#icon(@click="toggleMenu()", :class="{on: mobileMenu}") menu
+	.oj-menu
+		a.icon(@click="toggleMenu()", :class="{on: mobileMenu}") menu
 		nav
-			nuxt-link#logo(to="/", :title="siteTitle[$i18n.locale]")
-			#items(:class="{on: mobileMenu}")
+			nuxt-link.home(to="/", :title="siteTitle[$i18n.locale]") {{siteTitle[$i18n.locale]}}
+			.items(:class="{on: mobileMenu}")
 				nuxt-link(v-for="item in menu[$i18n.locale]", :key="item.title", :to="item.href", :title="item.title") {{item.title}}
 				nuxt-link.lang-switch(v-for="t in translations", :to="t.path", :key="t.code") {{t.name}}
 </template>
@@ -82,7 +82,7 @@ body.menu-on
 <style scoped lang="stylus">
 @import "~assets/styles/component"
 
-#oj-menu
+.oj-menu
 	height 5.5rem
 	position sticky
 	top -1px
@@ -105,14 +105,7 @@ nav
 	a
 		text-decoration: none
 
-#logo
-	display block
-	float left
-	width 4rem
-	height 4rem
-	background url('~/assets/ui/oj-logo.svg') center left no-repeat
-	background-size contain
-a#icon
+a.icon
 	display none
 	position fixed
 	top .5rem
@@ -130,14 +123,21 @@ a#icon
 	+below(780px)
 		display inline-block
 		margin-top .25rem
-#items
+.home
+	display inline-block
+	font-weight 700
+	text-transform uppercase
+	font-size 1rem
+	line-height 1em
+	padding 1.5rem 0 0.5rem 0
+	color $oj-dark
+.items
 	display block
 	float right
 	margin 0
 	font-family $Lemur
 	font-weight 700
 	list-style-type none
-	// text-transform uppercase
 	text-align right
 	letter-spacing .125em
 	font-size 1rem
@@ -155,7 +155,6 @@ a#icon
 		text-align left
 		padding-top 2rem
 
-#items
 	a.lang-switch
 		text-transform capitalize
 		opacity .4
