@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "delay": "^2.0.0",
-    "marked": "^0.3.19",
+    "marked": "^0.4.0",
     "moment": "^2.22.1",
     "nuxt": "^1.0.0",
     "nuxt-i18n": "^3.2.3",
