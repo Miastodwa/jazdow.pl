@@ -2,6 +2,7 @@ const pkg = require('./package')
 const I18N = require('./lang')
 const routes = require('./routes')
 
+
 module.exports = {
 	mode: 'universal',
 

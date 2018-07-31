@@ -43,10 +43,12 @@ export default {
 		},
 
 		scrollEvents(){
-			const scrolled = window.pageYOffset
-			this.styles.shift1 = {
-				transform: `translateY(${ scrolled * -.07 }px)`
-			}
+			window.requestAnimationFrame( ()=> {
+				const scrolled = window.pageYOffset
+				this.styles.shift1 = {
+					transform: `translateY(${ (scrolled * -.07).toFixed(2) }px)`
+				}
+			})
 		}
 	},
 

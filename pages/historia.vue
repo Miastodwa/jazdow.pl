@@ -31,7 +31,7 @@ export default {
 
 	async beforeMount(){
 		const locale = this.$i18n.defaultLocale === this.$i18n.locale ? '/pl' : ''
-		await this.getPage(locale + this.$route.fullPath)
+		await this.getPage(locale + this.$route.path)
 	}
 }
 </script>

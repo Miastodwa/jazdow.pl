@@ -20,6 +20,8 @@ marked.setOptions({breaks: true})
 export default {
 	name: 'map-view',
 	
+	scrollToTop: true,
+
 	components: {OjMap, OjMapLegend},
 
 	computed: {
