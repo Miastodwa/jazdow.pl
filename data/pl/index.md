@@ -73,7 +73,7 @@ faqCard:
 cards:
   - link: /faq
     cover: /images/cards/cover-faq.jpg
-    title: F.A.Q. —
+    title: FAQ —
     caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
   - link: /historia
     cover: /images/cards/cover-history.jpg
