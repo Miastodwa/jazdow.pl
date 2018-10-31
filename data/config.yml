@@ -46,6 +46,9 @@ menu:
         -
             href: /pomoc/
             title: pomoc
+        -
+            href: /faq/
+            title: faq
 
 # Footer
 contact:

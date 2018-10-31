@@ -56,7 +56,25 @@ eventsCard:
   caption: "dziś:"
   more: cały kalendarz →
   empty: Lista wydarzeń nie jest dostępna na stronie, ze względu na zmiany jakie Facebook wprowadza po ujawnionym wycieku danych.
+faqCard:
+  link: /faq
+  more: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
+  caption: |
+    Czym jest Otwarty Jazdów?
+
+    Kto tu rządzi?
+
+    Jakie są osiągnięcia Otwartego Jazdowa?
+    
+    Czy mogę wynająć domek fiński?
+
+    A jeśli chcę coś zmienić?
+
 cards:
+  - link: /faq
+    cover: /images/cards/cover-faq.jpg
+    title: F.A.Q. —
+    caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
   - link: /historia
     cover: /images/cards/cover-history.jpg
     title: HISTORIA —

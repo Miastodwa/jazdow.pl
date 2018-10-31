@@ -19,6 +19,7 @@
 import OjVideo from '~/components/oj-video'
 import OjIntro from '~/components/oj-intro'
 import OjCard from '~/components/oj-card'
+import OjFaqCard from '~/components/oj-faq-card'
 import OjMapCard from '~/components/oj-map-card'
 import OjEventsMini from '~/components/oj-events-mini'
 import {mapActions, mapState} from 'vuex'
@@ -31,7 +32,7 @@ export default {
 
 	layout: 'home',
 
-	components: {OjVideo, OjIntro, OjCard, OjMapCard, OjEventsMini},
+	components: {OjVideo, OjIntro, OjCard, OjFaqCard, OjMapCard, OjEventsMini},
 
 	computed: {
 		...mapState('pages', ['page'])
@@ -79,10 +80,23 @@ export default {
 	+below(700px)
 		width 100%
 		max-width 40rem
-		margin $gutter auto
+		margin $gutter auto	
+.oj-faq-card
+	margin-bottom $gutter
+	+above(600px)
+		lost-column 4/12 2 $gutter
+.cards
+	+above(600px)
+		display flex
+		flex-flow row wrap
+		lost-column 8/12 2 $gutter
+	+below(600px)
+		width 100%
 .oj-card
 	+above(600px)
 		lost-column 4/12 3 $gutter
+		margin-bottom $gutter
+.oj-card, .oj-faq-card
 	+below(600px)
 		width 100%
 		max-width 40rem

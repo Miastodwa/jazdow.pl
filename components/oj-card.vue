@@ -30,7 +30,7 @@ export default {
 	overflow hidden
 	background-size contain
 	background-repeat no-repeat
-	background-position center center
+	background-position center top
 	+above($grid-width)
 		height $grid-width * 0.2
 	+below(600px)

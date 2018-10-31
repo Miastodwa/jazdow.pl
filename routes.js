@@ -5,6 +5,7 @@ module.exports = [
     '/model',
     '/partnerstwo',
     '/pomoc',
+    '/faq',
     '/polityka-prywatnosci',
     '/en/events',
     '/en/map',
