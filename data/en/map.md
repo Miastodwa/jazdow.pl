@@ -27,7 +27,7 @@ legend:
 houses:
     open:
         - 
-            name: Fundacja Łyński Kamień
+            name: Waiting to be rebuilt after a fire
             coords: 925 602
             address: 3/4
         - 
@@ -43,7 +43,7 @@ houses:
             coords: 779.5 555
             address: 3/8
         - 
-            name: Fundacja Pracownia Dóbr Wspólnych + Fundacja Łąka
+            name: Fundacja Pracownia Dóbr Wspólnych
             coords: 877 628
             address: 3/9
         - 
@@ -59,7 +59,7 @@ houses:
             coords: 763.5 667
             address: 3/20
         - 
-            name: Stowarzyszenie Amnesty International + Fundacja Bullerbyn na rzecz wspólnoty dzieci i dorosłych
+            name: Fundacja Bullerbyn na rzecz wspólnoty dzieci i dorosłych
             coords: 500.5 505.5
             address: 5a/1
         - 
