@@ -57,7 +57,7 @@ eventsCard:
   more: cały kalendarz →
   empty: Lista wydarzeń nie jest dostępna na stronie, ze względu na zmiany jakie Facebook wprowadza po ujawnionym wycieku danych.
 faqCard:
-  link: /faq
+  link: /pytania
   more: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
   caption: |
     Czym jest Otwarty Jazdów?
@@ -71,17 +71,17 @@ faqCard:
     A jeśli chcę coś zmienić?
 
 cards:
-  - link: /faq
+  - link: /pytania
     cover: /images/cards/cover-faq.jpg
-    title: FAQ —
+    title: pytania — 
     caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
   - link: /historia
     cover: /images/cards/cover-history.jpg
     title: HISTORIA —
     caption: Zobacz na osi czasu historię domków fińskich i Otwartego Jazdowa.
-  - link: /model
+  - link: /wspolzarzadzanie
     cover: /images/cards/cover-model.jpg
-    title: MODEL —
+    title: współzarządzanie —
     caption: Tworzymy model społecznościowego zarządzania przestrzenią miejską.
   - link: partnerstwo
     cover: /images/cards/cover-partnership.jpg
