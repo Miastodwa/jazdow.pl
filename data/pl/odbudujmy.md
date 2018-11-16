@@ -5,7 +5,7 @@ tldr: Uratujmy Jazdów 3/4 - odbudujmy domek fiński po pożarze
 [zbiórka na platformie ODPAL PROJEKT](https://odpalprojekt.pl/projekty/pokaz/1846,uratujmy-jazdow-34---odbudujmy-domek-finski-po-pozarze  \"Uratujmy Jazdów na Odpal Projekt\")
 
 ###  Oświadczenie Partnerstwa Otwarty Jazdów:
- 
+
 3 grudnia 2017 r. spłonął domek fiński  Jazdów 3/4 na Osiedlu Jazdów w Warszawie - rodzinny dom aktorki Barbary Wrzesińskiej  i muzyka Borysa Janczarskiego. Od dwóch lat była to również przestrzeń działań edukacyjnych,  kulturalnych i muzycznych.
 
 Prawdopodobną przyczyną pożaru było przegrzanie  instalacji zasilającej piec elektryczny. Domek został wyłączony z użytkowania decyzją  inspektora budowlanego – wymaga odbudowy praktycznie od zera, ale chcemy odzyskać  maksymalnie dużo oryginalnych elementów z
