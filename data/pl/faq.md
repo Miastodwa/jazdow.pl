@@ -1,6 +1,6 @@
 ---
 title: Pierwszy raz na Jazdowie?
-tldr: Rozłóż koc na trawie, napij się Jazdowianki, odpocznij, poczytaj
+tldr: Rozłóż koc na trawie, napij się Jazdowianki, odpocznij, poczytaj ;)
 ---
 ## Czym jest Osiedle Jazdów i Otwarty Jazdów?
 Osiedle Jazdów to mały raj w centrum Warszawy: 27 zatopionych w zieleni drewnianych domków. Otwarty Jazdów to społeczność ich gospodarzy, gości i przyjaciół, czyli my i każdy kto chce się do nas przyłączyć. Rozpoczęliśmy działalność jako grupa nieformalna broniąca Osiedla przed likwidacją, później działaliśmy jako Partnerstwo Lokalne, a teraz jesteśmy formalnym Związkiem Stowarzyszeń. Dziś pracujemy nad tym, aby to miejsce dawało chwilę wytchnienia i zapewniało spotkania z niezależną kulturą i fajnymi ludźmi w niecodziennych okolicznościach przyrody.
