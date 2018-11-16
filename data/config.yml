@@ -22,8 +22,8 @@ menu:
             href: /en/history/
             title: history
         -
-            href: /en/model/
-            title: model
+            href: /en/co-management/
+            title: co-management
         -
             href: /en/partnership/
             title: partnership
@@ -38,17 +38,17 @@ menu:
             href: /historia/
             title: historia
         -
-            href: /model/
-            title: model
+            href: /wspolzarzadzanie/
+            title: współzarządzanie
         -
             href: /partnerstwo/
             title: partnerstwo
         -
-            href: /pomoc/
-            title: pomoc
+            href: /odbudujmy/
+            title: odbudujmy
         -
-            href: /faq/
-            title: FAQ
+            href: /pytania/
+            title: pytania
 
 # Footer
 contact:
