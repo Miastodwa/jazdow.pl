@@ -1,8 +1,8 @@
 ---
-title: Pomoc
-tldr: Uratujmy Jazdów 3/4 - odbudujmy domek fiński po pożarze
+title: Uratujmy Jazdów 3/4
+tldr: odbudujmy domek fiński po pożarze
 ---
-[zbiórka na platformie ODPAL PROJEKT](https://odpalprojekt.pl/projekty/pokaz/1846,uratujmy-jazdow-34---odbudujmy-domek-finski-po-pozarze  \"Uratujmy Jazdów na Odpal Projekt\")
+[zbiórka na platformie ODPAL PROJEKT](https://odpalprojekt.pl/projekty/pokaz/1846,uratujmy-jazdow-34---odbudujmy-domek-finski-po-pozarze)
 
 ###  Oświadczenie Partnerstwa Otwarty Jazdów:
 
@@ -12,7 +12,8 @@ Prawdopodobną przyczyną pożaru było przegrzanie  instalacji zasilającej pie
 1945 r. Podejmujemy również działania  prewencyjne. Gospodarze pozostałych domków przeprowadzają przeglądy wszystkich instalacji,  aby móc dokonać koniecznych napraw i ulepszeń.
 
 Liczne inicjatywy społeczne straciły  miejsce do działania:
-środowisko muzyczne skupione wokół inicjatywy Jazzdów3przez4  oraz działalności Fundacji Ludoteka Roszada. Do tej pory domek był miejscem warsztatów  językowych, kulinarnych, teatralnych i muzycznych dla dzieci i dorosłych. Działania  dotychczas prowadzone w domku Jazdów 3/4 zostały na czas odbudowy przeniesione do  sąsiadów. Szczegółowe informacje można znaleźć na stronie [@Osiedle Jazdów](https://www.facebook.com/jazdow)  lub [@Jazzdow3przez4](https://www.facebook.com/Jazzdow3przez4/).
+środowisko muzyczne skupione wokół inicjatywy Jazzdów3przez4  oraz działalności Fundacji Ludoteka Roszada. Do tej pory domek był miejscem warsztatów  językowych, kulinarnych, teatralnych i muzycznych dla dzieci i dorosłych. Działania  dotychczas prowadzone w domku Jazdów 3/4 zostały na czas odbudowy przeniesione do  sąsiadów. Szczegółowe informacje można znaleźć na stronie:
+[@Osiedle Jazdów](https://www.facebook.com/jazdow) lub: [@Jazzdow3przez4](https://www.facebook.com/Jazzdow3przez4/).
 
 Dziękujemy  za liczne słowa wsparcia i deklaracje pomocy. Podjęliśmy decyzję o odbudowie domku  Jazdów 3/4. Chcemy prężnie go rozwijać - stworzyć przestrzeń otwartą na świat jazzu  i projekt rezydencji artystycznych oraz multikulturalne i wielojęzyczne centrum  z biblioteką gier, miejscem na warsztaty dla dzieci, młodzieży i dorosłych.
 

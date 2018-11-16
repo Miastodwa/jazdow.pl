@@ -30,6 +30,7 @@ houses:
             name: Odbudujmy
             coords: 925 602
             address: 3/4
+            link: /odbudujmy
         - 
             name: Chata Numinosum
             coords: 992 616

@@ -50,4 +50,7 @@ article
 	max-width 800px
 	hyphens auto
 	text-align justify
+	text-align-last center
+	a[href]
+		white-space nowrap
 </style>

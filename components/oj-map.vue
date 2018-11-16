@@ -165,7 +165,7 @@
 					v-for="house in houses.open",
 					xlink:href="#house",
 					class="house open",
-					@click="goToHouse",
+					@click="goToHouse(house.address.replace('/','-'), house.link)",
 					@mouseenter="updateLabel(house.name, 'enter')",
 					@mouseout="updateLabel(house.name, 'leave')",
 					:id="house.address.replace('/','-')",
@@ -231,9 +231,10 @@
 	},
 
 	methods: {
-		goToHouse(e){
-			const id = e.target.id
-			const route = this.localePath( { name: 'domki-id', params: {id: id} } )
+		goToHouse(id, link){
+			const route = link
+				? link
+				: this.localePath( { name: 'domki-id', params: {id: id} } )
 			this.$router.push(route)
 		},
 
