@@ -73,7 +73,7 @@ faqCard:
 cards:
   - link: /pytania
     cover: /images/cards/cover-faq.jpg
-    title: pytania — 
+    title: PYTANIA — 
     caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
   - link: /historia
     cover: /images/cards/cover-history.jpg
@@ -81,7 +81,7 @@ cards:
     caption: Zobacz na osi czasu historię domków fińskich i Otwartego Jazdowa.
   - link: /wspolzarzadzanie
     cover: /images/cards/cover-model.jpg
-    title: współzarządzanie —
+    title: WSPÓŁZARZĄDZANIE —
     caption: Tworzymy model społecznościowego zarządzania przestrzenią miejską.
   - link: partnerstwo
     cover: /images/cards/cover-partnership.jpg
