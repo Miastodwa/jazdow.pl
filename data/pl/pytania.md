@@ -10,7 +10,7 @@ Otwarty Jazdów to także największy, oddolny dom kultury i edukacji w Polsce. 
 Drewniane domki były częścią reparacji wojennych, które Finlandia po II wojnie światowej świadczyła na rzecz Związku Radzieckiego. Związek przekazał Polsce 500 sztuk, nad Wisłę dostarczyła je Armia Czerwona. 96 z nich zostało zmontowanych na Jazdowie, tworząc pierwsze powojenne osiedle mieszkaniowe w Warszawie. W 1945 roku w “fińskich domkach” zamieszkali architekci i projektanci z Biura Odbudowy Stolicy. Później mieszkało tu wielu znanych artystów, a wśród nich m.in. satyrycy Maria Czubaszek i Jan Pietrzak, aktorka Barbara Wrzesińska oraz poeta, dramaturg i satyryk Jonasz Kofta.
 
 ## To ile fińskich domków jest na Jazdowie?
-27, a właściwie 26, bo jeden spłonął w grudniu 2017 r. Jeżeli chcesz dowiedzieć się, jak wspomóc jego odbudowę, zajrzyj na stronę [Pomoc](https://jazdow.pl/pomoc).
+27, a właściwie 26, bo jeden spłonął w grudniu 2017 r. Jeżeli chcesz dowiedzieć się, jak wspomóc jego odbudowę, zajrzyj na stronę [odbudujmy](https://jazdow.pl/odbudujmy).
 
 96 - tyle domków według źródeł stanęło na Jazdowie w 1945. W latach 1968-1974 nastąpiła rozbiórka kilkunastu domków pod budowę Trasy Łazienkowskiej oraz przy wznoszeniu Ambasady Francji. Następnie w latach 2005-2007 doszło do likwidacji kolejnych. Ich miejsce zajęła Ambasada Niemiec. W 2012 rozebrano kolejne 4 i wtedy wkroczyliśmy my - z buntu zaczął rodzić się Otwarty Jazdów.
 
