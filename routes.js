@@ -7,6 +7,7 @@ module.exports = [
     '/odbudujmy',
     '/pytania',
     '/polityka-prywatnosci',
+    '/en',
     '/en/events',
     '/en/map',
     '/en/history',
