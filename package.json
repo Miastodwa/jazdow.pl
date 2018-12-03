@@ -1,0 +1,23 @@
+{
+	"scripts": {
+		"dev": "vuepress dev www",
+		"build": "vuepress build www"
+	},
+	"dependencies": {
+		"axios": "^0.18.0",
+		"delay": "^4.1.0",
+		"moment": "^2.22.2",
+		"stickybits": "^3.5.7",
+		"vue-in-viewport-mixin": "^1.0.4",
+		"vue-markdown": "^2.2.4",
+		"vuepress": "^1.0.0-alpha.13",
+		"vuepress-plugin-sitemap": "^2.1.0"
+	},
+	"devDependencies": {
+		"lost": "^8.3.0",
+		"postcss-preset-env": "^6.2.0",
+		"pug": "^2.0.3",
+		"pug-plain-loader": "^1.0.0",
+		"rupture": "^0.7.1"
+	}
+}
