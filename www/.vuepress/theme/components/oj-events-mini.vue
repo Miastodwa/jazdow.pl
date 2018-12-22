@@ -4,12 +4,12 @@
 		h2 {{$page.frontmatter.eventsCard.title}}
 		h3 {{$page.frontmatter.eventsCard.caption}}
 	.events
-		ul(v-if="events.length")
-			li(v-fot="event in events")
-				.time {{event.startTime}}
-				.title {{event.title}}
-		.empty(v-else) {{$page.frontmatter.eventsCard.empty}}
-	nuxt-link.link(:to="$page.frontmatter.eventsCard.link")
+		//- ul(v-if="events.length")
+		//- 	li(v-fot="event in events")
+		//- 		.time {{event.startTime}}
+		//- 		.title {{event.title}}
+		.empty {{$page.frontmatter.eventsCard.empty}}
+	router-link.link(:to="$page.frontmatter.eventsCard.link")
 		h2 {{$page.frontmatter.eventsCard.more}}
 </template>
 
@@ -39,7 +39,7 @@ export default {
 .empty
 	width 100%
 	text-align center
-	background url('~/assets/ui/sleepey.svg') top center no-repeat
+	background url('../assets/ui/sleepey.svg') top center no-repeat
 	background-size 30% auto
 	padding 30% 0 0 0
 	color $oj-violet

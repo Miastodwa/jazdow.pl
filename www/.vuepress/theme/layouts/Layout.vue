@@ -1,22 +1,33 @@
 <template lang="pug">
-.page-view
-	.intro
-		h1.title {{$page.frontmatter.title}}
-		.tldr(v-html="$page.frontmatter.tldr")
-	article
-		Content
+.default
+	oj-menu
+	main
+		.page-view
+			.intro
+				h1.title {{$page.frontmatter.title}}
+				.tldr(v-html="$page.frontmatter.tldr")
+			article
+				Content
+		oj-footer
 </template>
 
 <script>
+import OjMenu from '../components/oj-menu'
+import OjFooter from '../components/oj-footer'
 
 export default {
-	name: "article-view"
+	name: "article-view",
+
+	components: {
+		OjMenu, OjFooter
+	}
 }
 </script>
 
 
 <style scoped lang='stylus'>
 @import '../styles/component'
+
 .page-view
 	lost-center: 800px $gutter no-flex
 	+below(800px)
@@ -32,7 +43,6 @@ article
 	max-width 800px
 	hyphens auto
 	text-align justify
-	text-align-last center
 	a[href]
 		white-space nowrap
 </style>

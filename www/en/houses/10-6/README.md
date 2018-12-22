@@ -1,0 +1,19 @@
+---
+layout: Houses
+address: Jazdów 10/6, Warszawa
+title: Global Action Plan Polska
+website: http://gappolska.org/
+fb: https://www.facebook.com/pg/GlobalActionPlanPL/about/
+email: biuro@gappolska.org
+phone: 22 126 58 01
+person: Zdzisław Stan Nitak
+---
+Fundacja jest organizacją pożytku publicznego skupioną na działaniach na rzecz zrównoważonego rozwoju i zmiany zachowań na coraz bardziej ekologiczne.
+
+Prowadzimy szkolenia nauczycieli, młodzieży, wydajemy materiały metodyczne i wspieramy placówki oświatowe w projektach ekologicznych dotyczących kampanii ochrony klimatu, promowania zdrowego odżywiania, poszanowania wody i energii, ekologicznego transportu – w oparciu o własny program szkolnych zespołów działań ekologicznych (ekozespołów).
+
+Częścią szkoleń Fundacji jest nabywanie przez uczestników umiejętności tworzenia wizji ekorozwoju społeczności lokalnej. Fundacja stosowała tą metodę podczas warsztatów dla społeczności m.in. Warszawy, Gdyni i Sopotu we współpracy z urzędami miast.
+
+We współpracy z organizacją siostrzaną Global Action Plan w Wielkiej Brytanii i organizacjami w dziesięciu innych krajach fundacja rozpoczęła jesienią 2014 dwuletni projekt Badacz Wody – poszanowania zasobów wody i festiwali wody w szkołach podstawowych i gimnazjach Polski.
+
+Fundacja jest członkiem Global Action Plan International (sekretariat w Sztokholmie, Szwecja) oraz polskiej Koalicji Klimatycznej.

@@ -1,5 +1,5 @@
 <template lang='pug'>
-nuxt-link.oj-card(:to="link", :style="{backgroundImage: `url(${cover})`}")
+router-link.oj-card(:to="link", :style="{backgroundImage: `url(${cover})`}")
 	.card-content
 		h2.card-title {{title}}
 		p.card-caption {{caption}}

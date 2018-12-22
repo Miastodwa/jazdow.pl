@@ -1,56 +1,62 @@
 <template lang="pug">
-#view-house
-	header#header
-		h1#org-name {{$page.frontmatter.org}}
-		p#house-address {{$page.frontmatter.address}}
-	article
-		section#main
-			#image-gallery(v-if="$page.frontmatter.images")
-				oj-slider(captions, controls, counter, loop)
-					img(v-for="image in $page.frontmatter.images", :src="image.src", :caption="image.caption")
-			#content
-				Content.house-body
+.default
+	oj-menu
+	main
+		#view-house
+			header#header
+				h1#org-name {{$page.frontmatter.title}}
+				p#house-address {{$page.frontmatter.address}}
+			article
+				section#main
+					#image-gallery(v-if="$page.frontmatter.images")
+						oj-slider(captions, controls, counter, loop)
+							img(v-for="image in $page.frontmatter.images", :src="image.src", :caption="image.caption")
+					#content
+						Content.house-body
 
-		section#info
-			#info-details
-				h5 {{labels.contact[$i18n.locale]}}
-				.detail.website
-					a(:href="$page.frontmatter.website", :title="$page.frontmatter.org", target="_blank") strona internetowa
-				.detail.fb
-					a(:href="$page.frontmatter.fb", :title="$page.frontmatter.org", target="_blank") facebook
-				.detail.email {{$page.frontmatter.email}}
-				.detail.phone {{$page.frontmatter.phone}}
-				.detail.person {{$page.frontmatter.person}}
+				section#info
+					#info-details
+						h5 {{labels.contact[$lang]}}
+						.detail.website
+							a(:href="$page.frontmatter.website", :title="$page.frontmatter.org", target="_blank") strona internetowa
+						.detail.fb
+							a(:href="$page.frontmatter.fb", :title="$page.frontmatter.org", target="_blank") facebook
+						.detail.email {{$page.frontmatter.email}}
+						.detail.phone {{$page.frontmatter.phone}}
+						.detail.person {{$page.frontmatter.person}}
+	oj-footer
 </template>
 
 
 <script>
 
 import OjSlider from '../components/oj-slider'
+import OjMenu from '../components/oj-menu'
+import OjFooter from '../components/oj-footer'
 
 export default {
 	name: 'view-house',
 	
-	components: {OjSlider},
+	components: {OjSlider, OjMenu, OjFooter},
 
 	data() {
 		return {
 			labels: {
 				calendar: {
-					pl: {
+					'pl-PL': {
 						header: 'Kalendarz wydarzeń do',
 						when: 'Kiedy',
 						what: 'Co'
 					},
-					en: {
+					'en-US': {
 						header: 'Events calendar untill',
 						when: 'When',
 						what: 'What'
 					}
 				},
 				contact: {
-					pl: 'kontakt',
-					en: 'contact'
+					'pl-PL': 'kontakt',
+					'en-US': 'contact'
 				}
 			}
 		}

@@ -76,21 +76,14 @@ module.exports = {
             title: 'Privacy Policy'
         }]
     },
-
-    locale: {
+    contact: {
         pl: {
-            contact: {
-                name: 'Stowarzyszenie Kulturotwórcze Miastodwa',
-                krs: '0000460862',
-                email: 'kontakt@miastodwa.org'
-            }
+            title: 'Kontakt',
+            details: 'Otwarty Jazdów [otwarty@jazdow.pl](mailto:otwarty@jazdow.pl)\nStrona powstała dzięki wsparciu European Cultural Foundation'
         },
         en: {
-            contact: {
-                name: 'Stowarzyszenie Kulturotwórcze Miastodwa',
-                krs: '0000460862',
-                email: 'kontakt@miastodwa.org'
-            }
+            title: 'Contact',
+            details: 'Otwarty Jazdów [otwarty@jazdow.pl](mailto:otwarty@jazdow.pl)\nThis website was created thanks to support from European Cultural Foundation'
         }
     }
 }

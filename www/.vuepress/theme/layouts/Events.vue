@@ -1,23 +1,29 @@
 <template lang='pug'>
-#events-view
-	.intro
-		h1.title {{$page.frontmatter.title}}
-	fb-events
-	.intro
-		Content#tldr
-	.calendar-illustration
+.default
+	oj-menu
+	main
+		#events-view
+			.intro
+				h1.title {{$page.frontmatter.title}}
+			fb-events
+			.intro
+				Content#tldr
+			.calendar-illustration
+		oj-footer
 </template>
 
 
 <script>
 import FbEvents from '../components/fb-events'
+import OjMenu from '../components/oj-menu'
+import OjFooter from '../components/oj-footer'
 
 
 export default {
 	name: "article-view",
 
 	components: {
-		FbEvents
+		FbEvents, OjMenu, OjFooter
 	}
 }
 </script>

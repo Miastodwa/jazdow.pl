@@ -1,34 +1,40 @@
 <template lang="pug">
-#home-page
-	oj-video(:sources="$page.frontmatter.video", :subs="$page.frontmatter.subs")
-	oj-intro
-	.content
-		.row.a
-			oj-map-card
-			oj-events-mini
-		.row.b
-			oj-card(v-for="card in $page.frontmatter.cards"
-			:key="card.link"
-			:title="card.title"
-			:caption="card.caption"
-			:cover="card.cover"
-			:link="card.link")
+.video-bg
+	main
+		oj-menu
+		#home-page
+			oj-video(:sources="$page.frontmatter.video", :subs="$page.frontmatter.subs")
+			oj-intro
+			.content
+				.row.a
+					oj-map-card
+					oj-events-mini
+				.row.b
+					oj-card(v-for="card in $page.frontmatter.cards"
+					:key="card.link"
+					:title="card.title"
+					:caption="card.caption"
+					:cover="card.cover"
+					:link="card.link")
+		oj-footer
 </template>
 
 <script>
+import OjMenu from '../components/oj-menu'
 import OjVideo from '../components/oj-video'
 import OjIntro from '../components/oj-intro'
 import OjCard from '../components/oj-card'
 import OjFaqCard from '../components/oj-faq-card'
 import OjMapCard from '../components/oj-map-card'
 import OjEventsMini from '../components/oj-events-mini'
+import OjFooter from '../components/oj-footer'
 
 export default {
 	name: 'home-view',
 
 	layout: 'home',
 
-	components: {OjVideo, OjIntro, OjCard, OjFaqCard, OjMapCard, OjEventsMini}
+	components: {OjMenu, OjVideo, OjIntro, OjCard, OjFaqCard, OjMapCard, OjEventsMini, OjFooter}
 
 }
 </script>
@@ -36,9 +42,36 @@ export default {
 
 <style scoped lang="stylus">
 @import '../styles/component'
+main
+	margin-top 0
+	transition margin-top .5s ease
+.video-bg
+	main
+		margin-top calc(100vh - 5.5rem)
+		+above(0, true, null, 'portrait')
+			margin-top 75vh
+.intro
+	margin 6rem auto 0 auto
+	.title
+		display block
+		width 100%
+		font-size 2rem
+	#tldr
+		display block
+		margin 0 auto
+		p
+			font-size 1.6rem
+			margin-bottom 0
+			@media print
+				font-size 1.2rem
+
+@media print
+	#oj-menu
+		display none
+
 .content
 	background white
-	background-image url('~/assets/ui/white-fumes-1.svg'), url('~/assets/ui/bg-green.png')
+	background-image url('../assets/ui/white-fumes-1.svg'), url('../assets/ui/bg-green.png')
 	background-position center top, 0 0
 	background-repeat no-repeat, repeat
 	background-size  100%, 4rem

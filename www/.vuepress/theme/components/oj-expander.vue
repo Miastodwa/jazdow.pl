@@ -2,7 +2,7 @@
 	.oj-expander
 		.content(:class="{closed: !visible, open: visible}")
 			slot
-		a.more(@click="toggle()") {{visible ? less[$i18n.locale] : more[$i18n.locale]}}
+		a.more(@click="toggle()") {{visible ? less[$lang] : more[$lang]}}
 </template>
 
 <script>
@@ -12,12 +12,12 @@ export default {
 		return {
 			visible: false,
 			more: {
-				en: 'read more ↓',
-				pl: 'czytaj dalej ↓'
+				'en-US': 'read more ↓',
+				'pl-PL': 'czytaj dalej ↓'
 			},
 			less: {
-				en: 'hide text ↑',
-				pl: 'ukryj tekst ↑'
+				'en-US': 'hide text ↑',
+				'pl-PL': 'ukryj tekst ↑'
 			}
 		};
 	},

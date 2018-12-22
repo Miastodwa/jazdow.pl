@@ -1,19 +1,25 @@
 <template lang="pug">
-#history-view(v-if="$page.frontmatter")
-	.intro
-		h1.title {{$page.frontmatter.title}}
-		Content#tldr
-	oj-history(:timeline="$page.frontmatter.history")
+.default
+	oj-menu
+	main
+		#history-view(v-if="$page.frontmatter")
+			.intro
+				h1.title {{$page.frontmatter.title}}
+				Content#tldr
+			oj-history(:timeline="$page.frontmatter.history")
+		oj-footer
 </template>
 
 
 <script>
 import OjHistory from '../components/oj-history'
+import OjMenu from '../components/oj-menu'
+import OjFooter from '../components/oj-footer'
 
 export default {
 	name: "history-view",
 
-	components: {OjHistory}
+	components: {OjHistory, OjMenu, OjFooter}
 
 }
 </script>

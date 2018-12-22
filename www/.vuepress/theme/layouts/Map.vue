@@ -1,25 +1,31 @@
 <template lang='pug'>
-	#view-map
-		.intro
-			h1.title {{$page.frontmatter.title}}
-			Content#tldr
+.default
+	oj-menu
+	main
+		#view-map
+			.intro
+				h1.title {{$page.frontmatter.title}}
+				Content#tldr
 
-		.map-section
-			oj-map(v-if="$page.frontmatter.houses", :houses="$page.frontmatter.houses")
-		.legend
-			oj-map-legend(v-if="$page.frontmatter.legend", :legend="$page.frontmatter.legend")
+			.map-section
+				oj-map(v-if="$page.frontmatter.houses", :houses="$page.frontmatter.houses")
+			.legend
+				oj-map-legend(v-if="$page.frontmatter.legend", :legend="$page.frontmatter.legend")
+		oj-footer
 </template>
 
 <script>
 import OjMap from '../components/oj-map'
 import OjMapLegend from '../components/oj-map-legend'
+import OjMenu from '../components/oj-menu'
+import OjFooter from '../components/oj-footer'
 
 export default {
 	name: 'map-view',
 	
 	scrollToTop: true,
 
-	components: {OjMap, OjMapLegend}
+	components: {OjMap, OjMapLegend, OjMenu, OjFooter}
 
 }
 </script>

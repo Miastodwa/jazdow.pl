@@ -165,7 +165,7 @@
 					v-for="house in houses.open",
 					xlink:href="#house",
 					class="house open",
-					@click="goToHouse(house.address.replace('/','-'), house.link)",
+					@click="$router.push($localePath + dir[$lang] + house.address.replace('/','-') + '/')",
 					@mouseenter="updateLabel(house.name, 'enter')",
 					@mouseout="updateLabel(house.name, 'leave')",
 					:id="house.address.replace('/','-')",
@@ -226,15 +226,17 @@
 				text: '',
 				animate: '',
 				isFixed: true
+			},
+			dir: {
+				'en-US': 'houses/',
+				'pl-PL': 'domki/'
 			}
 		}
 	},
 
 	methods: {
-		goToHouse(id, link){
-			const route = link
-				? link
-				: this.localePath( { name: 'domki-id', params: {id: id} } )
+		goToHouse(id){
+			const route = this.$localePath + this.dir[this.$lang] + id
 			this.$router.push(route)
 		},
 
@@ -272,85 +274,85 @@
 $oj-map-dark = $oj-violet
 
 #oj-map
-	display: block
-	position: relative
+	display block
+	position relative
 	clearfix()
-	margin-top: 12rem
-	overflow-x: hidden
-	width: 100%
+	margin-top 12rem
+	overflow-x hidden
+	width 100%
 .map-viewport
-	display: block
-	width: 100%
+	display block
+	width 100%
 	+below(600px, true)
-		width: 170%
-		transform: translateX(-25%)
+		width 170%
+		transform translateX(-25%)
 .map-land-1
-	fill: $oj-palegreen
+	fill $oj-palegreen
 .map-land-2
-	fill: $oj-palegreen2
+	fill $oj-palegreen2
 .building
-	fill: #fff
-	stroke-miterlimit: 10
-	stroke-width: 0.5px
-	stroke: $oj-map-dark
+	fill #fff
+	stroke-miterlimit 10
+	stroke-width 0.5px
+	stroke $oj-map-dark
 .fence
-	stroke: $oj-map-dark
-	fill: none
-	opacity: 0.75
-	stroke-miterlimit: 10
-	stroke-dasharray: 2 5
+	stroke $oj-map-dark
+	fill none
+	opacity 0.75
+	stroke-miterlimit 10
+	stroke-dasharray 2 5
 .street-label
-	font-size: 14px
-	color: $oj-map-dark
+	font-size 14px
+	color $oj-map-dark
 .filled
-	fill: $oj-map-dark
+	fill $oj-map-dark
 #house-label
-	position: fixed
-	display: block
-	left: 0
-	right: 0
-	z-index: 9
-	margin: 0 auto
-	padding: .5rem 0
-	bottom: 0
-	background-color: rgba(white, .9)
+	position fixed
+	display block
+	left 0
+	right 0
+	z-index 9
+	margin 0 auto
+	padding .5rem 0
+	bottom 0
+	background-color rgba(white, .9)
 	&.enter
-		animation: labelIn .2s 1 ease
-		visibility: visible
+		animation labelIn .2s 1 ease
+		visibility visible
 	&.leave
-		animation: labelOut .5s 1 ease
-		visibility: hidden
+		animation labelOut .5s 1 ease
+		visibility hidden
 #house-label-content
-	color: $oj-violet
-	font-family: $P
-	font-weight: 700
-	font-size: 1.2rem
-	line-height: 1.4em
-	letter-spacing: .05em
-	text-align: center
-	max-width: 520px
-	margin: 0 auto
-	padding: 0 1rem
+	color $oj-violet
+	font-family $P
+	font-weight 700
+	font-size 1.2rem
+	line-height 1.4em
+	letter-spacing .05em
+	text-align center
+	max-width 520px
+	margin 0 auto
+	padding 0 1rem
 svg
 	.house
-		stroke: #5200cc
-		stroke-linejoin: bevel
-		stroke-width: 0.5px
+		stroke #5200cc
+		stroke-linejoin bevel
+		stroke-width 0.5px
 		&.open
-			cursor: pointer
-			fill: #f7e98b
+			cursor pointer
+			fill #f7e98b
 			&:hover
-				fill: #ffe954
+				fill #ffe954
 		&.closed
-			fill: white
+			fill white
 
 	.house-number, text
-		fill: #5200cc
-		font-family: SC, Monaco, monospace
-		font-size: 13px
-		font-weight: 300
-		isolation: isolate
-		pointer-events: none
-		cursor: pointer
+		fill #5200cc
+		font-family SC, Monaco, monospace
+		font-size 13px
+		font-weight 300
+		isolation isolate
+		pointer-events none
+		cursor pointer
 
 </style>
