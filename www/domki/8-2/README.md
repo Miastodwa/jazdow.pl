@@ -1,0 +1,25 @@
+---
+layout: Houses
+id: 8-2
+lang: pl
+address: ul. Jazdów 8/2, Warszawa
+location:
+    lon: 21.02923099999998
+    lat: 52.22156589999999
+title: OsiemPrzezDwa
+website: http://naukaprzygoda.edu.pl
+fb: facebook.com/osiemprzezdwa
+email: osiemprzezdwa@gmail.com
+phone: +48 505 127 515
+person: Jacek Walawender
+images:
+  - src: /images/houses/8-2/1.jpg
+    caption: OsiemPrzezDwa
+  - src: /images/houses/8-2/2.jpg
+    caption: Spotkania odkrywców
+---
+„OsiemPrzezDwa” jest przestrzenią dla każdego: dzieci, młodzieży, nauczycieli, wychowawców, instruktorów, trenerów, wolontariuszy organizacji pozarządowych. W ofercie kulturalno-edukacyjnej domku znajdą się m.in. zajęcia i gry outdoorowe, warsztaty edukacyjne, spotkania tematyczne, kluby zainteresowań, projekcje filmów, seminaria naukowe. Z myślą o dzieciach w domku prowadzona jest świetlica naukowa, które nie tylko rozbudzą w dzieciach ciekawość świata, ale także zachęcą je do zgłębiania tajemnic nauki. Odbywają się również zabawy dla całych rodzin uczące wrażliwości na otaczający świat oraz pobudzające świadomość przyrodniczą i ekologiczną. Co miesiąc zapraszamy na śpiewanki. Dodatkowo, co jakiś czas odbywają się bezpłatne zajęcia w terenie z wykorzystaniem niskiego parku linowego, kluby dyskusyjne, warsztaty.
+
+Fundacja Pracownia Nauki i Przygody jest organizacją pozarządową, która rozwija i promuje pedagogikę przygody (outdoor&adventure education) w Polsce. Inicjuje, wspiera oraz realizuje inicjatywy edukacyjne, wychowawcze, szkoleniowe oraz informacyjne w dziedzinie edukacji pozaformalnej i nieformalnej, w szczególności z nurtu pedagogiki przygody, edukacji alternatywnej, edukacji naukowej, turystki i animacji społeczno-kulturalnej. Organizuje warsztaty, wyjazdy, projekty - najczęściej dla dzieci i młodzieży, często ze środowisk dysfunkcyjnych. Propaguje naukę i aktywne zdobywanie wiedzy o świecie, w szczególności, łączenie zdobywania wiedzy z poznawaniem oraz przeżywaniem głębokiego kontaktu z naturą.
+
+Związek Harcerstwa Rzeczypospolitej (ZHR) to wspólnota przyjaciół – dzieci, młodzieży i dorosłych, która w oparciu o wartości chrześcijańskie, poprzez przykład własny instruktorek i instruktorów harcerskich, pracę nad sobą, służbę, przygodę oraz inne elementy metody harcerskiej wychowuje człowieka pełnego radości życia, odpowiedzialnego za Polskę i gotowego podjąć wyzwania współczesności. ZHR opiera swoją działalność wychowawczą na społecznej pracy członków.

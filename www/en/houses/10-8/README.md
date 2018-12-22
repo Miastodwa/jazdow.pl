@@ -1,0 +1,20 @@
+---
+layout: Houses
+address: Jazdów 10/8, Warszawa
+location:
+    lon: 21.02934300000004
+    lat: 52.222133
+title: Towarzystwo Polska-Finlandia
+website: http://www.seura.pl
+fb: http://www.facebook.com/puolasuomiseura
+email: seura@seura.pl
+phone: +48 692340271
+person: Milena Napiórkowska
+---
+Towarzystwo Polska-Finlandia tworzą osoby, którym Finlandia, jej krajobrazy, kultura, ludzie są bliskie sercu.
+
+Chcielibyśmy, aby Towarzystwo było ważnym i stałym punktem na kulturalnej mapie Warszawy. Żeby odwiedzali nas ludzie młodzi i starsi, fani metalu i muzyki tradycyjnej, miłośnicy książek, filmów i tańca. Chcemy podtrzymywać przyjazne stosunki i zainteresowanie naszą działalnością osób związanych w różny sposób z Finlandią: będących w związkach z Finami, Finów mieszkających w Polsce, osób, które mieszkały w Finlandii, studentów fennistyki i wszystkich ludzi, którzy już znają i kochają Finlandię. Ale poza tym pragniemy wprowadzić do naszego świata inne osoby i zaszczepić w nich fiński pierwiastek. Naszą działalnością chcemy i możemy zainteresować miłośników książek, fotografów, studentów - przyszłych inżynierów i ekonomistów, historyków... lista jest nieograniczona. A to dlatego, że każdej z tych grup, Finlandia ma coś do zaoferowania.
+
+Towarzystwo ma służyć ludziom zainteresowanym jego działalnością i pozwalać im się rozwijać zarówno w strukturach Towarzystwa jako organizatorzy i pomysłodawcy imprez, albo po prostu umożliwiając udział w odczytach, wykładach, warsztatach i innych wydarzeniach z fińską duszą.
+
+Do Towarzystwa zapraszamy każdego, kto poczuł zew północy i pragnie odnaleźć swoje miejsce w naszej fińskiej, pachnącej lasem enklawie w samym centrum Warszawy!

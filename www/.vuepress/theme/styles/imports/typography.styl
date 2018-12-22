@@ -1,0 +1,254 @@
+// LEMUR
+fontface(Lemur, '/fonts/LEMUR/Lemur-Regular', 400, normal)
+fontface(Lemur, '/fonts/LEMUR/Lemur-Bold', 700, normal)
+
+// HK GROTESK
+fontface(HK, '/fonts/HK/HKGrotesk-Light', 200, normal)
+fontface(HK, '/fonts/HK/HKGrotesk-LightItalic', 200, italic)
+fontface(HK, '/fonts/HK/HKGrotesk-Regular', 400, normal)
+fontface(HK, '/fonts/HK/HKGrotesk-Italic', 400, italic)
+fontface(HK, '/fonts/HK/HKGrotesk-Bold', 700, normal)
+fontface(HK, '/fonts/HK/HKGrotesk-BoldItalic', 700, italic)
+
+// SOURCE CODE
+fontface(SC, '/fonts/SC/SC-300', 300, normal)
+
+*
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga"
+	-moz-font-feature-settings: "liga=1"
+	-moz-font-feature-settings: "liga"
+	-ms-font-feature-settings: "liga" 1
+	-o-font-feature-settings: "liga"
+	font-feature-settings: "liga"
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+html
+	font-size: $base_font_size
+	+above(1500px)
+		font-size: 1.1*$base_font_size
+	+below(1200px)
+		font-size: .9*$base_font_size
+	+below(800px)
+		font-size: .8*$base_font_size
+	+below(600px)
+		font-size: .7*$base_font_size
+
+
+body
+	color: $base_font_color
+	font-family: $base_font_family
+	font-size: $base_font_size
+	line-height: $base_line_height
+	font-family: $base_font_family
+	-webkit-font-smoothing: antialiased
+
+// ! HEADINGS, PARAGRAPH, ANCHOR
+
+h1, h2, h3, h4, h5, h6
+	text-rendering: optimizeLegibility // Fix the character spacing for headings
+	font-family: $base_font_family
+	margin-bottom: 1em
+
+h1
+	font-family: $extra_font_family
+	font-size: 1.8rem
+	letter-spacing: .02em
+	line-height: 1.4em
+	font-weight: 700
+	font-style: normal
+	margin-bottom: 1em
+
+
+h2
+	font-size: 1.6rem
+	line-height: 1.4em
+	font-weight: 700
+	font-style: normal
+	margin-bottom: 0.8em
+
+
+h3
+	font-size: 1.4rem
+	line-height: 1.4em
+	font-weight: 700
+	font-style: normal
+	margin-bottom: 0.4em
+
+
+h4
+	font-size: 1rem
+	line-height: 1.4em
+	font-weight: 700
+	font-style: normal
+	margin-bottom: 0.4em
+	text-transform: uppercase
+
+h5
+	font-size: 1rem
+	line-height: 1.4em
+	font-weight: 700
+	font-style: normal
+	margin-bottom: 0.4em
+
+h6
+	font-size: 1rem
+	line-height: 1.4em
+	font-weight: 700
+	font-style: normal
+	margin-bottom: 0.4em
+
+p
+	margin: 0 0 1em
+	line-height 1.6em
+
+a
+	color: $base_link_color
+
+
+em
+	font-style: italic
+
+strong
+	font-weight: 700
+
+
+// DESTINATION SPECIFIC LINKS:
+// a[href^="http://"]
+// a[href^="/"]
+// a[href^=".."]
+//a[href^="mailto:"]
+// a[href$=".pdf"]
+// a[href$=".doc"]
+// a[href$=".docx"]
+// a[href$=".mp3"]
+// a[href$=".zip"]
+
+img
+	margin: 0
+	max-width: 100%
+	height: auto
+	vertical-align: middle
+
+
+// ! TABLES
+table
+	border-spacing: 0
+	border-collapse: separate
+	border: 1px solid $table_border_color
+	text-align: left
+	margin: 1em 0
+	width: 100%
+	caption
+		font-weight: 700
+
+	thead
+	tfoot
+	tbody
+	tr
+		border-bottom: 1px solid $table_border_color
+	th
+		font-weight: 700
+		padding: 10px
+
+	td
+		padding: 10px
+
+
+
+// ! LISTS
+
+
+ul, ol
+	padding-left: $base_line_height
+	font-size: $base_font_size
+	line-height $base_line_height
+	letter-spacing 0.02em
+	margin-bottom: 2em
+	margin-left: .6em
+	ol, ul
+		font-size: 1em
+
+
+ul
+	list-style-type: disc
+ol
+	list-style-type: decimal
+	ol
+		list-style-type:lower-alpha
+
+
+
+
+
+
+// ! MISCELLANEOUS
+
+abbr, acronym
+	border-bottom $abbr_border
+	cursor help
+
+
+address
+	display block
+	margin 0 0 $base_line_height / 2
+
+
+hgroup
+	margin-bottom $base_line_height / 2
+
+
+del
+	color lighten $base_font_color, 15%
+
+pre
+	overflow auto
+	display block
+	font-size 1.2rem
+	line-height 1.4em
+	font-family monospace
+	padding 1em
+	border-left 1px solid $light
+	margin 0.5em 0
+	background-color #EEE
+
+hr
+	border-bottom 1px solid $base_border_color
+	border-left: none
+	border-right: none
+	border-top: none
+	margin: $base_line_height 0
+
+
+
+
+// ! BLOCKQUOTE
+
+blockquote
+	font-style italic
+	background-repeat no-repeat
+	background-position top left
+
+
+cite
+	margin-top 1em
+	display inline-block
+	&:before
+		content '\2014 \00A0'
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner
+	padding: 0
+	border: 0
+
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]
+	border: none
+	cursor: pointer
