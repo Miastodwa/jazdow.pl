@@ -49,25 +49,25 @@ subs:
     - - 3
       - Welcome to Open Jazdów
 mapCard:
-  link: /en/map
+  link: /en/map/
   title: HOUSES / MAP —
   caption: See what's inside of each house
 eventsCard:
-  link: /events
+  link: /events/
   title: Events —
   caption: today
   more: full calendar →
   empty: Nothin's on today.
 cards:
-  - link: /en/history
+  - link: /en/history/
     cover: /images/cards/cover-history.jpg
     title: HISTORY —
     caption: History of Finnish houses of Open Jazdów
-  - link: /en/model
+  - link: /en/model/
     cover: /images/cards/cover-model.jpg
     title: MODEL —
     caption: community-management of urban space
-  - link: /en/partnership
+  - link: /en/partnership/
     cover: /images/cards/cover-partnership.jpg
     title: PARTNERSHIP —
     caption: Jazdów Partnership

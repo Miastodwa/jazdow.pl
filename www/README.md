@@ -48,17 +48,17 @@ subs:
     - - 3
       - witamy w Otwartym Jazdowie
 mapCard:
-  link: /mapa
+  link: /mapa/
   title: MAPA OSIEDLA —
   caption: Zobacz co się mieści w domkach fińskich
 eventsCard:
-  link: /wydarzenia
+  link: /wydarzenia/
   title: WYDARZENIA —
   caption: "dziś:"
   more: cały kalendarz →
   empty: Lista wydarzeń nie jest dostępna na stronie, ze względu na zmiany jakie Facebook wprowadza po ujawnionym wycieku danych.
 faqCard:
-  link: /pytania
+  link: /pytania/
   more: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
   caption: |
     Czym jest Otwarty Jazdów?
@@ -72,19 +72,19 @@ faqCard:
     A jeśli chcę coś zmienić?
 
 cards:
-  - link: /pytania
+  - link: /pytania/
     cover: /images/cards/cover-faq.jpg
     title: pytania — 
     caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
-  - link: /historia
+  - link: /historia/
     cover: /images/cards/cover-history.jpg
     title: HISTORIA —
     caption: Zobacz na osi czasu historię domków fińskich i Otwartego Jazdowa.
-  - link: /wspolzarzadzanie
+  - link: /wspolzarzadzanie/
     cover: /images/cards/cover-model.jpg
     title: współzarządzanie —
     caption: Tworzymy model społecznościowego zarządzania przestrzenią miejską.
-  - link: partnerstwo
+  - link: /partnerstwo/
     cover: /images/cards/cover-partnership.jpg
     title: PARTNERSTWO —
     caption: Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy nieformalne, instytucje publiczne i osoby prywatne.
