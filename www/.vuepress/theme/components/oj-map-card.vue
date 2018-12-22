@@ -1,5 +1,5 @@
 <template lang="pug">
-router-link.oj-map-card(to="/mapa")
+router-link.oj-map-card(:to="$page.frontmatter.mapCard.link")
 	.cover
 		img.cover-map(src="../assets/ui/cover-map.svg")
 	.caption

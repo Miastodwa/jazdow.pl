@@ -43,8 +43,12 @@ export default {
 			}
 		},
 
-		$route(){
-			this.mobileMenu = false
+		$route: {
+			handler(val) {
+				console.log(val)
+				this.mobileMenu = false
+			},
+			deep: true
 		}
 	}
 }
