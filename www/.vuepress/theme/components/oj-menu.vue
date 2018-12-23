@@ -41,14 +41,6 @@ export default {
 			} else {
 				return document.body.classList.remove('menu-on')
 			}
-		},
-
-		$route: {
-			handler(val) {
-				console.log(val)
-				this.mobileMenu = false
-			},
-			deep: true
 		}
 	}
 }
