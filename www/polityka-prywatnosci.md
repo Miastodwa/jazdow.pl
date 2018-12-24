@@ -1,8 +1,7 @@
 ---
 generic: true
+permalink: polityka-prywatnosci
 title: Polityka prywatności serwisu jazdow.pl
-langs:
-    en: /en/privacy-policy
 ---
 
 1. Słownik

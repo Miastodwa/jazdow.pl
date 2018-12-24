@@ -1,5 +1,6 @@
 ---
 generic: true
+permalink: odbudujmy
 title: Uratujmy Jazdów 3/4
 tldr: odbudujmy domek fiński po pożarze
 ---

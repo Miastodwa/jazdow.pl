@@ -1,5 +1,6 @@
 ---
 generic: true
+permalink: pytania
 title: Pierwszy raz na Jazdowie?
 tldr: Rozłóż koc na trawie, napij się Jazdowianki, odpocznij, poczytaj ;)
 ---

@@ -1,5 +1,6 @@
 ---
 generic: true
+permalink: partnerstwo
 title: Partnerstwo
 tldr: Od 2015 r. Otwarty Jazdów działa w formule partnerstwa lokalnego pod opieką Biura Obsługi Ruchu Inicjatyw Społecznych (Warszawski Program Wspierania Partnerstw). Partnerstwo jest rozwiązaniem tymczasowym, na czas wypracowania modelu zarządzania osiedlem.
 ---
