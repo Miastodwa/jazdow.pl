@@ -18,7 +18,7 @@ eventsCard:
     Facebook wprowadza po ujawnionym wycieku danych.
   link: /wydarzenia/
   more: cały kalendarz →
-  title: wydarzenia —
+  title: WYDARZENIA —
 cards:
   - caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
     cover: /images/cover-faq.jpg
