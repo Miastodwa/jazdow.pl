@@ -1,37 +1,41 @@
 backend:
     name: github
     repo: Miastodwa/jazdow.pl
-    branch: master # Branch to update (optional; defaults to master)
+    branch: master
 
 media_folder: www/.vuepress/public/images
 public_folder: www/.vuepress/dist/
+
+display_url: https://jazdow.pl
 
 collections:
     - 
         name: pages
         label: Pages
-        files:
+        folder: www/
+        filter: {field: generic, value: true}
+        fields:
+            - 
+                label: Title
+                name: title
+                widget: string
+            - 
+                label: TLDR
+                name: tldr
+                widget: text
             -
-                name: comanagemet_pl
-                label: Współzarządzanie
-                file: www/wspolzarzadzanie/README.md
-                fields:
-                    - 
-                        label: Title
-                        name: title
-                        widget: string
-                    - 
-                        label: TLDR
-                        name: tldr
-                        widget: string
-                    -
-                        label: Layout
-                        name: layout
-                        widget: hidden
-                    -
-                        label: Body
-                        name: body
-                        widget: markdown
+                label: Body
+                name: body
+                widget: markdown
+            -
+                label: Generic
+                name: generic
+                widget: hidden
+                default: true
+    -
+        name: customPages
+        label: Custom Pages
+        files:
             -
                 name: home_pl
                 label: Strona Główna

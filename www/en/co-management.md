@@ -1,7 +1,6 @@
 ---
 title: What is community-management of urban space and how can it function?
-langs:
-    pl: /model
+tldr: ''
 ---
 In search of an answer to this question, the interdisciplinary research team
 has been looking upon initiatives from around the world for the past months to create

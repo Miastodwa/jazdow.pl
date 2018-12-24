@@ -1,7 +1,5 @@
 ---
 title: Privacy Policy
-langs:
-    pl: /polityka-prywatnosci
 ---
 
 1. Dictionary

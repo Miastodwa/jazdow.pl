@@ -1,4 +1,5 @@
 ---
+generic: true
 title: Polityka prywatności serwisu jazdow.pl
 langs:
     en: /en/privacy-policy

@@ -1,7 +1,6 @@
 ---
+generic: true
 title: Partnerstwo
-langs:
-    en: /en/partnership
 tldr: Od 2015 r. Otwarty Jazdów działa w formule partnerstwa lokalnego pod opieką Biura Obsługi Ruchu Inicjatyw Społecznych (Warszawski Program Wspierania Partnerstw). Partnerstwo jest rozwiązaniem tymczasowym, na czas wypracowania modelu zarządzania osiedlem.
 ---
 Głównym celem działania Otwartego Jazdowa jest zachowanie osiedla Jazdów oraz dbanie o jego dziedzictwo historyczne, przyrodnicze i społeczne. Partnerstwo lokalne zmierza do wypracowania społecznego systemu zarządzania tym miejscem wprowadzając nowe, innowacyjne mechanizmy współdecydowania i współdziałania wszystkich podmiotów związanych z osiedlem Jazdów. Opiekę na partnerstwem sprawuje [BORIS](https://www.facebook.com/stowarzyszenieboris/).
