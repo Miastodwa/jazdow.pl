@@ -38,30 +38,30 @@ eventsCard:
 
 cards:
   - link: /pytania/
-    cover: /images/cards/cover-faq.jpg
+    cover: /images/cover-faq.jpg
     title: pytania — 
     caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
 
   - link: /historia/
-    cover: /images/cards/cover-history.jpg
+    cover: /images/cover-history.jpg
     title: historia —
     caption: Zobacz na osi czasu historię domków fińskich i Otwartego Jazdowa.
 
   - link: /wspolzarzadzanie/
-    cover: /images/cards/cover-model.jpg
+    cover: /images/cover-model.jpg
     title: współzarządzanie —
     caption: Tworzymy model społecznościowego zarządzania przestrzenią miejską.
 
   - link: /partnerstwo/
-    cover: /images/cards/cover-partnership.jpg
+    cover: /images/cover-partnership.jpg
     title: partnerstwo —
     caption: Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy nieformalne, instytucje publiczne i osoby prywatne.
 
 intro: Otwarty Jazdów to społeczność warszawskiego osiedla drewnianych domków fińskich, prowadząca ogólnodostępne działania społeczne, kulturalne, edukacyjne, artystyczne.
 
 images:
-  - /images/intro/ambasada1.jpg
-  - /images/intro/ambasada2.jpg
+  - /images/ambasada1.jpg
+  - /images/ambasada2.jpg
 ---
 Naszą misją jest łączenie różnych grup, aby wspólnie rozwijać przestrzeń publiczną, tworzyć ofertę społeczną i kulturalną dostępną dla każdego, sprawdzać w praktyce alternatywne modele finansowania i wymiany bezpieniężnej, wspólnie uprawiać ogrody i po prostu dobrze spędzać czas wolny.
 
