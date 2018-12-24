@@ -10,37 +10,19 @@ subs:
   - t: 0
     s: ''
   - t: 0.1
-    s: |
-      łąka kwietna
-      Motyka i Słońce
-      Jazdów 3/9
+    s: łąka kwietna – Motyka i Słońce – Jazdów 3/9
   - t: 10
-    s: |
-      Warszawskie Combo Taneczne
-      Ladomek
-      Jazdów 7/30
+    s: Warszawskie Combo Taneczne – Ladomek – Jazdów 7/30
   - t: 22
-    s: |
-      Dom Tańca
-      Jazdów 3/20
+    s: Dom Tańca – Jazdów 3/20
   - t: 36
-    s: |
-      budowa pieca z gliny
-      Motyka i Słońce Jazdów 3/9
+    s: budowa pieca z gliny – Motyka i Słońce – Jazdów 3/9
   - t: 44
-    s: |
-      Miejskie pszczoły
-      Jazdów 3/8
+    s: Miejskie pszczoły – Jazdów 3/8
   - t: 49
-    s: |
-      urodziny "Pańskiej Skórki"
-      PM na Trawie
-      Jazdów 3/12
+    s: urodziny "Pańskiej Skórki" – PM na Trawie – Jazdów 3/12
   - t: 57
-    s: |
-      Warszawskie Kroje
-      Motyka i Słońce
-        Jazdów 3/9
+    s: Warszawskie Kroje – Motyka i Słońce – Jazdów 3/9
 
 mapCard:
   link: /mapa/
