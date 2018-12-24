@@ -1,15 +1,91 @@
 backend:
-  name: git-gateway
-  repo: Miastodwa/jazdow.pl
-  branch: master # Branch to update (optional; defaults to master)
-media_folder: "www/.vuepress/public/images"
-public_folder: "www/.vuepress/dist/"
+    name: github
+    repo: Miastodwa/jazdow.pl
+    branch: master # Branch to update (optional; defaults to master)
+
+media_folder: www/.vuepress/public/images
+public_folder: www/.vuepress/dist/
+
 collections:
-  - name: "doc" # Used in routes, e.g., /admin/collections/blog
-    label: "Doc" # Used in the UI
-    folder: "www/docs" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+    - 
+        name: pages
+        label: Pages
+        files:
+            -
+                name: comanagemet_pl
+                label: Współzarządzanie
+                file: www/wspolzarzadzanie/README.md
+                fields:
+                    - 
+                        label: Title
+                        name: title
+                        widget: string
+                    - 
+                        label: TLDR
+                        name: tldr
+                        widget: string
+                    -
+                        label: Layout
+                        name: layout
+                        widget: hidden
+                    -
+                        label: Body
+                        name: body
+                        widget: markdown
+            -
+                name: home_pl
+                label: Strona Główna
+                file: www/README.md
+                fields:
+                    - {label: Layout, name: layout, widget: hidden}
+                    - {label: Intro, name: intro, widget: text}
+                    - {label: Body, name: body, widget: markdown}
+                    -
+                        label: Parallax images
+                        name: images
+                        widget: list
+                        allow_add: false
+                        field: {label: image, widget: image}
+                        default: [/images/intro/ambasada1.jpg, /images/intro/ambasada2.jpg]
+                    -
+                        label: Map Card
+                        name: mapCard
+                        widget: object
+                        fields:
+                            - {label: Link, name: link, widget: string}
+                            - {label: Title, name: title, widget: string}
+                            - {label: Caption, name: caption, widget: string}
+                    -
+                        label: Events Card
+                        name: eventsCard
+                        widget: object
+                        fields:
+                            - {label: Link, name: link, widget: string}
+                            - {label: Title, name: title, widget: string}
+                            - {label: Caption, name: caption, widget: string}
+                            - {label: More, name: more, widget: string}
+                            - {label: Empty, name: empty, widget: string}
+                    -
+                        label: Pages Cards
+                        name: cards
+                        widget: list
+                        fields:
+                            - {label: Cover, name: cover, widget: image}
+                            - {label: Link, name: link, widget: string}
+                            - {label: Title, name: title, widget: string}
+                            - {label: Caption, name: caption, widget: string}
+                    -
+                        label: Video sources
+                        name: video
+                        widget: hidden
+                        fields:
+                            - {label: mp4 source, name: mp4, widget: string}
+                            - {label: webm source, name: webm, widget: string}
+                            - {label: poster source, name: poster, widget: string}
+                    -
+                        label: Subtitles
+                        name: subs
+                        widget: list
+                        fields:
+                            - {label: time (seconds), name: t, widget: number, default: 0, min: 0, valueType: float}
+                            - {label: text, name: s, widget: string}
