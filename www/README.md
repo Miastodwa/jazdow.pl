@@ -1,67 +1,64 @@
 ---
 layout: Home
-
-video:
-  mp4: "/videos/video.mp4"
-  webm: "/videos/video.webm"
-  poster: "/videos/poster.jpg"
-
-subs:
-  - t: 0
-    s: ''
-  - t: 0.1
-    s: łąka kwietna – Motyka i Słońce – Jazdów 3/9
-  - t: 10
-    s: Warszawskie Combo Taneczne – Ladomek – Jazdów 7/30
-  - t: 22
-    s: Dom Tańca – Jazdów 3/20
-  - t: 36
-    s: budowa pieca z gliny – Motyka i Słońce – Jazdów 3/9
-  - t: 44
-    s: Miejskie pszczoły – Jazdów 3/8
-  - t: 49
-    s: urodziny "Pańskiej Skórki" – PM na Trawie – Jazdów 3/12
-  - t: 57
-    s: Warszawskie Kroje – Motyka i Słońce – Jazdów 3/9
-
-mapCard:
-  link: /mapa/
-  title: MAPA OSIEDLA —
-  caption: Zobacz co się mieści w domkach fińskich
-
-eventsCard:
-  link: /wydarzenia/
-  title: WYDARZENIA —
-  caption: "dziś:"
-  more: cały kalendarz →
-  empty: Lista wydarzeń nie jest dostępna na stronie, ze względu na zmiany jakie Facebook wprowadza po ujawnionym wycieku danych.
-
-cards:
-  - link: /pytania/
-    cover: /images/cover-faq.jpg
-    title: pytania — 
-    caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
-
-  - link: /historia/
-    cover: /images/cover-history.jpg
-    title: historia —
-    caption: Zobacz na osi czasu historię domków fińskich i Otwartego Jazdowa.
-
-  - link: /wspolzarzadzanie/
-    cover: /images/cover-model.jpg
-    title: współzarządzanie —
-    caption: Tworzymy model społecznościowego zarządzania przestrzenią miejską.
-
-  - link: /partnerstwo/
-    cover: /images/cover-partnership.jpg
-    title: partnerstwo —
-    caption: Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy nieformalne, instytucje publiczne i osoby prywatne.
-
-intro: Otwarty Jazdów to społeczność warszawskiego osiedla drewnianych domków fińskich, prowadząca ogólnodostępne działania społeczne, kulturalne, edukacyjne, artystyczne.
-
+intro: >-
+  Otwarty Jazdów to społeczność warszawskiego osiedla drewnianych domków
+  fińskich, prowadząca ogólnodostępne działania społeczne, kulturalne,
+  edukacyjne, artystyczne.
 images:
   - /images/ambasada1.jpg
   - /images/ambasada2.jpg
+mapCard:
+  caption: Zobacz co się mieści w domkach fińskich
+  link: /mapa/
+  title: MAPA OSIEDLA —
+eventsCard:
+  caption: 'dziś:'
+  empty: >-
+    Lista wydarzeń nie jest dostępna na stronie, ze względu na zmiany jakie
+    Facebook wprowadza po ujawnionym wycieku danych.
+  link: /wydarzenia/
+  more: cały kalendarz →
+  title: wydarzenia —
+cards:
+  - caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
+    cover: /images/cover-faq.jpg
+    link: /pytania/
+    title: pytania —
+  - caption: Zobacz na osi czasu historię domków fińskich i Otwartego Jazdowa.
+    cover: /images/cover-history.jpg
+    link: /historia/
+    title: historia —
+  - caption: Tworzymy model społecznościowego zarządzania przestrzenią miejską.
+    cover: /images/cover-model.jpg
+    link: /wspolzarzadzanie/
+    title: współzarządzanie —
+  - caption: >-
+      Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy
+      nieformalne, instytucje publiczne i osoby prywatne.
+    cover: /images/cover-partnership.jpg
+    link: /partnerstwo/
+    title: partnerstwo —
+video:
+  mp4: /videos/video.mp4
+  poster: /videos/poster.jpg
+  webm: /videos/video.webm
+subs:
+  - s: ''
+    t: 0
+  - s: łąka kwietna – Motyka i Słońce – Jazdów 3/9
+    t: 0.1
+  - s: Warszawskie Combo Taneczne – Ladomek – Jazdów 7/30
+    t: 10
+  - s: Dom Tańca – Jazdów 3/20
+    t: 22
+  - s: budowa pieca z gliny – Motyka i Słońce – Jazdów 3/9
+    t: 36
+  - s: Miejskie pszczoły – Jazdów 3/8
+    t: 44
+  - s: urodziny "Pańskiej Skórki" – PM na Trawie – Jazdów 3/12
+    t: 49
+  - s: Warszawskie Kroje – Motyka i Słońce – Jazdów 3/9
+    t: 57
 ---
 Naszą misją jest łączenie różnych grup, aby wspólnie rozwijać przestrzeń publiczną, tworzyć ofertę społeczną i kulturalną dostępną dla każdego, sprawdzać w praktyce alternatywne modele finansowania i wymiany bezpieniężnej, wspólnie uprawiać ogrody i po prostu dobrze spędzać czas wolny.
 
