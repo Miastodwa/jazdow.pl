@@ -1,9 +1,9 @@
 ---
 title: Czym jest i jak może działać społecznościowe zarządzanie przestrzenią miejską?
-langs:
-    en: /en/model
-tldr: |
-    Od kwietnia do grudnia 2017 roku zespół Otwartego Jazdowa realizował projekt: Otwarte sąsiedztwo. Współzarządzanie przestrzenią miejską w partnerstwie publiczno-społecznym na przykładzie osiedla Jazdów w Warszawie.
+tldr: >-
+  Od kwietnia do grudnia 2017 roku zespół Otwartego Jazdowa realizował projekt:
+  Otwarte sąsiedztwo. Współzarządzanie przestrzenią miejską w partnerstwie
+  publiczno-społecznym na przykładzie osiedla Jazdów w Warszawie.
 ---
 ## Współzarządzanie przestrzenią miejską
 
