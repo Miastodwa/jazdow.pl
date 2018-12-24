@@ -2,7 +2,7 @@
 #oj-video
 	#video-overlay(@click="playToggle")
 		video-sticker(:time="currentTime")
-		#subtitles(v-html='currentSubs[0]')
+		#subtitles(v-html='currentSubs')
 	video#video(autoplay, playsinline, muted, loop, :poster="sources.poster")
 		source#webm(:src="sources.webm", type="video/webm")
 		source#mp4(:src="sources.mp4", type="video/mp4")
@@ -28,18 +28,20 @@ export default {
 		subs: {
 			type: Array,
 			default() {
-				return [
-					[[0, '']],
-					[[0, '']]
-				]
+				return [ {t: 0, s: ''} ]
 			}
 		}
 	},
 	data() {
 		return {
 			currentTime: 0,
-			currentCues: [0,0],
-			currentSubs: ['','']
+			currentCue: 0
+		}
+	},
+
+	computed: {
+		currentSubs(){
+			return this.subs[this.currentCue].s
 		}
 	},
 
@@ -50,32 +52,17 @@ export default {
 			if (!video.paused) { video.pause() } else { video.play() }
 		},
 
-		computeCurrentCues(time){
-			const cues = this.currentCues
-			const { subs } = this
-			for (let i = 0; i < cues.length; i++) {
-				const cue = cues[i]
-				if (time < subs[i][cue][0]) {
-					cues[i] = 0
-				} else if (cue >= (subs[i].length-1)) {
-					cues[i] = cue
-				} else if (time > subs[i][cue+1][0]) {
-					cues[i] = cue+1
-				} else { cues[i] = cue }
-			}
-			return cues
-		},
-
-		computeCurrentSubs(time){
-			this.currentCues = this.computeCurrentCues(time)
-			const { subs } = this
-			return this.currentCues.map( (cue, i)=> subs[i][cue][1])
+		setCurrentCue(){
+			if (this.currentTime < this.subs[0].t) this.currentCue = 0
+			else if ( this.currentCue === this.subs.length - 1) return
+			else if ( this.currentTime > this.subs[this.currentCue + 1].t ) this.currentCue ++
 		}
+
 	},
 
 	watch: {
-		currentTime(time){
-			return this.currentSubs = this.computeCurrentSubs(time)
+		currentTime(){
+			this.setCurrentCue()
 		}
 	},
 
