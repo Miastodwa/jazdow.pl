@@ -1,4 +1,6 @@
 ---
+generic: true
+permalink: en/privacy-policy
 title: Privacy Policy
 ---
 

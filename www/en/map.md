@@ -1,4 +1,5 @@
 ---
+permalink: en/map
 title: Map of Jazdów Finnish Houses
 layout: Map
 legend:

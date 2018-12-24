@@ -1,4 +1,5 @@
 ---
+permalink: mapa
 title: Mapa osiedla domków fińskich na Jazdowie
 layout: Map
 legend:

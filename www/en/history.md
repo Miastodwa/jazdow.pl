@@ -1,4 +1,5 @@
 ---
+permalink: en/history
 title: History
 history:
 -

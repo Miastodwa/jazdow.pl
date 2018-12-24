@@ -1,4 +1,6 @@
 ---
+generic: true
+permalink: en/co-management
 title: What is community-management of urban space and how can it function?
 tldr: ''
 ---

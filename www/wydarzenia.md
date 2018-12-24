@@ -1,4 +1,5 @@
 ---
+permalink: wydarzenia
 title: Wydarzenia
 layout: Events
 langs:

@@ -1,4 +1,5 @@
 ---
+permalink: historia
 title: Historia
 layout: History
 history:

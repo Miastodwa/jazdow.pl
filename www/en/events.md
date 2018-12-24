@@ -1,4 +1,5 @@
 ---
+permalink: en/events
 lang: en
 title: Events
 ---
