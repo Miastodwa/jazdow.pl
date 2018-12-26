@@ -162,7 +162,7 @@
 
 			g#oj-map-houses-open(ref="open")
 				use(
-					v-for="house in houses.open",
+					v-for="house in openHouses",
 					xlink:href="#house",
 					class="house open",
 					@click="$router.push($localePath + dir[$lang] + house.address.replace('/','-') + '/')",
@@ -175,7 +175,7 @@
 					:transform="'translate(' + house.coords + ')'")
 			g#oj-map-houses-closed(ref="closed")
 				use(
-					v-for="house in houses.closed",
+					v-for="house in closedHouses",
 					xlink:href="#house",
 					class="house closed",
 					:id="house.address.replace('/','-')",
@@ -185,11 +185,11 @@
 					:transform="'translate(' + house.coords + ')'")
 			g#oj-map-numbers(ref="numbers")
 				text(
-					v-for="house in houses.open"
+					v-for="house in openHouses"
 					class="house-number",
 					:transform="numTransform(house.coords)") {{house.address}}
 				text(
-					v-for="house in houses.closed"
+					v-for="house in closedHouses"
 					class="house-number",
 					:transform="numTransform(house.coords)") {{house.address}}
 
@@ -203,15 +203,8 @@
 	name: 'oj-map',
 	props: {
 		lang: String,
-		houses: {
-			type: Object,
-			default() {
-				return {
-					open: [],
-					closed: []
-				}
-			}
-		}
+		openHouses: Array,
+		closedHouses: Array,
 	},
 
 	data() {

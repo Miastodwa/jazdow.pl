@@ -10,8 +10,8 @@ display_url: https://jazdow.pl
 
 collections:
     - 
-        name: pages
-        label: Pages
+        label: PL Pages
+        name: pages_pl
         folder: www/
         filter: {field: generic, value: true}
         fields:
@@ -33,12 +33,12 @@ collections:
                 widget: hidden
                 default: true
     -
-        name: customPages
-        label: Custom Pages
+        label: PL Custom Pages
+        name: customPages_pl
         files:
             -
-                name: home_pl
                 label: Strona Główna
+                name: home_pl
                 file: www/README.md
                 fields:
                     - {label: Layout, name: layout, widget: hidden}
@@ -83,9 +83,9 @@ collections:
                         name: video
                         widget: hidden
                         fields:
-                            - {label: mp4 source, name: mp4, widget: string}
-                            - {label: webm source, name: webm, widget: string}
-                            - {label: poster source, name: poster, widget: string}
+                            - {label: mp4 source, name: mp4, widget: string, default: /videos/video.mp4}
+                            - {label: webm source, name: webm, widget: string, default: /videos/video.webm}
+                            - {label: poster source, name: poster, widget: string, default: /videos/poster.jpg}
                     -
                         label: Subtitles
                         name: subs
@@ -93,3 +93,31 @@ collections:
                         fields:
                             - {label: time (seconds), name: t, widget: number, default: 0, min: 0, valueType: float}
                             - {label: text, name: s, widget: string}
+            -
+                label: Mapa
+                name: map_pl
+                file: www/mapa.md
+                fields:
+                    - {name: permalink, widget: hidden, default: mapa}
+                    - {label: Layout, name: layout, widget: hidden, default: Map}
+                    - {label: Body, name: body, widget: markdown}
+                    -
+                        label: Legend
+                        name: legend
+                        widget: hidden
+                    -
+                        label: Open Houses
+                        name: openHouses
+                        widget: list
+                        fields:
+                            - {label: Name, name: Name, widget: string}
+                            - {label: Coords, name: coords, widget: string}
+                            - {label: Address, name: address, widget: string}
+                            - {label: Link, name: link, widget: string, default: ''}
+                    -
+                        label: ClosedHouses
+                        name: closedHouses
+                        widget: list
+                        fields:
+                            - {label: Coords, name: coords, widget: string}
+                            - {label: Address, name: address, widget: string}

@@ -8,9 +8,9 @@
 				Content#tldr
 
 			.map-section
-				oj-map(v-if="$page.frontmatter.houses", :houses="$page.frontmatter.houses")
+				oj-map(:openHouses="$page.frontmatter.openHouses", :closedHouses="$page.frontmatter.closedHouses")
 			.legend
-				oj-map-legend(v-if="$page.frontmatter.legend", :legend="$page.frontmatter.legend")
+				oj-map-legend(:legend="$page.frontmatter.legend", , :title="$page.frontmatter.legendTitle")
 		oj-footer
 </template>
 
