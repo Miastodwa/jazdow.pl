@@ -134,12 +134,13 @@ collections:
             - {label: Body, name: body, widget: markdown}
             - {label: Address, name: address, widget: string}
             - {label: Email, name: email, widget: string}
-            - {label: Phone, name: phone, widget: string}
-            - {label: Person, name: person, widget: string}
+            - {label: Phone, name: phone, widget: string, required: false}
+            - {label: Person, name: person, widget: string, required: false}
             -
                 label: Location
                 name: location
                 widget: object
+                required: false
                 fields:
                     - {label: longitude, name: lon, widget: number, valueType: float}
                     - {label: latitude, name: lat, widget: number, valueType: float}
@@ -147,6 +148,7 @@ collections:
                 label: Images
                 name: images
                 widget: list
+                required: false
                 fields:
                     - {label: Caption, name: caption, widget: string}
                     - {label: Image, name: src, widget: image}
@@ -447,13 +449,14 @@ collections:
             - {label: Title, name: title, widget: string}
             - {label: Body, name: body, widget: markdown}
             - {label: Address, name: address, widget: string}
-            - {label: Email, name: email, widget: string}
-            - {label: Phone, name: phone, widget: string}
-            - {label: Person, name: person, widget: string}
+            - {label: Email, name: email, widget: string, required: false}
+            - {label: Phone, name: phone, widget: string, required: false}
+            - {label: Person, name: person, widget: string, required: false}
             -
                 label: Location
                 name: location
                 widget: object
+                required: false
                 fields:
                     - {label: longitude, name: lon, widget: number, valueType: float}
                     - {label: latitude, name: lat, widget: number, valueType: float}
@@ -461,6 +464,7 @@ collections:
                 label: Images
                 name: images
                 widget: list
+                required: false
                 fields:
                     - {label: Caption, name: caption, widget: string}
                     - {label: Image, name: src, widget: image}
