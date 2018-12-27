@@ -12,7 +12,9 @@ mapCard:
   title: HOUSES / MAP —
 eventsCard:
   caption: today
-  empty: Nothin's on today.
+  empty: >-
+    Facebook has shutdown access to page events. To see full calendar, go
+    directly to: https://www.facebook.com/jazdow/events/
   link: /en/events/
   more: full calendar →
   title: Events —
