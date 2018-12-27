@@ -137,14 +137,6 @@ collections:
             - {label: Phone, name: phone, widget: string, required: false}
             - {label: Person, name: person, widget: string, required: false}
             -
-                label: Location
-                name: location
-                widget: object
-                required: false
-                fields:
-                    - {label: longitude, name: lon, widget: number, valueType: float}
-                    - {label: latitude, name: lat, widget: number, valueType: float}
-            -
                 label: Images
                 name: images
                 widget: list
@@ -452,14 +444,6 @@ collections:
             - {label: Email, name: email, widget: string, required: false}
             - {label: Phone, name: phone, widget: string, required: false}
             - {label: Person, name: person, widget: string, required: false}
-            -
-                label: Location
-                name: location
-                widget: object
-                required: false
-                fields:
-                    - {label: longitude, name: lon, widget: number, valueType: float}
-                    - {label: latitude, name: lat, widget: number, valueType: float}
             -
                 label: Images
                 name: images
