@@ -1,9 +1,40 @@
 ---
 layout: Home
+intro: >-
+  Open Jazdów is the community of the Warsaw settlement of wooden Finnish
+  houses, offering a social, cultural and ecological public program.
+images:
+  - /images/ambasada1.jpg
+  - /images/ambasada2.jpg
+mapCard:
+  caption: See what's inside of each house
+  link: /en/map/
+  title: HOUSES / MAP —
+eventsCard:
+  caption: today
+  empty: >-
+    Currently, Facebook has shutdown access to page events, due to the infamous
+    data leaks.
+  link: /en/events/
+  more: full calendar →
+  title: Events —
+cards:
+  - caption: History of Finnish houses of Open Jazdów
+    cover: /images/cover-history.jpg
+    link: /en/history/
+    title: HISTORY —
+  - caption: community-management of urban space
+    cover: /images/cover-model.jpg
+    link: /en/model/
+    title: MODEL —
+  - caption: Jazdów Partnership
+    cover: /images/cover-partnership.jpg
+    link: /en/partnership/
+    title: PARTNERSHIP —
 video:
-  mp4: "/videos/video.mp4"
-  webm: "/videos/video.webm"
-  poster: "/videos/poster.jpg"
+  mp4: /videos/video.mp4
+  poster: /videos/poster.jpg
+  webm: /videos/video.webm
 subs:
   - s: ''
     t: 0
@@ -21,34 +52,6 @@ subs:
     t: 49
   - s: Warsaw Types – Motyka i Słońce – Jazdów 3/9
     t: 57
-mapCard:
-  link: /en/map/
-  title: HOUSES / MAP —
-  caption: See what's inside of each house
-eventsCard:
-  link: /events/
-  title: Events —
-  caption: today
-  more: full calendar →
-  empty: Nothin's on today.
-cards:
-  - link: /en/history/
-    cover: /images/cover-history.jpg
-    title: HISTORY —
-    caption: History of Finnish houses of Open Jazdów
-  - link: /en/model/
-    cover: /images/cover-model.jpg
-    title: MODEL —
-    caption: community-management of urban space
-  - link: /en/partnership/
-    cover: /images/cover-partnership.jpg
-    title: PARTNERSHIP —
-    caption: Jazdów Partnership
-
-intro: Open Jazdów is the community of the Warsaw settlement of wooden Finnish houses, offering a social, cultural and ecological public program.
-images:
-  - /images/ambasada1.jpg
-  - /images/ambasada2.jpg
 ---
 
 Open Jazdów is both the name of community and actions undertaken in Jazdów settlement in Warsaw, just behind The Ujazdowski Public Garden. After The Second World War, the colony of Finnish houses, that were constructed here, served as residential area for workers of Warsaw Reconstruction Bureau. 
