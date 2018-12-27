@@ -13,8 +13,8 @@ mapCard:
 eventsCard:
   caption: today
   empty: >-
-    Facebook has shutdown access to page events. To see full calendar, go
-    directly to: https://www.facebook.com/jazdow/events/
+    Currently, Facebook has shutdown access to page events, due to the infamous
+    data leaks.
   link: /en/events/
   more: full calendar →
   title: Events —
