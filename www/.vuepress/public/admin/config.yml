@@ -10,7 +10,7 @@ backend:
 publish_mode: editorial_workflow
 
 media_folder: www/.vuepress/public/images
-public_folder: www/.vuepress/dist/
+public_folder: /
 
 display_url: https://jazdow.pl
 
