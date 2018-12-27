@@ -1,5 +1,5 @@
 ---
-permalink: en/map
+permalink: map/
 title: Map of Jazdów Finnish Houses
 layout: Map
 legendTitle: 'Legenda:'

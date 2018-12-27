@@ -1,6 +1,6 @@
 ---
 generic: true
-permalink: en/partnership
+permalink: partnership
 title: Partnership
 tldr: Open Jazdów – Partnership for Jazdów Settlement is a temporary formula for the management of the area
 ---

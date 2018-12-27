@@ -1,5 +1,5 @@
 ---
-permalink: en/history
+permalink: history
 title: History
 history:
 -
