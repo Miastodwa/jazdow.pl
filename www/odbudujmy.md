@@ -18,7 +18,7 @@ Liczne inicjatywy społeczne straciły  miejsce do działania:
 
 Dziękujemy  za liczne słowa wsparcia i deklaracje pomocy. Podjęliśmy decyzję o odbudowie domku  Jazdów 3/4. Chcemy prężnie go rozwijać - stworzyć przestrzeń otwartą na świat jazzu  i projekt rezydencji artystycznych oraz multikulturalne i wielojęzyczne centrum  z biblioteką gier, miejscem na warsztaty dla dzieci, młodzieży i dorosłych.
 
-Ostateczne  zgody będą udzielane przez Urząd m.st. Warszawy, dlatego liczymy  na społeczną presję  i pomoc w nagłaśnianiu idei odbudowy domku 3/4. Oddolne zaangażowanie już raz uratowało  Osiedle.
+Ostateczne  zgody będą udzielane przez Urząd m.st. Warszawy, dlatego liczymy  na społeczną presję i pomoc w nagłaśnianiu idei odbudowy domku 3/4. Oddolne zaangażowanie już raz uratowało  Osiedle.
 
 Już teraz potrzebujemy szerokiego wsparcia - osobowego, rzeczowego  i finansowego. Uruchamiamy zbiórkę społecznościową oraz możliwość bezpośrednich  wpłat na konto bankowe http://jazdow.pl/pomoc.
 
