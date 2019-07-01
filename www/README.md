@@ -44,7 +44,7 @@ video:
   webm: /videos/video.webm
 subs:
   - s: ''
-    t: 0
+    t: .nan
   - s: łąka kwietna – Motyka i Słońce – Jazdów 3/9
     t: 0.1
   - s: Warszawskie Combo Taneczne – Ladomek – Jazdów 7/30
