@@ -2,6 +2,10 @@
   "mainMenu": {
     "pl": [
       {
+        "href": "/konkurs/",
+        "title": "konkurs"
+      },
+      {
         "href": "/wydarzenia/",
         "title": "wydarzenia"
       },
@@ -28,10 +32,6 @@
       {
         "href": "/pytania/",
         "title": "pytania"
-      },
-      {
-        "href": "/konkurs/",
-        "title": "konkurs"
       }
     ],
     "en": [
