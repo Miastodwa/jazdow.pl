@@ -18,6 +18,6 @@ Wizja lokalna połączona ze wspólną akcją sprzątania pustostanów (obowiąz
 
 Zgłoszenia do 15 lipca 2019 r. do godz. 23:59.
 
-Wyniki konkursu planujemy ogłosić 20 lipca 2019 r.
+Wyniki konkursu planujemy ogłosić 20 lipca
 
 Więcej informacji pod adresem: **konkurs@jazdow.pl**
