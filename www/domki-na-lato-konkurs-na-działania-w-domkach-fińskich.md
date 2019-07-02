@@ -6,6 +6,10 @@ tldr: >-
   sezonie letnim 2019 r. na Osiedlu Jazdów w Warszawie
 generic: true
 ---
+Po wielu latach starań Partnerstwo Otwarty Jazdów doprowadziło do otworzenia trzech pustych domków fińskich na warszawskim Osiedlu Jazdów. Zbieramy na ich remonty oraz obsługę, aby jak najszybciej udostępnić je na działania społeczne, edukacyjne i kulturalne.
+
+**Zrzutka jest dostępna pod adresem** [**zrzutka.pl/9yuaxw**](https://zrzutka.pl/9yuaxw)**.**
+
 [Regulamin konkursu "Domki na lato"](https://drive.google.com/a/jazdow.pl/file/d/1knJBZ7ItDpIx7hKEwjZm0LQdvsn7J2x7/view?usp=drive_open)
 
 [Wzór porozumienia o współpracy między POJ a realizatorami projektów](https://drive.google.com/a/jazdow.pl/file/d/1tuBCq4DtWaefjkqi_B-Sr7HjmDsOHnTg/view?usp=drive_open)
