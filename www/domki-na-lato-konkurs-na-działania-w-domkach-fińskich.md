@@ -12,12 +12,10 @@ generic: true
 
 [Link do regulaminu / zbioru zasad obowiązujących na Osiedlu Jazdów](https://docs.google.com/document/d/1qJ4Mg7jRik7p-8NZO8BBWP1JT_Fvy9vEbElmqUSn0h4/edit?usp=sharing)
 
-**?? komisja konkursowa ??**
+Obowiązkowe spotkanie informacyjne dla wnioskodawców odbędzie się w 7 lipca 2019 r. o godz. 14:00, zbiórka przy domku fińskim Jazdów 3/6 (Otwarta Pracownia Jazdów).
 
-Wizja lokalna połączona ze wspólną akcją sprzątania pustostanów (obowiązkowa dla zainteresowanych uczestnictwem w konkursie) odbędzie się w _\_\_ \_\_ lipca 2019 r. o godz. __:00, zbiórka przy domku fińskim Jazdów 3/6 (Otwarta Pracownia Jazdów).
+Zgłoszenia przyjmujemy do 15 lipca 2019 r. do godz. 23:59 wyłącznie przez [ten formularz internetowy](https://forms.gle/z4UL32MsgQmCZNzb9).
 
-Zgłoszenia do 15 lipca 2019 r. do godz. 23:59.
-
-Wyniki konkursu planujemy ogłosić 20 lipca
+Wyniki konkursu planujemy ogłosić 23 lipca 2019 r., zastrzegamy jednak możliwość wydłużenia tego terminu.
 
 Więcej informacji pod adresem: **konkurs@jazdow.pl**
