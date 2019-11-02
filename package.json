@@ -4,7 +4,7 @@
 		"build": "vuepress build www"
 	},
 	"dependencies": {
-		"axios": "^0.18.0",
+		"axios": "^0.18.1",
 		"delay": "^4.1.0",
 		"moment": "^2.22.2",
 		"stickybits": "^3.5.7",
