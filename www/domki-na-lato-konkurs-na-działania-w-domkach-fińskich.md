@@ -23,6 +23,6 @@ Przede wszystkim przyjmujemy darowizny na cele statutowe. Możesz wpłacać je b
 
 **Aktualnie trwa również zrzutka na otwarcie Osiedla po kwarantannie, dostępna jest pod adresem** **[zrzutka.pl/pomoz-osiedlu-jazdow](https://zrzutka.pl/pomoz-osiedlu-jazdow)**
 
-Niedługo odpalimy również nasz profil w serwisie Patronite, dzięki któremu możesz zostać naszym regularnym patronem i mieć dostęp do 
+Niedługo odpalimy również nasz profil w serwisie Patronite, dzięki któremu możesz zostać naszym regularnym patronem i mieć dostęp do specjalnych treści i wydarzeń tylko dla Patronów!
 
 Więcej informacji pod adresem: **otwarty@jazdow.pl**
