@@ -1,25 +1,28 @@
 ---
-permalink: konkurs
-title: Lato w domkach - konkurs na działania w domkach fińskich
-tldr: >-
-  Informacje na temat konkursu "Lato w domkach" - na działania w domkach
-  fińskich w sezonie letnim 2019 r. na Osiedlu Jazdów w Warszawie
+permalink: wesprzyj
+title: Wsparcie finansowe dla Otwartego Jazdowa
+tldr: Tutaj dowiesz się w jaki sposób możesz pomóc rozwijać największe oddolne
+  centrum kultury i edukacji w Polsce!
 generic: true
 ---
-Po wielu latach starań Partnerstwo Otwarty Jazdów doprowadziło do otworzenia trzech pustych domków fińskich na warszawskim Osiedlu Jazdów. Zbieramy na ich remonty oraz obsługę, aby jak najszybciej udostępnić je na działania społeczne, edukacyjne i kulturalne.
+Partnerstwo Otwarty Jazdów utrzymuje się w głównie z dobrowolnych zbiórek swoich członków, gości i fanów. Jeśli podoba Ci się to co robimy i chcesz pomóc nam dalej chronić i rozwijać Osiedle Jazdów, to możesz to zrobić na kilka sposobów.
 
-**Zrzutka jest dostępna pod adresem** [**zrzutka.pl/9yuaxw**](https://zrzutka.pl/9yuaxw)**.**
+Przede wszystkim przyjmujemy darowizny na cele statutowe. Możesz wpłacać je bezpośrednio na nasze konto zawsze, kiedy przyjdzie Ci na to ochota:
 
-[Regulamin konkursu "Domki na lato"](https://drive.google.com/a/jazdow.pl/file/d/1knJBZ7ItDpIx7hKEwjZm0LQdvsn7J2x7/view?usp=drive_open)
+**Partnerstwo Otwarty Jazdów**
 
-[Wzór porozumienia o współpracy między POJ a realizatorami projektów](https://drive.google.com/a/jazdow.pl/file/d/1tuBCq4DtWaefjkqi_B-Sr7HjmDsOHnTg/view?usp=drive_open)
+**Związek Stowarzyszeń**
 
-[Link do regulaminu / zbioru zasad obowiązujących na Osiedlu Jazdów](https://docs.google.com/document/d/1qJ4Mg7jRik7p-8NZO8BBWP1JT_Fvy9vEbElmqUSn0h4/edit?usp=sharing)
+**ul. Myśliwiecka 11/36, 00-459 Warszawa**
 
-Obowiązkowe spotkanie informacyjne dla wnioskodawców odbędzie się w 7 lipca 2019 r. o godz. 14:00, zbiórka przy domku fińskim Jazdów 8/1.
+**KRS: 0000737179, REGON: 380558414, NIP: 7010827495**
 
-Zgłoszenia przyjmujemy do 14 lipca 2019 r. do godz. 23:59 wyłącznie przez [ten formularz internetowy](https://forms.gle/z4UL32MsgQmCZNzb9).
+**nr konta PLN: 36114021050000356875001001**
 
-Wyniki konkursu planujemy ogłosić 22 lipca 2019 r., zastrzegamy jednak możliwość wydłużenia tego terminu.
+**tytułem: "darowizna na cele statutowe"**
 
-Więcej informacji pod adresem: **konkurs@jazdow.pl**
+**Aktualnie trwa również zrzutka na otwarcie Osiedla po kwarantannie, dostępna jest pod adresem** **[zrzutka.pl/pomoz-osiedlu-jazdow](https://zrzutka.pl/pomoz-osiedlu-jazdow)**
+
+Niedługo odpalimy również nasz profil w serwisie Patronite, dzięki któremu możesz zostać naszym regularnym patronem i mieć dostęp do 
+
+Więcej informacji pod adresem: **otwarty@jazdow.pl**
