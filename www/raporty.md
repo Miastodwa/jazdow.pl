@@ -15,6 +15,5 @@ generic: true
 **2018**
 
 [sprawozdanie merytoryczne](https://drive.google.com/file/d/1MNqoy-i67TH5HyT1U_tkhhGynDrdOBT4/view?usp=sharing)\
-[bilans i rachunek](https://drive.google.com/file/d/1091wyz38soTz6luQm_pzkP7ZIopDznBG/view?usp=sharing)
-
+[bilans i rachunek](https://drive.google.com/file/d/1091wyz38soTz6luQm_pzkP7ZIopDznBG/view?usp=sharing)\
 [informacje uzupełniające](https://drive.google.com/file/d/15aSt3DUuWziA0KpcD1v_mfqXA5xn_zuk/view?usp=sharing)
