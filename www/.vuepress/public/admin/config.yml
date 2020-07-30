@@ -1,11 +1,11 @@
 backend:
-    name: git-gateway
-    repo: Miastodwa/jazdow.pl
-    branch: master
-    site_domain: cms.netlify.com
-    accept_roles: #optional - accepts all users if left out
-        - admin
-        - editor
+  name: git-gateway
+  repo: Miastodwa/jazdow.pl
+  branch: master
+  site_domain: cms.netlify.com
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
 
 publish_mode: editorial_workflow
 
@@ -15,440 +15,421 @@ public_folder: /images
 display_url: https://jazdow.pl
 
 collections:
-    -
-        label: Site settings
+  - label: Site settings
+    name: settings
+    editor:
+      preview: false
+    files:
+      - label: Settings
         name: settings
-        editor:
-            preview: false
-        files:
-            - 
-                label: Settings
-                name: settings
-                file: www/.vuepress/themeConfig.json
-                fields:
-                    -
-                        name: mainMenu
-                        label: Main menu
-                        widget: object
-                        fields:
-                            -
-                                label: Polski
-                                name: pl
-                                widget: list
-                                fields:
-                                    - {label: Link, name: href, widget: string}
-                                    - {label: Title, name: title, widget: string}
-                            -
-                                label: English
-                                name: en
-                                widget: list
-                                fields:
-                                    - {label: Link, name: href, widget: string}
-                                    - {label: Title, name: title, widget: string}
-                    -
-                        name: social
-                        label: Social
-                        widget: list
-                        fields:
-                            - {label: Link, name: href, widget: string}
-                            - {label: Type, name: type, widget: string}
-                    -
-                        name: links
-                        label: Links
-                        widget: object
-                        fields:
-                            -
-                                label: Polski
-                                name: pl
-                                widget: list
-                                fields:
-                                    - {label: Link, name: to, widget: string}
-                                    - {label: Title, name: title, widget: string}
-                            -
-                                label: English
-                                name: en
-                                widget: list
-                                fields:
-                                    - {label: Link, name: to, widget: string}
-                                    - {label: Title, name: title, widget: string}
-                    -
-                        name: contact
-                        label: Contact
-                        widget: object
-                        fields:
-                            -
-                                label: Polski
-                                name: pl
-                                widget: object
-                                fields:
-                                    - {label: Title, name: title, widget: string}
-                                    - {label: Details, name: details, widget: string}
-                            -
-                                label: English
-                                name: en
-                                widget: object
-                                fields:
-                                    - {label: Title, name: title, widget: string}
-                                    - {label: Details, name: details, widget: string}
-
-
-    -
-        label: PL Pages
-        name: pages_pl
-        folder: www/
-        filter: {field: generic, value: true}
-        create: true
+        file: www/.vuepress/themeConfig.json
         fields:
-            -
-                label: Permalink
-                name: permalink
-                widget: string
-            - 
-                label: Title
-                name: title
-                widget: string
-            - 
-                label: TLDR
-                name: tldr
-                widget: text
-            -
-                label: Body
-                name: body
-                widget: markdown
-            -
-                label: Generic
-                name: generic
-                widget: hidden
-                default: true
-
-
-    - 
-        label: PL Domki
-        name: houses_pl
-        folder: www/domki
-        create: true
-        fields:
-            - {label: permalink, name: permalink, widget: string}
-            - {label: Layout, name: layout, widget: hidden, default: Map}
-            - {label: Title, name: title, widget: string}
-            - {label: Body, name: body, widget: markdown}
-            - {label: Address, name: address, widget: string}
-            - {label: Email, name: email, widget: string}
-            - {label: Phone, name: phone, widget: string, required: false}
-            - {label: Person, name: person, widget: string, required: false}
-            -
-                label: Images
-                name: images
+          - name: mainMenu
+            label: Main menu
+            widget: object
+            fields:
+              - label: Polski
+                name: pl
                 widget: list
-                required: false
                 fields:
-                    - {label: Caption, name: caption, widget: string}
-                    - {label: Image, name: src, widget: image}
-
-    -
-        label: PL Custom Pages
-        name: customPages_pl
-        editor:
-            preview: false
-        files:
-            -
-                label: Strona Główna
-                name: home_pl
-                file: www/README.md
-                fields:
-                    - {label: Layout, name: layout, widget: hidden}
-                    - {label: Intro, name: intro, widget: text}
-                    - {label: Body, name: body, widget: markdown}
-                    -
-                        label: Parallax images
-                        name: images
-                        widget: list
-                        allow_add: false
-                        field: {label: image, widget: image}
-                        default: [/images/intro/ambasada1.jpg, /images/intro/ambasada2.jpg]
-                    -
-                        label: Map Card
-                        name: mapCard
-                        widget: object
-                        fields:
-                            - {label: Link, name: link, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Caption, name: caption, widget: string}
-                    -
-                        label: Events Card
-                        name: eventsCard
-                        widget: object
-                        fields:
-                            - {label: Link, name: link, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Caption, name: caption, widget: string}
-                            - {label: More, name: more, widget: string}
-                            - {label: Empty, name: empty, widget: string}
-                    -
-                        label: Pages Cards
-                        name: cards
-                        widget: list
-                        fields:
-                            - {label: Cover, name: cover, widget: image}
-                            - {label: Link, name: link, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Caption, name: caption, widget: string}
-                    -
-                        label: Video sources
-                        name: video
-                        widget: hidden
-                        fields:
-                            - {label: mp4 source, name: mp4, widget: string, default: /videos/video.mp4}
-                            - {label: webm source, name: webm, widget: string, default: /videos/video.webm}
-                            - {label: poster source, name: poster, widget: string, default: /videos/poster.jpg}
-                    -
-                        label: Subtitles
-                        name: subs
-                        widget: list
-                        fields:
-                            - {label: time (seconds), name: t, widget: number, default: 0, min: 0, valueType: float}
-                            - {label: text, name: s, widget: string}
-            -
-                label: Mapa
-                name: map_pl
-                file: www/mapa.md
-                fields:
-                    - {name: permalink, widget: hidden, default: mapa}
-                    - {label: Layout, name: layout, widget: hidden, default: Map}
-                    - {label: Body, name: body, widget: markdown}
-                    -
-                        label: Legend
-                        name: legend
-                        widget: hidden
-                    -
-                        label: Open Houses
-                        name: openHouses
-                        widget: list
-                        fields:
-                            - {label: Address, name: address, widget: string}
-                            - {label: Name, name: Name, widget: string}
-                            - {label: Coords, name: coords, widget: string}
-                            - {label: Link, name: link, widget: string, default: ''}
-                    -
-                        label: Closed Houses
-                        name: closedHouses
-                        widget: list
-                        fields:
-                            - {label: Address, name: address, widget: string}
-                            - {label: Coords, name: coords, widget: string}
-
-            -
-                label: Historia
-                name: history_pl
-                file: www/historia.md
-                fields:
-                    - {name: permalink, widget: hidden, default: mapa}
-                    - {label: Layout, name: layout, widget: hidden, default: Map}
-                    - {label: Title, name: title, widget: string}
-                    - {label: Body, name: body, widget: markdown}
-                    -
-                        label: History
-                        name: history
-                        widget: list
-                        fields:
-                            - {label: Date, name: date, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Text, name: text, widget: string}
-                            -
-                                label: Photo
-                                name: photo
-                                widget: object
-                                fields:
-                                    - {label: Caption, name: caption, widget: string}
-                                    - {label: Image, name: image, widget: image}
-
-            -
-                label: Wydarzenia
-                name: events_pl
-                file: www/wydarzenia.md
-                fields:
-                    - {name: permalink, widget: hidden, default: mapa}
-                    - {label: Layout, name: layout, widget: hidden, default: Map}
-                    - {label: Title, name: title, widget: string}
-                    - {label: Body, name: body, widget: markdown}
-
-
-############
-# ENGLISH
-############
-
-    -
-        label: EN Pages
-        name: pages_en
-        folder: www/en
-        filter: {field: generic, value: true}
-        create: true
-        fields:
-            -
-                label: Permalink
-                name: permalink
-                widget: string
-            - 
-                label: Title
-                name: title
-                widget: string
-            - 
-                label: TLDR
-                name: tldr
-                widget: text
-            -
-                label: Body
-                name: body
-                widget: markdown
-            -
-                label: Generic
-                name: generic
-                widget: hidden
-                default: true
-    -
-        label: EN Custom Pages
-        name: customPages_en
-        files:
-            -
-                label: Home Page
-                name: home_en
-                file: www/en/README.md
-                fields:
-                    - {label: Layout, name: layout, widget: hidden}
-                    - {label: Intro, name: intro, widget: text}
-                    - {label: Body, name: body, widget: markdown}
-                    -
-                        label: Parallax images
-                        name: images
-                        widget: list
-                        allow_add: false
-                        field: {label: image, widget: image}
-                        default: [/images/intro/ambasada1.jpg, /images/intro/ambasada2.jpg]
-                    -
-                        label: Map Card
-                        name: mapCard
-                        widget: object
-                        fields:
-                            - {label: Link, name: link, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Caption, name: caption, widget: string}
-                    -
-                        label: Events Card
-                        name: eventsCard
-                        widget: object
-                        fields:
-                            - {label: Link, name: link, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Caption, name: caption, widget: string}
-                            - {label: More, name: more, widget: string}
-                            - {label: Empty, name: empty, widget: string}
-                    -
-                        label: Pages Cards
-                        name: cards
-                        widget: list
-                        fields:
-                            - {label: Cover, name: cover, widget: image}
-                            - {label: Link, name: link, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Caption, name: caption, widget: string}
-                    -
-                        label: Video sources
-                        name: video
-                        widget: hidden
-                        fields:
-                            - {label: mp4 source, name: mp4, widget: string, default: /videos/video.mp4}
-                            - {label: webm source, name: webm, widget: string, default: /videos/video.webm}
-                            - {label: poster source, name: poster, widget: string, default: /videos/poster.jpg}
-                    -
-                        label: Subtitles
-                        name: subs
-                        widget: list
-                        fields:
-                            - {label: time (seconds), name: t, widget: number, default: 0, min: 0, valueType: float}
-                            - {label: text, name: s, widget: string}
-            -
-                label: Map
-                name: map_en
-                file: www/en/map.md
-                fields:
-                    - {name: permalink, widget: hidden, default: mapa}
-                    - {label: Layout, name: layout, widget: hidden, default: Map}
-                    - {label: Body, name: body, widget: markdown}
-                    -
-                        label: Legend
-                        name: legend
-                        widget: hidden
-                    -
-                        label: Open Houses
-                        name: openHouses
-                        widget: list
-                        fields:
-                            - {label: Address, name: address, widget: string}
-                            - {label: Name, name: Name, widget: string}
-                            - {label: Coords, name: coords, widget: string}
-                            - {label: Link, name: link, widget: string, default: ''}
-                    -
-                        label: Closed Houses
-                        name: closedHouses
-                        widget: list
-                        fields:
-                            - {label: Address, name: address, widget: string}
-                            - {label: Coords, name: coords, widget: string}
-
-            -
-                label: History
-                name: history_en
-                file: www/en/history.md
-                fields:
-                    - {name: permalink, widget: hidden, default: mapa}
-                    - {label: Layout, name: layout, widget: hidden, default: Map}
-                    - {label: Title, name: title, widget: string}
-                    - {label: Body, name: body, widget: markdown}
-                    -
-                        label: History
-                        name: history
-                        widget: list
-                        fields:
-                            - {label: Date, name: date, widget: string}
-                            - {label: Title, name: title, widget: string}
-                            - {label: Text, name: text, widget: string}
-                            -
-                                label: Photo
-                                name: photo
-                                widget: object
-                                fields:
-                                    - {label: Caption, name: caption, widget: string}
-                                    - {label: Image, name: image, widget: image}
-
-            -
-                label: Events
-                name: events_en
-                file: www/en/events.md
-                fields:
-                    - {name: permalink, widget: hidden, default: mapa}
-                    - {label: Layout, name: layout, widget: hidden, default: Map}
-                    - {label: Title, name: title, widget: string}
-                    - {label: Body, name: body, widget: markdown}
-
-    - 
-        label: EN Houses
-        name: houses_en
-        folder: www/en/houses
-        create: true
-        fields:
-            - {label: permalink, name: permalink, widget: string}
-            - {label: Layout, name: layout, widget: hidden, default: Map}
-            - {label: Title, name: title, widget: string}
-            - {label: Body, name: body, widget: markdown}
-            - {label: Address, name: address, widget: string}
-            - {label: Email, name: email, widget: string, required: false}
-            - {label: Phone, name: phone, widget: string, required: false}
-            - {label: Person, name: person, widget: string, required: false}
-            -
-                label: Images
-                name: images
+                  - { label: Link, name: href, widget: string }
+                  - { label: Title, name: title, widget: string }
+              - label: English
+                name: en
                 widget: list
-                required: false
                 fields:
-                    - {label: Caption, name: caption, widget: string}
-                    - {label: Image, name: src, widget: image}
+                  - { label: Link, name: href, widget: string }
+                  - { label: Title, name: title, widget: string }
+          - name: social
+            label: Social
+            widget: list
+            fields:
+              - { label: Link, name: href, widget: string }
+              - { label: Type, name: type, widget: string }
+          - name: links
+            label: Links
+            widget: object
+            fields:
+              - label: Polski
+                name: pl
+                widget: list
+                fields:
+                  - { label: Link, name: to, widget: string }
+                  - { label: Title, name: title, widget: string }
+              - label: English
+                name: en
+                widget: list
+                fields:
+                  - { label: Link, name: to, widget: string }
+                  - { label: Title, name: title, widget: string }
+          - name: contact
+            label: Contact
+            widget: object
+            fields:
+              - label: Polski
+                name: pl
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Details, name: details, widget: string }
+              - label: English
+                name: en
+                widget: object
+                fields:
+                  - { label: Title, name: title, widget: string }
+                  - { label: Details, name: details, widget: string }
+
+  - label: PL Pages
+    name: pages_pl
+    folder: www/
+    filter: { field: generic, value: true }
+    create: true
+    fields:
+      - label: Permalink
+        name: permalink
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+      - label: TLDR
+        name: tldr
+        widget: text
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Generic
+        name: generic
+        widget: hidden
+        default: true
+
+  - label: PL Domki
+    name: houses_pl
+    folder: www/domki
+    create: true
+    fields:
+      - { label: permalink, name: permalink, widget: string }
+      - { label: Layout, name: layout, widget: hidden, default: Map }
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Address, name: address, widget: string }
+      - { label: Email, name: email, widget: string }
+      - { label: Phone, name: phone, widget: string, required: false }
+      - { label: Person, name: person, widget: string, required: false }
+      - label: Images
+        name: images
+        widget: list
+        required: false
+        fields:
+          - { label: Caption, name: caption, widget: string }
+          - { label: Image, name: src, widget: image }
+
+  - label: PL Custom Pages
+    name: customPages_pl
+    editor:
+      preview: false
+    files:
+      - label: Strona Główna
+        name: home_pl
+        file: www/README.md
+        fields:
+          - { label: Layout, name: layout, widget: hidden }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Body, name: body, widget: markdown }
+          - label: Parallax images
+            name: images
+            widget: list
+            allow_add: false
+            field: { label: image, widget: image, name: image }
+            default: [/images/intro/ambasada1.jpg, /images/intro/ambasada2.jpg]
+          - label: Map Card
+            name: mapCard
+            widget: object
+            fields:
+              - { label: Link, name: link, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Caption, name: caption, widget: string }
+          - label: Events Card
+            name: eventsCard
+            widget: object
+            fields:
+              - { label: Link, name: link, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Caption, name: caption, widget: string }
+              - { label: More, name: more, widget: string }
+              - { label: Empty, name: empty, widget: string }
+          - label: Pages Cards
+            name: cards
+            widget: list
+            fields:
+              - { label: Cover, name: cover, widget: image }
+              - { label: Link, name: link, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Caption, name: caption, widget: string }
+          - label: Video sources
+            name: video
+            widget: hidden
+            fields:
+              - {
+                  label: mp4 source,
+                  name: mp4,
+                  widget: string,
+                  default: /videos/video.mp4,
+                }
+              - {
+                  label: webm source,
+                  name: webm,
+                  widget: string,
+                  default: /videos/video.webm,
+                }
+              - {
+                  label: poster source,
+                  name: poster,
+                  widget: string,
+                  default: /videos/poster.jpg,
+                }
+          - label: Subtitles
+            name: subs
+            widget: list
+            fields:
+              - {
+                  label: time (seconds),
+                  name: t,
+                  widget: number,
+                  default: 0,
+                  min: 0,
+                  valueType: float,
+                }
+              - { label: text, name: s, widget: string }
+      - label: Mapa
+        name: map_pl
+        file: www/mapa.md
+        fields:
+          - { name: permalink, widget: hidden, default: mapa }
+          - { label: Layout, name: layout, widget: hidden, default: Map }
+          - { label: Body, name: body, widget: markdown }
+          - label: Legend
+            name: legend
+            widget: hidden
+          - label: Open Houses
+            name: openHouses
+            widget: list
+            fields:
+              - { label: Address, name: address, widget: string }
+              - { label: Name, name: Name, widget: string }
+              - { label: Coords, name: coords, widget: string }
+              - { label: Link, name: link, widget: string, default: "" }
+          - label: Closed Houses
+            name: closedHouses
+            widget: list
+            fields:
+              - { label: Address, name: address, widget: string }
+              - { label: Coords, name: coords, widget: string }
+
+      - label: Historia
+        name: history_pl
+        file: www/historia.md
+        fields:
+          - { name: permalink, widget: hidden, default: mapa }
+          - { label: Layout, name: layout, widget: hidden, default: Map }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: History
+            name: history
+            widget: list
+            fields:
+              - { label: Date, name: date, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: string }
+              - label: Photo
+                name: photo
+                widget: object
+                fields:
+                  - { label: Caption, name: caption, widget: string }
+                  - { label: Image, name: image, widget: image }
+
+      - label: Wydarzenia
+        name: events_pl
+        file: www/wydarzenia.md
+        fields:
+          - { name: permalink, widget: hidden, default: mapa }
+          - { label: Layout, name: layout, widget: hidden, default: Map }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
+  ############
+  # ENGLISH
+  ############
+
+  - label: EN Pages
+    name: pages_en
+    folder: www/en
+    filter: { field: generic, value: true }
+    create: true
+    fields:
+      - label: Permalink
+        name: permalink
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+      - label: TLDR
+        name: tldr
+        widget: text
+      - label: Body
+        name: body
+        widget: markdown
+      - label: Generic
+        name: generic
+        widget: hidden
+        default: true
+  - label: EN Custom Pages
+    name: customPages_en
+    files:
+      - label: Home Page
+        name: home_en
+        file: www/en/README.md
+        fields:
+          - { label: Layout, name: layout, widget: hidden }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Body, name: body, widget: markdown }
+          - label: Parallax images
+            name: images
+            widget: list
+            allow_add: false
+            field: { label: image, widget: image, name: image }
+            default: [/images/intro/ambasada1.jpg, /images/intro/ambasada2.jpg]
+          - label: Map Card
+            name: mapCard
+            widget: object
+            fields:
+              - { label: Link, name: link, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Caption, name: caption, widget: string }
+          - label: Events Card
+            name: eventsCard
+            widget: object
+            fields:
+              - { label: Link, name: link, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Caption, name: caption, widget: string }
+              - { label: More, name: more, widget: string }
+              - { label: Empty, name: empty, widget: string }
+          - label: Pages Cards
+            name: cards
+            widget: list
+            fields:
+              - { label: Cover, name: cover, widget: image }
+              - { label: Link, name: link, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Caption, name: caption, widget: string }
+          - label: Video sources
+            name: video
+            widget: hidden
+            fields:
+              - {
+                  label: mp4 source,
+                  name: mp4,
+                  widget: string,
+                  default: /videos/video.mp4,
+                }
+              - {
+                  label: webm source,
+                  name: webm,
+                  widget: string,
+                  default: /videos/video.webm,
+                }
+              - {
+                  label: poster source,
+                  name: poster,
+                  widget: string,
+                  default: /videos/poster.jpg,
+                }
+          - label: Subtitles
+            name: subs
+            widget: list
+            fields:
+              - {
+                  label: time (seconds),
+                  name: t,
+                  widget: number,
+                  default: 0,
+                  min: 0,
+                  valueType: float,
+                }
+              - { label: text, name: s, widget: string }
+      - label: Map
+        name: map_en
+        file: www/en/map.md
+        fields:
+          - { name: permalink, widget: hidden, default: mapa }
+          - { label: Layout, name: layout, widget: hidden, default: Map }
+          - { label: Body, name: body, widget: markdown }
+          - label: Legend
+            name: legend
+            widget: hidden
+          - label: Open Houses
+            name: openHouses
+            widget: list
+            fields:
+              - { label: Address, name: address, widget: string }
+              - { label: Name, name: Name, widget: string }
+              - { label: Coords, name: coords, widget: string }
+              - { label: Link, name: link, widget: string, default: "" }
+          - label: Closed Houses
+            name: closedHouses
+            widget: list
+            fields:
+              - { label: Address, name: address, widget: string }
+              - { label: Coords, name: coords, widget: string }
+
+      - label: History
+        name: history_en
+        file: www/en/history.md
+        fields:
+          - { name: permalink, widget: hidden, default: mapa }
+          - { label: Layout, name: layout, widget: hidden, default: Map }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: History
+            name: history
+            widget: list
+            fields:
+              - { label: Date, name: date, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: string }
+              - label: Photo
+                name: photo
+                widget: object
+                fields:
+                  - { label: Caption, name: caption, widget: string }
+                  - { label: Image, name: image, widget: image }
+
+      - label: Events
+        name: events_en
+        file: www/en/events.md
+        fields:
+          - { name: permalink, widget: hidden, default: mapa }
+          - { label: Layout, name: layout, widget: hidden, default: Map }
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
+  - label: EN Houses
+    name: houses_en
+    folder: www/en/houses
+    create: true
+    fields:
+      - { label: permalink, name: permalink, widget: string }
+      - { label: Layout, name: layout, widget: hidden, default: Map }
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Address, name: address, widget: string }
+      - { label: Email, name: email, widget: string, required: false }
+      - { label: Phone, name: phone, widget: string, required: false }
+      - { label: Person, name: person, widget: string, required: false }
+      - label: Images
+        name: images
+        widget: list
+        required: false
+        fields:
+          - { label: Caption, name: caption, widget: string }
+          - { label: Image, name: src, widget: image }

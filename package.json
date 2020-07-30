@@ -1,23 +1,23 @@
 {
-	"scripts": {
-		"dev": "vuepress dev www",
-		"build": "vuepress build www"
-	},
-	"dependencies": {
-		"axios": "^0.18.1",
-		"delay": "^4.1.0",
-		"moment": "^2.22.2",
-		"stickybits": "^3.5.7",
-		"vue-in-viewport-mixin": "^1.0.4",
-		"vue-markdown": "^2.2.4",
-		"vuepress": "^1.0.0-alpha.13",
-		"vuepress-plugin-sitemap": "^2.1.0"
-	},
-	"devDependencies": {
-		"lost": "^8.3.0",
-		"postcss-preset-env": "^6.2.0",
-		"pug": "^2.0.3",
-		"pug-plain-loader": "^1.0.0",
-		"rupture": "^0.7.1"
-	}
+  "scripts": {
+    "dev": "vuepress dev www",
+    "build": "vuepress build www"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "delay": "^4.4.0",
+    "moment": "^2.27.0",
+    "stickybits": "^3.7.7",
+    "vue-in-viewport-mixin": "^2.0.0"
+  },
+  "devDependencies": {
+    "lost": "^8.3.1",
+    "postcss-preset-env": "^6.7.0",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "rupture": "^0.7.1",
+    "vue-markdown": "^2.2.4",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-sitemap": "^2.3.1"
+  }
 }
