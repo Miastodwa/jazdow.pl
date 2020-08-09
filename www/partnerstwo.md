@@ -16,6 +16,6 @@ Partnerstwo stało się ważnym aktorem i punktem odniesienia dla Dzielnicy Śr�
 
 Do partnerstwa lokalnego należą gospodarze domków fińskich, wspierające organizacje pozarządowe, przedstawiciele okolicznych instytucji kultury i innych podmiotów publicznych oraz osoby prywatne. 
 
-Związek Stowarzyszeń Otwarty Jazdów złożony jest aktualnie z sześciu "jazdowskich" organizacji działających na rzecz rozwoju potencjału całego Osiedla Jazdów. Więcej o celach, misji i sposobach działania przeczytasz w Statutucie Związku Stowarzyszeń Partnerstwo Otwarty Jazdów.
+Związek Stowarzyszeń Otwarty Jazdów złożony jest aktualnie z sześciu "jazdowskich" organizacji działających na rzecz rozwoju potencjału całego Osiedla Jazdów. Więcej o celach, misji i sposobach działania przeczytasz w[ Statucie Związku Stowarzyszeń Partnerstwo Otwarty Jazdów.](https://drive.google.com/file/d/1xXlxdlXRn6QKa5sg1v_M4x8Pu7N9iDov/view?usp=sharing)
 
 **Jeśli chcesz dołączyć do partnerstwa, skontaktuj się z [nami](#oj-footer).**
