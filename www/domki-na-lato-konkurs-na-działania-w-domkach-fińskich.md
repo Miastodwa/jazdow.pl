@@ -13,7 +13,7 @@ Przede wszystkim przyjmujemy darowizny na cele statutowe. Możesz wpłacać je b
 
 **Związek Stowarzyszeń**
 
-**ul. Myśliwiecka 11/36, 00-459 Warszawa**
+**ul. Jazdów 10/5, 00-457 Warszawa**
 
 **KRS: 0000737179, REGON: 380558414, NIP: 7010827495**
 
@@ -21,8 +21,6 @@ Przede wszystkim przyjmujemy darowizny na cele statutowe. Możesz wpłacać je b
 
 **tytułem: "darowizna na cele statutowe"**
 
-Aktualnie trwa również **zrzutka na otwarcie Osiedla po kwarantannie, dostępna jest pod adresem** **[zrzutka.pl/pomoz-osiedlu-jazdow](https://zrzutka.pl/pomoz-osiedlu-jazdow)**
-
-Niedługo ruszy również nasz serwis na profilu **Patronite.pl,** dzięki któremu otrzymasz dostęp do specjalnych treści i wydarzeń tylko dla Patronów! 
+Ruszył również nasz serwis na profilu **Patronite.pl!** Wejdź na stronę https://patronite.pl/otwartyjazdow i zostań naszą matroną lub patronem! Dzięki temu uzyskasz dostęp do specjalnych treści i wydarzeń, które przygotowujemy regularnie dla wspierających nas osób.
 
 Więcej informacji pod adresem: **otwarty@jazdow.pl**
