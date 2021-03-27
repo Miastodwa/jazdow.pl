@@ -13,7 +13,7 @@
   "devDependencies": {
     "lost": "^8.3.1",
     "postcss-preset-env": "^6.7.0",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "rupture": "^0.7.1",
     "vue-markdown": "^2.2.4",
