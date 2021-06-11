@@ -6,6 +6,10 @@
         "title": "wesprzyj"
       },
       {
+        "href": "/festiwal/",
+        "title": "festiwal"
+      },
+      {
         "href": "/wydarzenia/",
         "title": "wydarzenia"
       },
@@ -32,10 +36,6 @@
       {
         "href": "/raporty/",
         "title": "raporty"
-      },
-      {
-        "href": "/festiwal/",
-        "title": "festiwal"
       }
     ],
     "en": [
