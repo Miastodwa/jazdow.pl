@@ -13,133 +13,126 @@ generic: true
 <!--StartFragment-->
 
 \
-![💬](https://static.xx.fbcdn.net/images/emoji.php/v9/t6e/1/16/1f4ac.png)DYSKUSYJNE PONIEDZIAŁKI\
+Po dłuuugiej, pandemicznej przerwie znów możemy Was zaprosić do bycia razem na Osiedlu Jazdów! 💛
+
+🟡Codziennie, przez cały lipiec i sierpień, czekamy na Was z dużą dawką dobra, sztuki, rozmów i kulinarnych doznań.
+
+💬DYSKUSYJNE PONIEDZIAŁKI
 Polubmy ten gatunek.
 
+My, mieszkańcy Ziemi, nie bardzo mamy się dokąd wyprowadzić. Dlatego zamiast praktykować nienawiść i przekrzykiwać siebie nawzajem chcielibyśmy spróbować rozmowy, podczas której nie będziemy się zgadzać. Nie chodzi nam o odwracanie wzroku od problemów i nie egzekwowanie swoich praw ale o spotkanie w różnorodności. Mamy głębokie poczucie, że wzajemne wysłuchanie, mimo odmiennych racji może pomóc za poglądami dostrzec drugą osobę. 
 
+Chcemy zaprosić Cię na cykl dyskusji, w którym osoby z różnorodnych środowisk, o różnych wartościach i doświadczeniach będą dyskutowały i próbowały siebie nawzajem usłyszeć, dopuszczając do siebie możliwość posiadania innego zdania. Mini eksperyment współistnienia w inności w bezpiecznej przestrzeni Jazdowa. 
+W ramach wsparcia, spotkania dyskusyjne będą poparte lipcowymi wykładami, które pomogą zanurzyć się nam w sierpniowych dyskusjach.
 
-My, mieszkańcy Ziemi, nie bardzo mamy się dokąd wyprowadzić. Dlatego zamiast praktykować nienawiść i w nieskończoność zamazywać nawzajem swoje napisy na murach, chcielibyśmy spróbować rozmowy, podczas której nie będziemy się zgadzać. Nie chodzi nam o odwracanie wzroku od problemów i nie egzekwowanie swoich praw, chodzi nam o robienie tego z szacunkiem. Mini Eksperyment współistnienia w inności.
+Oto nasz rozkład jazdy (zawsze o 18:00)
 
-<12|07> Historia dyskutowania, zasady logiki dyskusji, narodziny dyskursu publicznego
+<12|07> Historia dyskutowania, zasady logiki dyskusji, narodziny dyskursu publicznego - spotkanie z dr. Piotrem Stankiewiczem. 
 
-<19|07> Dyskurs(y) społeczne we współczesności, echo chambers i dezinformacja.
+<19|07> Jak rozmawiać, kiedy trudno się dogadać. Kręgi empatii, mediacje, facylitacje, konsultacje - spotkanie z Justyną Chaber 
 
-<26|07> Jak rozmawiać, kiedy trudno się dogadać. Kręgi empatii, mediacje, facylitacje, konsultacje.
+<26|07> Dyskurs(y) społeczne we współczesności, echo chambers i dezinformacja - spotkanie z Jędrzejem Malko 
 
-<02|08> Komunikacja porozumienia bez przemocy. Trening przed dyskusjami tematycznymi.\
------------\
-<09|08> Spotkanie dyskusyjne temat 1\
-<16|08> Spotkanie dyskusyjne temat 2\
-<23|08> Spotkanie dyskusyjne temat 3
+<02|08> Komunikacja porozumienia bez przemocy. Trening przed dyskusjami tematycznymi - spotkanie z Mają Wyborską 
+
+- - -
+
+<09|08> Docelowe spotkanie dyskusyjne
+*<16|08> Docelowe spotkanie dyskusyjne*
+<23|08> Docelowe spotkanie dyskusyjne *
 
 \*tematy wybierane będą przez uczestników spotkań
 
-
-
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png)Partnerstwo Otwarty Jazdów\
+🏡Partnerstwo Otwarty Jazdów
 Jazdów 10/5
 
+🔻WIZUALNE WTORKI
 
-
-![🔻](https://static.xx.fbcdn.net/images/emoji.php/v9/t9c/1/16/1f53b.png)WIZUALNE WTORKI
-
-
-
-<13|07> Warsztat komiksowy: „ Ja, czyli kto?” z Beatą Sosnowską.
+<13|07> JA, CZYLI KTO? Warsztat dyskursywno-komiksowy - Beata Sosnowska.
+https://fb.me/e/3XnyTp9vh
 
 <20|07> Warsztaty zinowe: Bunt! - Girls to the Front.
+https://fb.me/e/LxZ6lkdx
 
-<27|07> Dostrzegam stworzenie z ukrytym pod skorupą tułowiem - Zuzanna Wołejko.
+<27|07> Dostrzegam stworzenie z ukrytym pod skorupą tułowiem - Zuzanna Wołejko, wystawa grafik i warsztaty z fikcyjnego rysunku biologicznego.
 
 <03|08> Druk sitodrukiem na tekstyliach: Selfisz - V9.
 
 <10|08> Wykład/Spotkanie: Inne kreski. Alternatywne nurty w projektowaniu graficznym - Witold Dąbrowski.
 
-<17|08> ODBIÓR ) ) ) BAZA. Otwarte Laboratorium Artystyczne - autorstwo kolektywne.
+<17|08> ODBIÓR ) ) ) BAZA. Otwarte Laboratorium Artystyczne - kolektywka
 
 <24|08> "Nowa geoetyka" - pokaz filmowy i rzeźba w ogrodzie - Pola Salicka, Marcin Liminowicz.
 
+🏡Ogród "Motyka i Słońce"/Solatorium
 
+🎥FILMOWE ŚRODY
 
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png)Ogród "Motyka i Słońce"/Solatorium
+<14|07> Spotkanie z Jogą - Ewa Kurzawa.
+Projekcja filmu i dyskusja z Kordianem Kądzielą.
 
-
-
-![🎥](https://static.xx.fbcdn.net/images/emoji.php/v9/tff/1/16/1f3a5.png)FILMOWE ŚRODY
-
-
-
-<14|07> Projekcja filmu i rozmowa z Kordianem Kędzielą.\
-oraz Warsztat aktorsko-ruchowy z Ireną Mercel.
-
-<21|07> Plener fotograficzny z Piotrem Chodurą. Warsztaty zawierać w sobie\
+<21|07> Spotkanie z Jogą - Ewa Kurzawa.
+Plener fotograficzny - prowadzący niespodzianka.\
+Warsztaty zawierać w sobie
 będą wskazówki z technik realizacji zdjęć oraz wywoływania w ciemni fotograficznej.
+oraz Projekcja filmu i dyskusja z Katarzyną Warzechą.
 
-<28|07> Projekcja filmu i dyskusja z Katarzyną Warzechą.\
-oraz Warsztat aktorsko-ruchowy z Ireną Mercel.
+<28|07> Spotkanie z Jogą - Ewa Kurzawa.
 
-<4|08> Projekcja filmu i rozmowa z Ewą Mroczkowską, scenografką filmową i teatralną.\
-oraz Plener fotograficzny z Piotrem Chodurą.
+<4|08> Spotkanie z Jogą - Ewa Kurzawa. 
+Projekcja filmu i rozmowa z Ewą Mroczkowską - scenografką filmową i teatralną.
+oraz Plener fotograficzny - prowadzący niespodzianka. Technika realizacji zdjęć w ciemni. 
 
-<11|08> Projekcja filmu i rozmowa z producentką filmową Martą Habior.\
-oraz Warsztat aktorsko-ruchowy z aktorką-choreografką Ireną Mercel.
+<11|08> Spotkanie z Jogą - Ewa Kurzawa. 
+Projekcja filmu i rozmowa z producentką filmową Martą Habior.
+oraz Warsztat aktorsko-ruchowy z aktorką-choreografką Ireną Melcer. 
 
-<18|08> Projekcja filmu i rozmowa z Magdą Chowańską, montażystką filmową.\
-oraz Plener fotograficzny z operatorem Piotrem Chodurą.
+<18|08> Spotkanie z Jogą - Ewa Kurzawa. Projekcja filmu i rozmowa z Magdą Chowańską, montażystką filmową.
+oraz Plener fotograficzny - prowadzący niespodzianka - technika realizacji zdjęć w ciemni.
 
-<25|08> Wystawa zdjęć z warsztatów z Piotrem Chodurą. Projekcja filmu i rozmowa z Michałem Dymkiem, operatorem, i Kamilem Rutkowskim, specjalistą branży audiowizualnej.
+<25|08> Spotkanie z Jogą - Ewa Kurzawa.
+Wystawa zdjęć z warsztatów fotograficznych - koncert, wernisaż.
+oraz Projekcja filmu i rozmowa z Kamilem Rutkowskim, specjalistą branży audiowizualnej.
 
+🏡Domek Filmowy, Jazdów 8/1
 
-
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png)Domek Filmowy, Jazdów 8/1
-
-
-
-![📖](https://static.xx.fbcdn.net/images/emoji.php/v9/t9e/1/16/1f4d6.png)CZWARTKI Z LITERATURĄ OTWARTĄ\
+📖CZWARTKI Z LITERATURĄ OTWARTĄ
 "Spiknięcia"
-
-
 
 To cykl warsztatów, w którym literatura spotka się z innymi dziedzinami sztuki i kultury. Podczas warsztatów uznani twórcy (poetki, prozatorzy, malarki, graficy, muzycy) spotykają się ze sobą, by wraz z uczestnikami, dotychczasowymi odbiorcami sztuki tworzyć nowe dzieła.
 
-Nabór do spiknięć: Link wkrótce
+Szczegóły i Nabór do spiknięć: etymios@gmail.com
 
-<15|07> Preludium "Spiknięć\
-poetyckich" (awangardowe, twórcze kolaboracje).\
-Seminarium.\
+<15|07> Preludium "Spiknięć
+poetyckich" (awangardowe, twórcze kolaboracje). 
+Seminarium. 
 Prowadzenie: Beata Gula, Sylwia Głuszak.
 
-<22|07> Warsztaty twórcze: Słowo/Obraz\
+<22|07> Warsztaty twórcze: Słowo/Obraz 
 Prowadzenie: Natalia Malek, Bianka Rolando.
 
-<29|07> Warsztaty twórcze: Słowo/Dźwięk\
+<29|07> Warsztaty twórcze: Słowo/Dźwięk
 Prowadzenie: Michał Szymaniak, Joanna Łańcucka.
 
-<5|08> Warsztaty twórcze: Słowo/Przestrzeń\
+<5|08> Warsztaty twórcze: Słowo/Przestrzeń 
 Prowadzenie: Joanna Mueller, Ola Wasilewska.
 
-<12|08> Warsztaty twórcze Słowo/Ruch\
+<12|08> Warsztaty twórcze Słowo/Ruch 
 Prowadzenie: Urszula Zajączkowska, Wojtek Matejko.
 
-<19|08> Warsztaty finałowe - seminarium. Zakończenie procesu twórczego, otwarcie\
-kolejnych procesów twórczych (mistrzowskich i debiutanckich). Prowadzenie: Beata Gula, Sylwia\
+<19|08> Warsztaty finałowe - seminarium. Zakończenie procesu twórczego, otwarcie
+kolejnych procesów twórczych (mistrzowskich i debiutanckich). Prowadzenie: Beata Gula, Sylwia
 Głuszak.
 
 <26|08> Wystawa prac powstałych na warsztatach: wernisaż, koncert, prezentacja tekstów i prac.
 
+🏡 Domek Przenośnia LAS, Jazdów 10/2
 
-
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png) Domek Przenośnia LAS, Jazdów 10/2
-
-
-
-![🎻](https://static.xx.fbcdn.net/images/emoji.php/v9/t4b/1/16/1f3bb.png)KONCERTOWE PIĄTKI
-
-
+🎻KONCERTOWE PIĄTKI
 
 <09|07> Koncert: pianista Wim te Groen
 
-<16|07> Koncert: Duo Paweł Szymiczek i Marcin Żebrowski
+<16|07> Koncert: Duo Paweł Szymiczek i Marcin Żebrowski 
 
 <23|07> Koncert: Zespół pieśniarski Wyraj
 
@@ -149,18 +142,12 @@ Głuszak.
 
 <13|08> Koncert: Noumassa Dembele
 
-<20|08> Koncert: Summan
+<20|08> Koncert: Summana
 
-
-
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png)Chata Numinosum, Jazdów 3/5\
+🏡Chata Numinosum, Jazdów 3/5
 lub Skwer Dialogu Społecznego
 
-
-
-![🕺](https://static.xx.fbcdn.net/images/emoji.php/v9/t97/1/16/1f57a.png)SOBOTY Z POTAŃCÓWKĄ
-
-
+🕺SOBOTY Z POTAŃCÓWKĄ
 
 <10|07> Potańcówka z muzyką francuską, Aurelien Claranbaux
 
@@ -174,46 +161,30 @@ lub Skwer Dialogu Społecznego
 
 <14|08> Potańcówka z kapelą Jakuba Zimończyka
 
+🏡Ambasada Muzyki Tradycyjnej 
+Jazdów 3/20
+🏡Chata Numinosum, Jazdów 3/5
 
-
-
-
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png)Ambasada Muzyki Tradycyjnej\
-Jazdów 3/20\
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png)Chata Numinosum, Jazdów 3/5
-
-
-
-![🌳](https://static.xx.fbcdn.net/images/emoji.php/v9/t6b/1/16/1f333.png)EKOLOGICZNE NIEDZIELE
-
-
+🌳EKOLOGICZNE NIEDZIELE
 
 PRZED - wspólne prace w Ogrodzie Motyka i Słońce
 
+<11|07> Spacer ornitologiczny z Pawłem Pstrokońckim
 
-
-<11|07> Spacer ornitologiczny.
-
-<25|07> Warszawska suwerenność żywnościowa.
+<25|07> Warszawska suwerenność żywnościowa. Spotkanie z Biennale Warszawa.
 
 <01|08> EkoWioski - opowieści podróżnicze.
 
-<08|08> Spotkanie ogrodnicze "Zdziczenie".
+<08|08> Spotkanie ogrodnicze "Zdziczenie - ile dzikości nam trzeba"
 
 <15|08> Freegański Piknik Foodsharingowy.
 
 <22|08> Solarpunk na Jazdowie.
 
-
-
 PO - wypoczynek i piknik w Ogrodzie Motyka i Słońce
 
+🏡Ogród "Motyka i Słońce"/Solatorium
 
-
-![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png)Ogród "Motyka i Słońce"/Solatorium
-
-
-
-![🟡](https://static.xx.fbcdn.net/images/emoji.php/v9/t7b/1/16/1f7e1.png)Projekt współfinansowany ze środków m. st. Warszawy
+🟡Projekt współfinansowany ze środków m. st. Warszawy 
 
 <!--EndFragment-->
