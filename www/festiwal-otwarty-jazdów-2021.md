@@ -12,10 +12,7 @@ generic: true
 ---
 <!--StartFragment-->
 
-\
-Po dłuuugiej, pandemicznej przerwie znów możemy Was zaprosić do bycia razem na Osiedlu Jazdów! 💛
 
-🟡Codziennie, przez cały lipiec i sierpień, czekamy na Was z dużą dawką dobra, sztuki, rozmów i kulinarnych doznań.
 
 💬DYSKUSYJNE PONIEDZIAŁKI
 Polubmy ten gatunek.
