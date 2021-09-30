@@ -1,7 +1,7 @@
 ---
 permalink: polityka-prywatnosci
 title: Polityka prywatności serwisu jazdow.pl
-tldr: Polityka prywatności serwisu jazdow.pl (...)
+tldr: (...)
 generic: true
 ---
 1. Słownik
