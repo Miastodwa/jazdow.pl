@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "delay": "^4.4.0",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "stickybits": "^3.7.7",
     "vue-in-viewport-mixin": "^2.0.0"
   },
