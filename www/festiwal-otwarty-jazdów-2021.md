@@ -11,6 +11,8 @@ tldr: >-
   Formuła jest prosta: jeden dzień tygodnia = jeden temat, w który angażuje się wiele organizacji, artystów i aktywistów działających w Partnerstwie Otwarty Jazdów lub zaprzyjaźnionych z naszą społecznością. Projekt współfinansowany ze środków m. st. Warszawy
 generic: true
 ---
+![](/images/285584595_395353005972068_4454883743467093297_n-1-.jpg)
+
 <!--StartFragment-->
 
 <!--StartFragment-->
