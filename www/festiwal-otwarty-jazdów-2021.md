@@ -72,7 +72,7 @@ Kuratorki instalacji: Beata Gula, Ola Wasilewska, Olga Rudzińska\
 [https://fb.me/e/1RqEwhGuT](https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.me%2Fe%2F1RqEwhGuT&h=AT0gmA4rbCnogYfqlpURiWGHQiTKUNA_F3dO_H8rbmCkAXBxn6UAls3FM9AYIFjPpgcegrG2k_ACq_NaQXxBP-scMt2iSIG0rcDXvh9bgTxe1khIOesWCZfO7-_qQ8izO7yf&__tn__=q&c[0]=AT23z3GRP7ZDddt8ySjp6IAV2N5kN8k9rzAGfhy1T0TXl_Cy0IZ3SXL0MuJFaVWqWb8cxIZEgu4XiRc9F8EisO9UucphP-MFXboLl_80UwkiCltN0FJK-93SPzpjmF4vV3c9TvMOKq0j1TnLhyAtee55)\
 𝟬𝟯|𝟬𝟴 Obieg zamknięty. Warsztat (17:00) i performance (20:00) butoh, Wojciech Matejko\
 [https://fb.me/e/2Sf1RaBld](https://l.facebook.com/l.php?u=https%3A%2F%2Ffb.me%2Fe%2F2Sf1RaBld&h=AT3yO2wwo-1wjCQGAlOiIybgkHD4MDqBu5HWxWkiCcbIEOf2aHcIVafq4jDIarVVH8Ee0VP-tjLghGXg9AIdGBO-0fnVBK17ZAtq1jB7r3b8U1Kk9TFQXr38Fvi59K1zHTXh&__tn__=q&c[0]=AT23z3GRP7ZDddt8ySjp6IAV2N5kN8k9rzAGfhy1T0TXl_Cy0IZ3SXL0MuJFaVWqWb8cxIZEgu4XiRc9F8EisO9UucphP-MFXboLl_80UwkiCltN0FJK-93SPzpjmF4vV3c9TvMOKq0j1TnLhyAtee55)\
-𝟭𝟬|𝟬𝟴 Sitogród. Wystawa sitodruku i drukowanie sitodrukiem na żywo w ogrodzie Motyka i Słońce.\
+𝟭𝟬|𝟬𝟴 Sitogród. Wystawa sitodruku i drukowanie sitodrukiem na żywo w ogrodzie Motyka i Słońce. <https://fb.me/e/2FT5yg3yw>\
 𝟭𝟳|𝟬𝟴 Instalacja Audiowizualna Patryka Wancerz w Zaczarowanym Ogrodzie.
 
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png) Solatorium\
