@@ -17,6 +17,8 @@ generic: true
 
 Partnerstwo Otwarty Jazdów zaprasza na jedyny w swoim rodzaju letni, niespieszny 4. Festiwal Otwarty Jazdów. Na sześć letnich tygodni przygotowaliśmy dla Was bogaty program kulturalny, artystyczny i edukacyjny! W ramach codziennych wydarzeń wspólnie będziemy brać udział w przeróżnych aktywnościach, gwarancją różnorodności programu festiwalowego jest to, że każdy znajdzie coś dla siebie!
 
+![](/images/350925555_3514165722192386_4868443072458810085_n.jpg)
+
 ![☀️](https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1.5/16/2600.png) Zapraszamy Was latem na jazdowską wioskę, do wspólnego doświadczania lata i spotkań z prawdziwymi ludźmi! Zabierzcie znajomych, rodzinę, psa czy kota i chodźcie poczuć lato w mieście wśród zieleni ![☀️](https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1.5/16/2600.png).
 
 ![🌱](https://static.xx.fbcdn.net/images/emoji.php/v9/tc2/1.5/16/1f331.png) Formuła jest prosta: jeden dzień tygodnia = jeden temat, w który angażuje się wiele organizacji, artystów i aktywistów działających w Partnerstwie Otwarty Jazdów lub zaprzyjaźnionych z naszą społecznością.
@@ -36,8 +38,6 @@ Szczegóły: [https://facebook.com/.../oprowadzanie-po.../823094896071792/](htt
 
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/td0/1.5/16/1f3e1.png) Zbiórka: ul. Jazdów 10/5, godz. 18:00
 
-
-
 ![🌱](https://static.xx.fbcdn.net/images/emoji.php/v9/tc2/1.5/16/1f331.png) 𝐄𝐊𝐎𝐋𝐎𝐆𝐈𝐂𝐙𝐍𝐄 𝐖𝐓𝐎𝐑𝐊𝐈
 
 Dyskusje o odporności miast, miejskich protopiach i spółdzielczości w jazdowskich ogrodach społecznych. Dyskusje poświęcone będą tworzeniu wspólnotowości, spółdzielni, farmach miejskich, RWS-ach, a także podmiotowości przyrody miejskiej czy zrównoważonym planowaniu żywnościowym.
@@ -52,8 +52,6 @@ Dyskusje o odporności miast, miejskich protopiach i spółdzielczości w jazdow
 
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/td0/1.5/16/1f3e1.png) ogród Motyka i Słońce, Jazdów 3/9
 
-
-
 ![🌱](https://static.xx.fbcdn.net/images/emoji.php/v9/tc2/1.5/16/1f331.png) 𝐖𝐈𝐙𝐔𝐀𝐋𝐍𝐄 Ś𝐑𝐎𝐃𝐘\
 open call - spotkania warsztatowe - wernisaż
 
@@ -62,8 +60,6 @@ Tematem open callu będzie przyszłość - "Jazdów - Utopia to przetestowania".
 5.07 / 12.07 / 19.07 / 26.07 / 2.08 / 9.08
 
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/td0/1.5/16/1f3e1.png) Solatorium, Jazdów 3/9
-
-
 
 ![🌱](https://static.xx.fbcdn.net/images/emoji.php/v9/tc2/1.5/16/1f331.png) 𝐋𝐈𝐓𝐄𝐑𝐀𝐂𝐊𝐈𝐄 𝗖𝗭𝗪𝗔𝗥𝗧𝗞𝗜
 
@@ -97,8 +93,6 @@ prowadzenie: Aleksandra Wasilewska
 
 prowadzenie: Joanna Mueller
 
-
-
 ![🌱](https://static.xx.fbcdn.net/images/emoji.php/v9/tc2/1.5/16/1f331.png) 𝗞𝗢𝗡𝗖𝗘𝗥𝗧𝗢𝗪𝗘 𝗣𝗜𝗔̨𝗧𝗞𝗜
 
 W piątkowe wieczory proponujemy spotkania muzyczne i taneczne do różnych rodzajów polskiej muzyki tradycyjnej. Zagrają młode składy muzyczne, w tym znakomici muzycy warszawscy, lecz także artyści związani z innymi regionami Polski.
@@ -112,8 +106,6 @@ W piątkowe wieczory proponujemy spotkania muzyczne i taneczne do różnych rodz
 
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/td0/1.5/16/1f3e1.png) Chata Numinosum, ul. Jazdów 3/5\
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/td0/1.5/16/1f3e1.png) Ambasada Muzyki Tradycyjnej, ul. Jazdów 3/20
-
-
 
 ![🌱](https://static.xx.fbcdn.net/images/emoji.php/v9/tc2/1.5/16/1f331.png) 𝗥𝗢𝗗𝗭𝗜𝗡𝗡𝗘 𝗦𝗢𝗕𝗢𝗧𝗬
 
@@ -132,13 +124,11 @@ W ramach wakacyjnych sobót mamy dla Was trzy propozycje:
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/td0/1.5/16/1f3e1.png) Odjazdów, Jazdów 8/1 (Domek Filmowy)
 
 3. Co drugą letnią sobotę będzie miał miejsce również projekt “Z różnych świata stron”, w ramach\
-którego będą odbywać się performatywne czytania baśni, bajek i przypowieści. Zwieńczeniem\
-każdego czytania odbędą się warsztaty dla dzieci, inspirowane obejrzaną historią. Dla najmłodszych czytać będą aktorzy teatralnych scen warszawskim.
+   którego będą odbywać się performatywne czytania baśni, bajek i przypowieści. Zwieńczeniem\
+   każdego czytania odbędą się warsztaty dla dzieci, inspirowane obejrzaną historią. Dla najmłodszych czytać będą aktorzy teatralnych scen warszawskim.
 
 8.07 / 22.07 / 5.08\
 ![🏡](https://static.xx.fbcdn.net/images/emoji.php/v9/td0/1.5/16/1f3e1.png) Towarzystwo Polska-Finlandia, ul. Jazdów 10/8
-
-
 
 ![🌱](https://static.xx.fbcdn.net/images/emoji.php/v9/tc2/1.5/16/1f331.png) 𝐖𝐈𝐄𝐋𝐎𝐊𝐔𝐋𝐓𝐔𝐑𝐎𝐖𝐄 𝐍𝐈𝐄𝐃𝐙𝐈𝐄𝐋𝐄
 
@@ -154,12 +144,8 @@ Partnerzy cyklu: Słuszna Strawa, Foodsharing Polska, Baza Inclusive, Stowarzysz
 30 lipca | “Poznajmy się” - Ukraina\
 6 sierpnia | “Poznajmy się” - Białoruś
 
-
-
 Więcej szczegółów niebawem.\
 DO ZOBACZENIA NA OTWARTYM JAZDOWIE! ![☀️](https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1.5/16/2600.png)![☀️](https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1.5/16/2600.png)![☀️](https://static.xx.fbcdn.net/images/emoji.php/v9/tf4/1.5/16/2600.png)
-
-
 
 Grafika: Witold Dąbrowski/@brat.witt\
 Projekt współfinansowany ze środków m. st. Warszawy.\
@@ -168,7 +154,5 @@ Festiwal objęty patronatem medialnym przez Radio Kampus, Radio Kapitał oraz wa
 Urząd m.st. Warszawy umożliwia osobom głuchym lub słabosłyszącym korzystanie z pomocy tłumacza języka migowego online. Szczegóły:
 
 https://warszawa19115.pl/-/stoleczne-urzedy-z-usluga-tlumacza-migowego-on-line?redirect=%2Fhome
-
-
 
 <!--EndFragment-->
