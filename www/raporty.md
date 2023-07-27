@@ -6,6 +6,22 @@ tldr: Tutaj znajdziesz sprawozdania merytoryczne i finansowe Partnerstwa Otwarty
   dziedzictwa i rozwoju Osiedla Jazdów.
 generic: true
 ---
+**2﻿022**
+
+[bilans i rachune](https://drive.google.com/file/d/14p06v6-mPol9h76iFUvGMzhhK8GSXdz9/view?usp=drive_link)\
+[informacje uzupełniające](https://drive.google.com/file/d/1lvq4TJoae0mAwmG4uw7ithPoUaKiiWYW/view?usp=drive_link)
+
+**[](https://drive.google.com/file/d/1lvq4TJoae0mAwmG4uw7ithPoUaKiiWYW/view?usp=drive_link)2﻿021**
+
+[sprawozdanie merytoryczne](<[sprawozdanie merytoryczne](https://drive.google.com/file/d/16Jztfj9ORQSVKHoQvNUXgpT4ugv3HQQJ/view?usp=sharing)>)\
+[bilans i rachune](https://drive.google.com/file/d/1_44fgXnW_UuXngvs3QZ3ywWQ46pFYp6U/view?usp=drive_link)\
+[informacje uzupełniające](https://drive.google.com/file/d/1fljJGkvkOgnGqIJntPxImU-QpKVIDmhI/view?usp=sharing)
+
+**2﻿020**
+
+[bilans i rachune](https://drive.google.com/file/d/1LatlrKMtJwjmjNxmwoK6aGwWX0QMfsG5/view?usp=drive_link)\
+[informacje uzupełniające](https://drive.google.com/file/d/15EC-6DDUfEuaVODY-39GZ23RzIxKFGKd/view?usp=sharing)
+
 **2019**
 
 [sprawozdanie merytoryczne](https://drive.google.com/file/d/16Jztfj9ORQSVKHoQvNUXgpT4ugv3HQQJ/view?usp=sharing)\
