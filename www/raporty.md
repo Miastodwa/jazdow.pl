@@ -14,8 +14,8 @@ generic: true
 **[](https://drive.google.com/file/d/1lvq4TJoae0mAwmG4uw7ithPoUaKiiWYW/view?usp=drive_link)2﻿021**
 
 [sprawozdanie merytoryczne](<[sprawozdanie merytoryczne](https://drive.google.com/file/d/16Jztfj9ORQSVKHoQvNUXgpT4ugv3HQQJ/view?usp=sharing)>)\
-[bilans i rachune](https://drive.google.com/file/d/1LatlrKMtJwjmjNxmwoK6aGwWX0QMfsG5/view?usp=sharing)\
-[informacje uzupełniające](https://drive.google.com/file/d/15EC-6DDUfEuaVODY-39GZ23RzIxKFGKd/view?usp=sharing)
+[bilans i rachune](https://drive.google.com/file/d/1_44fgXnW_UuXngvs3QZ3ywWQ46pFYp6U/view?usp=drive_link)\
+[informacje uzupełniające](https://drive.google.com/file/d/1fljJGkvkOgnGqIJntPxImU-QpKVIDmhI/view?usp=sharing)
 
 **2﻿020**
 
