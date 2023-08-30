@@ -13,7 +13,7 @@ Przede wszystkim przyjmujemy darowizny na cele statutowe. Możesz wpłacać je b
 
 **Związek Stowarzyszeń**
 
-**ul. Jazdów 10/5, 00-457 Warszawa**
+**ul. Jazdów 10/5, 00-467 Warszawa**
 
 **KRS: 0000737179, REGON: 380558414, NIP: 7010827495**
 
