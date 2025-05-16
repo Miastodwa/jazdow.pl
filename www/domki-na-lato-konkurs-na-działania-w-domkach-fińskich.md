@@ -17,6 +17,6 @@ Przede wszystkim przyjmujemy darowizny na cele statutowe. Możesz wpłacać je b
 **nr konta PLN: 36114021050000356875001001**\
 **tytułem: "darowizna na cele statutowe"**
 
-Ruszył również nasz serwis na profilu **Patronite.pl!** Wejdź na stronę https://patronite.pl/jazdow i zostań naszą matroną lub patronem! Dzięki temu uzyskasz dostęp do specjalnych treści i wydarzeń, które przygotowujemy regularnie dla wspierających nas osób.
+Ruszył również nasz serwis na profilu **Patronite.pl!** Wejdź na stronę [patronite.pl/jazdow](https://patronite.pl/jazdow) i zostań naszą matroną lub patronem! Dzięki temu uzyskasz dostęp do specjalnych treści i wydarzeń, które przygotowujemy regularnie dla wspierających nas osób.
 
 Więcej informacji pod adresem: **otwarty@jazdow.pl**
