@@ -27,7 +27,7 @@ Istnieje możliwość przekazania darowizny przez portal zrzutka.pl:
 
 ## Patronite.pl
 
-Zostań naszą matroną lub patronem! Dzięki temu uzyskasz dostęp do specjalnych treści i wydarzeń, które przygotowujemy regularnie dla wspierających nas osób. Wejdź na stron[](https://patronite.pl/jazdow)
+Dołącz do społeczności Patronite i korzystaj z przestrzeni domku fińskiego na stałe! Dołączając jesteś także na bieżąco z wszystkimi wydarzeniami Wolnego Jazdowa.
 
 [patronite.pl/jazdow](https://patronite.pl/jazdow)
 
@@ -35,7 +35,7 @@ Zostań naszą matroną lub patronem! Dzięki temu uzyskasz dostęp do specjalny
 
 [paypal.com/donate/?hosted_button_id=VX7Z64CXKU3V4](https://www.paypal.com/donate/?hosted_button_id=VX7Z64CXKU3V4)
 
-
+## Dane adresowe
 
 Więcej informacji pod adresem: **wolny@jazdow.pl**
 
