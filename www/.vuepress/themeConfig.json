@@ -6,8 +6,8 @@
         "title": "wesprzyj"
       },
       {
-        "href": "/wydarzenia/",
-        "title": "wydarzenia"
+        "href": "/archiwum/",
+        "title": "archiwum"
       },
       {
         "href": "/mapa/",
@@ -32,10 +32,6 @@
       {
         "href": "/raporty/",
         "title": "raporty"
-      },
-      {
-        "href": "/projekty/",
-        "title": "projekty"
       }
     ],
     "en": [
