@@ -1,7 +1,6 @@
 ---
 layout: Home
-intro: >-
-  Otwarty Jazdów to społeczność warszawskiego osiedla drewnianych domków
+intro: Otwarty Jazdów to społeczność warszawskiego osiedla drewnianych domków
   fińskich, prowadząca ogólnodostępne działania społeczne, kulturalne,
   edukacyjne, artystyczne.
 images:
@@ -12,13 +11,11 @@ mapCard:
   link: /mapa/
   title: MAPA OSIEDLA —
 eventsCard:
-  caption: 'dziś:'
-  empty: >-
-    Lista wydarzeń nie jest dostępna na stronie, ze względu na zmiany jakie
-    Facebook wprowadza po ujawnionym wycieku danych.
-  link: /wydarzenia/
+  caption: fb
+  empty: Lista wydarzeń jest dostępna na stronie Wolny Jazdów na Facebooku
+  link: https://facebook.com/jazdow/events/
   more: cały kalendarz →
-  title: WYDARZENIA —
+  title: WYDARZENIA
 cards:
   - caption: Pierwszy raz na Jazdowie? Znajdź odpowiedzi na najważniejsze pytania
     cover: /images/cover-faq.jpg
@@ -32,8 +29,7 @@ cards:
     cover: /images/cover-model.jpg
     link: /wspolzarzadzanie/
     title: współzarządzanie —
-  - caption: >-
-      Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy
+  - caption: Partnerstwo dla Osiedla Jazdów tworzą organizacje pozarządowe, grupy
       nieformalne, instytucje publiczne i osoby prywatne.
     cover: /images/cover-partnership.jpg
     link: /partnerstwo/
@@ -43,8 +39,6 @@ video:
   poster: /videos/poster.jpg
   webm: /videos/video.webm
 subs:
-  - s: ''
-    t: .nan
   - s: łąka kwietna – Motyka i Słońce – Jazdów 3/9
     t: 0.1
   - s: Warszawskie Combo Taneczne – Ladomek – Jazdów 7/30
