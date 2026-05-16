@@ -5,9 +5,9 @@ title: Regulamin Darowizn
 
 ## § 1. Postanowienia ogólne
 
-Niniejszy regulamin, zwany dalej Regulaminem, określa zasady świadczenia przez Związek Stowarzyszeń Partnerstwo Otwarty Jazdów usługi polegającej na umożliwieniu przekazywania darowizn za pośrednictwem serwisu internetowego dostępnego pod adresem [jazdow.pl](https://jazdow.pl).
+Niniejszy regulamin, zwany dalej Regulaminem, określa zasady świadczenia przez Partnerstwo Otwarty Jazdów usługi polegającej na umożliwieniu przekazywania darowizn za pośrednictwem serwisu internetowego dostępnego pod adresem [jazdow.pl](https://jazdow.pl).
 
-Ilekroć w niniejszym Regulaminie jest mowa o **Partnerstwie**, należy przez to rozumieć Związek Stowarzyszeń Partnerstwo Otwarty Jazdów z siedzibą w Warszawie przy ul. Jazdów 10/5, 00-467 Warszawa, wpisany do Rejestru Stowarzyszeń Krajowego Rejestru Sądowego pod numerem KRS: 0000737179, NIP: 7010827495, REGON: 380558414.
+Ilekroć w niniejszym Regulaminie jest mowa o **Partnerstwie**, należy przez to rozumieć Partnerstwo Otwarty Jazdów z siedzibą w Warszawie przy ul. Jazdów 10/5, 00-467 Warszawa, wpisany do Rejestru Stowarzyszeń Krajowego Rejestru Sądowego pod numerem KRS: 0000737179, NIP: 7010827495, REGON: 380558414.
 
 Ilekroć w Regulaminie jest mowa o **Darczyńcy**, należy przez to rozumieć osobę fizyczną, osobę prawną lub jednostkę organizacyjną nieposiadającą osobowości prawnej, która przekazuje darowiznę na rzecz Partnerstwa za pośrednictwem serwisu internetowego.
 
