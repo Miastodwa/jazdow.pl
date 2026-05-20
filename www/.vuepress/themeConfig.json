@@ -18,8 +18,8 @@
         "title": "obywatelstwo"
       },
       {
-        "href": "/opp/",
-        "title": "przekaż 1,5%"
+        "href": "/wspolpraca/",
+        "title": "Współpraca"
       },
       {
         "href": "/wesprzyj/",
@@ -76,10 +76,6 @@
       {
         "to": "/statut",
         "title": "Statut"
-      },
-      {
-        "to": "/wspolpraca",
-        "title": "Współpraca"
       },
       {
         "to": "/regulamin",
