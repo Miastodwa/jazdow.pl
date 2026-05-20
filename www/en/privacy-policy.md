@@ -46,7 +46,7 @@ Open Jazdow Partnership is also the operator of [jazdow.pl](https://jazdow.pl) w
    In the matters regarding the user data, [jazdow.pl](https://jazdow.pl) service operator will contact users through email or phone.
 8. Data modifications
 
-   Every user has a right to modify or remove their data from the service, by sending a request to: jazdow@jazdow.pl
+   Every user has a right to modify or remove their data from the service, by sending a request to: wolny@jazdow.pl
 9. Cookies
 
    Cookies on the website may be used for analytics. Every website visitor can block the use of cookies on the website.

@@ -309,9 +309,9 @@ Opis: Rodzinne życie Rudolfa i Hedwig, skrywające niepokojące tajemnice
 
 🌿 Na Osiedlu Jazdów obowiązuje zakaz wjazdu samochodów, prosimy o przybywanie rowerami lub pieszo! Samochody bez identyfikatorów mogą zostać odholowane przez Straż Miejską!
 
-▪ Kontakt: otwarty@jazdow.pl
-▪ IG: @otwarty_jazdow
-▪ Wesprzyj Otwarty Jazdów: [jazdow.pl/wesprzyj](https://jazdow.pl/wesprzyj)
+▪ Kontakt: wolny@jazdow.pl
+▪ IG: @wolny.jazdow
+▪ Wesprzyj Wolny Jazdów: [jazdow.pl/wesprzyj](https://jazdow.pl/wesprzyj)
 
 Informujemy, że w trakcie wydarzeń 5. Festiwalu Otwarty Jazdów będzie prowadzona fotorelacja oraz wideorelacja, uczestnicząc w wybranych wydarzeniu wyrażasz zgodę na utrwalenie i rozpowszechnienie twojego wizerunku, jako uczestnik wydarzenia publicznego.
 

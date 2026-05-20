@@ -81,7 +81,7 @@ CIĄGŁOŚĆ – czyli dążenie do zachowania dziedzictwa, które przetrwało p
 
 ## Jak zorganizować wydarzenie w domku fińskim lub ogrodzie?
 Zanim do nas napiszesz, poznaj nasze wartości.
-Jeśli chcesz zorganizować wydarzenie na Osiedlu Jazdów napisz na adres: jazdow@jazdow.pl
+Jeśli chcesz zorganizować wydarzenie na Osiedlu Jazdów napisz na adres: wolny@jazdow.pl
 Koniecznie dodaj:
 - kim jesteś?
 - czym się zajmujesz?
@@ -110,7 +110,7 @@ Staramy się wypracować model finansowania i ekonomii który ochroni przestrze�
 ## Jak można wesprzeć Otwarty Jazdów?
 Możesz włączyć się w działania na Jazdowie i wesprzeć nas swoją pracą, wiedzą, umiejętnościami czy doświadczeniem w ramach praktyk lub wolontariatu.
 Wsparcie możesz okazać również oferując pomoc finansową (datki, fundusze), wsparcie rzeczowe (więcej na grupie na Facebooku – „Otwarty Jazdów - wymienialnia / uwaga śmieciarka jedzie”) oraz w każdej innej formie. Jesteśmy otwarci na współpracę i nowe pomysły!
-Napisz do nas maila na adres jazdow@jazdow.pl.
+Napisz do nas maila na adres wolny@jazdow.pl.
 
 ## Jakie są aktualne wyzwania na Jazdowie?
 Sprawą kluczową jest doprowadzenie do kompleksowego remontu domków. Równolegle podejmujemy szereg działań mających na celu uchwalenie Miejscowego Planu Zagospodarowania Przestrzennego uwzględniającego wizję przyszłości Osiedla Jazdów.Staramy się wdrożyć model współzarządzania terenem Osiedla. Ponadto cały czas zachęcamy mieszkańców Warszawy do działania na Jazdowie oraz włączamy w te działania nowe grupy twórców. Bardzo istotne jest dla nas również wprowadzenie w domkach kolejnych udogodnień i rozwiązań proekologicznych.
