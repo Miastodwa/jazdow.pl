@@ -15,7 +15,7 @@ tldr: Rozłóż koc na trawie, napij się Jazdowianki, odpocznij, poczytaj ;)
 8. [Czy mogę kupić domek fiński?](#czy-moge-kupic-domek-finski)
 9. [To chociaż wynająć. Czy to możliwe?](#to-chociaz-wynajac-czy-to-mozliwe)
 10. [Jakie są wartości Otwartego Jazdowa?](#jakie-sa-wartosci-otwartego-jazdowa-czyli-co-jest-dla-was-wazne)
-11. [Jak zorganizować wydarzenie w domku fińskim lub ogrodzie?](#jak-zorganizowac-wydarzenie-w-domku-finskim-lub-ogrodzie)
+11. [Jak zorganizować wydarzenie w domku fińskim lub ogrodzie?](https://jazdow.pl/wspolpraca/#wspolorganizacja-wydarzen-w-zabytkowym-domku-finskim-lub-ogrodzie)
 12. [Kto tu rządzi?](#kto-tu-rzadzi)
 13. [Czyli jak wyglądają Wasze związki z miastem? Jazdów jest bezpieczny?](#czyli-jak-wygladaja-wasze-zwiazki-z-miastem-jazdow-jest-bezpieczny)
 14. [Z czego utrzymuje się Jazdów?](#z-czego-utrzymuje-sie-jazdow)
@@ -81,7 +81,7 @@ CIĄGŁOŚĆ – czyli dążenie do zachowania dziedzictwa, które przetrwało p
 
 ## Jak zorganizować wydarzenie w domku fińskim lub ogrodzie?
 Zanim do nas napiszesz, poznaj nasze wartości.
-Jeśli chcesz zorganizować wydarzenie na Osiedlu Jazdów napisz na adres: jazdow@jazdow.pl
+Jeśli chcesz zorganizować wydarzenie na Osiedlu Jazdów napisz na adres: wolny@jazdow.pl
 Koniecznie dodaj:
 - kim jesteś?
 - czym się zajmujesz?
@@ -110,7 +110,7 @@ Staramy się wypracować model finansowania i ekonomii który ochroni przestrze�
 ## Jak można wesprzeć Otwarty Jazdów?
 Możesz włączyć się w działania na Jazdowie i wesprzeć nas swoją pracą, wiedzą, umiejętnościami czy doświadczeniem w ramach praktyk lub wolontariatu.
 Wsparcie możesz okazać również oferując pomoc finansową (datki, fundusze), wsparcie rzeczowe (więcej na grupie na Facebooku – „Otwarty Jazdów - wymienialnia / uwaga śmieciarka jedzie”) oraz w każdej innej formie. Jesteśmy otwarci na współpracę i nowe pomysły!
-Napisz do nas maila na adres jazdow@jazdow.pl.
+Napisz do nas maila na adres wolny@jazdow.pl.
 
 ## Jakie są aktualne wyzwania na Jazdowie?
 Sprawą kluczową jest doprowadzenie do kompleksowego remontu domków. Równolegle podejmujemy szereg działań mających na celu uchwalenie Miejscowego Planu Zagospodarowania Przestrzennego uwzględniającego wizję przyszłości Osiedla Jazdów.Staramy się wdrożyć model współzarządzania terenem Osiedla. Ponadto cały czas zachęcamy mieszkańców Warszawy do działania na Jazdowie oraz włączamy w te działania nowe grupy twórców. Bardzo istotne jest dla nas również wprowadzenie w domkach kolejnych udogodnień i rozwiązań proekologicznych.

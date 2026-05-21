@@ -4,6 +4,9 @@ title: Co robimy?
 tldr: Co robimy? Czym się zajmujemy?
 generic: true
 ---
+
+[![Maj 2026](/plakaty/2026_05.png "Maj 2026")](https://jazdow.pl/plakaty/2026_05.png)
+
 ## [Lista wydarzeń na Facebooku](https://facebook.com/jazdow/events/)
 ### 1. [Oprowadzania po Osiedlu Jazdów](#oprowadzania-po-osiedlu-jazdow)
 ### 2. [Czytelnia Klimatyczna](#czytelnia-klimatyczna)
@@ -11,6 +14,7 @@ generic: true
 ### 4. [Społeczne Archiwum Osiedla Jazdów](https://jazdow.pl/archiwum)
 ### 5. [Model współzarządzania](https://jazdow.pl/wspolzarzadzanie)
 ### 6. [Partnerstwo Lokalne](https://jazdow.pl/partnerstwo)
+### 7. [Plakaty zbiorcze](#plakaty)
 
 ## Oprowadzania po Osiedlu Jazdów
 
@@ -40,7 +44,7 @@ To nie jest zwykły spacer turystyczny. Podczas spotkania nie tylko przybliżymy
 
 ## Czytelnia Klimatyczna
 
-W każdy poniedziałek otwieramy dla Was Czytelnie Klimatyczną - przytulną przestrzeń w domku fińskim Sołectwo przy ul. Jazdów 10/5 oferująca możliwość wypożyczenia literatury i eksplorowania jej,  a także pracy w skupieniu oraz odpoczynku w unikatowej przestrzeni. Jest to miejsce otwarte dla wszystkich, którzy cenią kameralną atmosferę i chcą spędzić czas w otoczeniu zieleni Jazdowa, korzystając z gościnności i ciepła drewnianego wnętrza.
+W każdy wtorek w godz. 16:00-21:00 otwieramy dla Was Czytelnie Klimatyczną - przytulną przestrzeń w domku fińskim Sołectwo przy ul. Jazdów 10/5 oferująca możliwość wypożyczenia literatury i eksplorowania jej, a także pracy w skupieniu oraz odpoczynku w unikatowej przestrzeni. Jest to miejsce otwarte dla wszystkich, którzy cenią kameralną atmosferę i chcą spędzić czas w otoczeniu zieleni Jazdowa, korzystając z gościnności i ciepła drewnianego wnętrza.
 
 ![ciepło drewnianego wnętrza](/images/dsc_0862-large.jpeg "ciepło drewnianego wnętrza")
 
@@ -58,6 +62,47 @@ W ofercie znajdują się zarówno książki, jak i wybrane czasopisma i ziny.
 
 Czytelnia Klimatyczna jest inicjatywą niezależną i nie posiada stałego finansowania na pokrycie kosztów bieżących oraz mediów. Jej funkcjonowanie jest możliwe wyłącznie dzięki dobrowolnym datkom oraz zaangażowaniu naszego zespołu wolontariackiego. Każde wsparcie finansowe przekazane przez odwiedzających bezpośrednio przyczynia się do utrzymania tej przestrzeni.
 
-Opiekunki Czytelni: Hania, Karola, Maga, Wiki lub Lukrecja.
+Opiekunki i Opiekunowie Czytelni: Hania, Klaudia, Karola, Magda, Mikołaj, Nemo, Olga, Sebastian.
 
 **Najbliższe terminy otwarcia Czytelni [znajdziesz na liście bieżących wydarzeń](https://www.facebook.com/jazdow/events).**
+
+## Plakaty zbiorcze
+
+[![Maj 2026](/plakaty/2026_05.png "Maj 2026")](https://jazdow.pl/plakaty/2026_05.png)
+[![Kwiecień 2026](/plakaty/2026_04.png "Kwiecień 2026")](https://jazdow.pl/plakaty/2026_04.png)
+[![Marzec 2026](/plakaty/2026_03.png "Marzec 2026")](https://jazdow.pl/plakaty/2026_03.png)
+[![Grudzień 2025](/plakaty/2025_12.png "Grudzień 2025")](https://jazdow.pl/plakaty/2025_12.png)
+[![Listopad 2025](/plakaty/2025_11.png "Listopad 2025")](https://jazdow.pl/plakaty/2025_11.png)
+[![Październik 2025](/plakaty/2025_10.png "Październik 2025")](https://jazdow.pl/plakaty/2025_10.png)
+[![Wrzesień 2025](/plakaty/2025_09.png "Wrzesień 2025")](https://jazdow.pl/plakaty/2025_09.png)
+[![Sierpień 2025](/plakaty/2025_08.png "Sierpień 2025")](https://jazdow.pl/plakaty/2025_08.png)
+[![Lipiec 2025](/plakaty/2025_07.png "Lipiec 2025")](https://jazdow.pl/plakaty/2025_07.png)
+[![Czerwiec 2025](/plakaty/2025_06.png "Czerwiec 2025")](https://jazdow.pl/plakaty/2025_06.png)
+[![Maj 2025](/plakaty/2025_05.png "Maj 2025")](https://jazdow.pl/plakaty/2025_05.png)
+[![Kwiecień 2025](/plakaty/2025_04.png "Kwiecień 2025")](https://jazdow.pl/plakaty/2025_04.png)
+[![Marzec 2025](/plakaty/2025_03.png "Marzec 2025")](https://jazdow.pl/plakaty/2025_03.png)
+[![Luty 2025](/plakaty/2025_02.png "Luty 2025")](https://jazdow.pl/plakaty/2025_02.png)
+[![Grudzień 2024](/plakaty/2024_12.png "Grudzień 2024")](https://jazdow.pl/plakaty/2024_12.png)
+
+<style>
+#plakaty-zbiorcze ~ p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+#plakaty-zbiorcze ~ p a img {
+  width: 140px;
+  height: 198px;
+  object-fit: cover;
+  border: 2px solid #e0d6f0;
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 0;
+  display: block;
+}
+#plakaty-zbiorcze ~ p a:hover img {
+  border-color: #6ba568;
+  box-shadow: 0 2px 10px rgba(82, 0, 204, 0.2);
+}
+</style>

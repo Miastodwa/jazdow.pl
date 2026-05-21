@@ -5,8 +5,8 @@ main
 		oj-intro
 		.content
 			.row.a
-				a.banner-15(href="/opp")
-					img(src="/images/opp-home.png" alt="Przekaż 1,5% podatku")
+				a.banner-plakat(href="https://jazdow.pl/plakaty/2026_05.png" target="_blank" rel="noopener")
+					img(src="/plakaty/2026_05-small.png" alt="Aktualny plakat zbiorczy")
 			.row.b
 				oj-card(v-for="(card, i) in $page.frontmatter.cards"
 				:key="i"
@@ -99,16 +99,24 @@ main
 		width 100%
 		max-width 40rem
 		margin $gutter auto
-.banner-15
+.banner-plakat
 	display block
 	width 66%
 	margin 0 auto
+	text-decoration none
+	text-align center
 	+below(600px)
 		width 100%
 	img
 		width 100%
 		height auto
 		display block
+		border-radius 4px
+	span
+		display block
+		margin-top 0.5rem
+		font-size 1rem
+		color $oj-violet
 .oj-faq-card
 	margin-bottom $gutter
 	+above(600px)

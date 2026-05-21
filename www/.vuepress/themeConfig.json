@@ -18,8 +18,8 @@
         "title": "obywatelstwo"
       },
       {
-        "href": "/opp/",
-        "title": "przekaż 1,5%"
+        "href": "/wspolpraca/",
+        "title": "współpraca"
       },
       {
         "href": "/wesprzyj/",
@@ -86,6 +86,10 @@
         "title": "Sprawozdania"
       },
       {
+        "to": "/regulamin-darowizn",
+        "title": "Regulamin Darowizn"
+      },
+      {
         "to": "/polityka-prywatnosci",
         "title": "Polityka Prywatności"
       }
@@ -100,11 +104,11 @@
   "contact": {
     "pl": {
       "title": "Wolny Jazdów",
-      "details": "#ZawszeBędzieJazdów\n\n[jazdow@jazdow.pl](mailto:jazdow@jazdow.pl)\n\ne-Doręczenia\nAE:PL-86024-98343-ERIGG-14"
+      "details": "#ZawszeBędzieJazdów\n\n[wolny@jazdow.pl](mailto:wolny@jazdow.pl)\n\ne-Doręczenia\nAE:PL-86024-98343-ERIGG-14"
     },
     "en": {
       "title": "Contact",
-      "details": "[jazdow@jazdow.pl](mailto:jazdow@jazdow.pl)"
+      "details": "[wolny@jazdow.pl](mailto:wolny@jazdow.pl)"
     }
   },
   "address": {

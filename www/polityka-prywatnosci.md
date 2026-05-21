@@ -22,7 +22,7 @@ generic: true
    REGON: 380558414
    KRS: 0000737179
 
-   jazdow@jazdow.pl
+   wolny@jazdow.pl
 
    e-Doręczenia: AE:PL-86024-98343-ERIGG-14
 
@@ -55,7 +55,7 @@ Partnerstwo Otwarty Jazdów jest również operatorem serwisu jazdow.pl.
    Operator serwisu jazdow.pl będzie się kontaktował z użytkownikami za pośrednictwem poczty elektronicznej i telefonicznie, w sprawach dotyczących ich stron profilowych.
 8. Zmiana danych
 
-   Każdy użytkownik ma prawo zmienić lub zaktualizować swoje dane osobowe, a także usunąć swoje dane z serwisu przesyłając dyspozycję do operatora serwisu jazdow.pl e-mailem na adres: jazdow@jazdow.pl
+   Każdy użytkownik ma prawo zmienić lub zaktualizować swoje dane osobowe, a także usunąć swoje dane z serwisu przesyłając dyspozycję do operatora serwisu jazdow.pl e-mailem na adres: wolny@jazdow.pl
 9. Pliki cookies
 
    Serwis jazdow.pl może wykorzystywać pliki cookies. Użytkownik może w dowolnym momencie zablokować zbieranie takich informacji wyłączając opcję obsługi cookies w ustawieniach przeglądarki. Operator serwisu jazdow.pl nie gwarantuje jednak poprawnego działania serwisu przy nieaktywnej obsłudze cookies w przeglądarce.
@@ -85,7 +85,7 @@ Partnerstwo Otwarty Jazdów jest również operatorem serwisu jazdow.pl.
     REGON: 380558414
     KRS: 0000737179
     
-    jazdow@jazdow.pl
+    wolny@jazdow.pl
     
     e-Doręczenia: AE:PL-86024-98343-ERIGG-14
 
