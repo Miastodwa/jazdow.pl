@@ -14,7 +14,7 @@ generic: true
 ### 4. [Społeczne Archiwum Osiedla Jazdów](https://jazdow.pl/archiwum)
 ### 5. [Model współzarządzania](https://jazdow.pl/wspolzarzadzanie)
 ### 6. [Partnerstwo Lokalne](https://jazdow.pl/partnerstwo)
-### 7. [Plakaty zbiorcze](#plakaty)
+### 7. [Plakaty zbiorcze](#plakaty-zbiorcze)
 
 ## Oprowadzania po Osiedlu Jazdów
 
