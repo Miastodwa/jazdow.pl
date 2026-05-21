@@ -25,7 +25,7 @@ Wolny Jazdów utrzymuje się w głównie z dobrowolnych zbiórek swoich członk�
 
 PS. Odpowiedź na Twoje pytanie zwykle otrzymasz w ciągu tygodnia.
 
-Uwaga: Rozpatrujemy tylko zapytania mailowe! Działamy społecznie i mimo starań nie nadążamy z odpowiedziami na pytania zadawane w innych komunikatorach i zapycha to naszą pamięć operacyjną, dlatego postanowiliśmy ograniczyć się jedynie do jednej formy kontaktu.
+Uwaga: Rozpatrujemy tylko zapytania mailowe! Działamy społecznie i mimo starań nie nadążamy z odpowiedziami na pytania zadawane w innych komunikatorach. Zapycha to naszą pamięć operacyjną, dlatego postanowiliśmy ograniczyć się jedynie do jednej formy kontaktu.
 
 **WAŻNE**: Nie udostępniamy przestrzeni na potrzeby wydarzeń o charakterze prywatnym, takich jak urodziny czy prywatne przyjęcia. Domki fińskie przeznaczone są na działania kulturalne, społeczne i edukacyjne, zgodne z misją społeczności i organizacji Wolnego Jazdowa.
 
