@@ -83,26 +83,3 @@ Opiekunki i Opiekunowie Czytelni: Hania, Klaudia, Karola, Magda, Mikołaj, Nemo,
 [![Marzec 2025](/plakaty/2025_03.png "Marzec 2025")](https://jazdow.pl/plakaty/2025_03.png)
 [![Luty 2025](/plakaty/2025_02.png "Luty 2025")](https://jazdow.pl/plakaty/2025_02.png)
 [![Grudzień 2024](/plakaty/2024_12.png "Grudzień 2024")](https://jazdow.pl/plakaty/2024_12.png)
-
-<style>
-#plakaty-zbiorcze ~ p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  margin-top: 1.5rem;
-}
-#plakaty-zbiorcze ~ p a img {
-  width: 140px;
-  height: 198px;
-  object-fit: cover;
-  border: 2px solid #e0d6f0;
-  border-radius: 4px;
-  transition: border-color 0.2s, box-shadow 0.2s;
-  margin-bottom: 0;
-  display: block;
-}
-#plakaty-zbiorcze ~ p a:hover img {
-  border-color: #6ba568;
-  box-shadow: 0 2px 10px rgba(82, 0, 204, 0.2);
-}
-</style>
