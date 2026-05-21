@@ -79,20 +79,6 @@ INNOWACYJNOŚĆ – Osiedle Jazdów to społeczna przestrzeń eksperymentu. Na J
 
 CIĄGŁOŚĆ – czyli dążenie do zachowania dziedzictwa, które przetrwało ponad 70 lat. Drewniane domki fińskie stopiły się z lokalną przyrodą, a energia społeczności mieszkańców Osiedla i całej Warszawy chcąc zachować ten stan rzeczy, nadała tej przestrzeni nową funkcję, którą należy pielęgnować.
 
-## Jak zorganizować wydarzenie w domku fińskim lub ogrodzie?
-Zanim do nas napiszesz, poznaj nasze wartości.
-Jeśli chcesz zorganizować wydarzenie na Osiedlu Jazdów napisz na adres: wolny@jazdow.pl
-Koniecznie dodaj:
-- kim jesteś?
-- czym się zajmujesz?
-- co chcesz organizować?
-- na ile osób?
-- jakiej przestrzeni potrzebujesz?
-- na jak długo? (daty, dni, godziny – czy są elastyczne)
-- czy możesz dorzucić grosik do utrzymania domku, z którego będziesz korzystać? (tu wyjaśniamy z czego utrzymuje się Jazdów)
-PS. Odpowiedź na Twoje pytanie zwykle otrzymasz w ciągu tygodnia.
-Uwaga: Rozpatrujemy tylko zapytania mailowe! Działamy społecznie i mimo starań nie nadążamy z odpowiedziami na pytania zadawane w innych komunikatorach i zapycha to naszą pamięć operacyjną, dlatego postanowiliśmy ograniczyć się jedynie do jednej formy kontaktu.
-
 ## Kto tu rządzi?
 Od momentu powstania inicjatywy Otwarty Jazdów dążymy do tego, aby różne jednostki miejskie podejmowały decyzje na temat Jazdowa razem z nami. Dlaczego? Bo troszczymy się o Jazdów i mamy go codziennie na oku. Wymarzona sytuacja jest taka, że wiemy kto za co odpowiada i bierzemy odpowiedzialność za swoją część. Nazywamy to modelem współzarządzania Osiedlem. Wciąż go szukamy. My, czyli kto? Organizacje działające na Osiedlu (z domkiem lub bez) i mieszkańcy. Spotykamy się w każdy pierwszy poniedziałek miesiąca na spotkaniu Otwartego Jazdowa - Partnerstwa dla Osiedla Jazdów. Dołączyć może każdy!
 Formalnie domki i ogrody znajdują się pod opieką Zakładu Gospodarowania Nieruchomościami w Dzielnicy Śródmieście. Dobrze rozumiemy się z Zarządem Zieleni m. st. Warszawy, który zarządza parkami: Ujazdowski, Jazdów i Tadeusza Mazowieckiego. Władztwo ma Zarząd Dzielnicy Śródmieście. Polityczny wpływ wywierają również władze m. st. Warszawy. Ulicą Jazdów zarządza Zarząd Terenów Publicznych. O planie miejscowym decyduje Biuro Architektury i Planowania Przestrzennego m. st. Warszawy. O ewidencji zabytków, w której są domki - stołeczny i mazowiecki konserwator zabytków. I tak dalej, od kilku dobrych lat.
