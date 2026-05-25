@@ -69,17 +69,53 @@ Opiekunki i Opiekunowie Czytelni: Hania, Klaudia, Karola, Magda, Mikołaj, Nemo,
 ## Plakaty zbiorcze
 
 [![Maj 2026](/plakaty/2026_05.png "Maj 2026")](https://jazdow.pl/plakaty/2026_05.png)
-[![Kwiecień 2026](/plakaty/2026_04.png "Kwiecień 2026")](https://jazdow.pl/plakaty/2026_04.png)
-[![Marzec 2026](/plakaty/2026_03.png "Marzec 2026")](https://jazdow.pl/plakaty/2026_03.png)
-[![Grudzień 2025](/plakaty/2025_12.png "Grudzień 2025")](https://jazdow.pl/plakaty/2025_12.png)
-[![Listopad 2025](/plakaty/2025_11.png "Listopad 2025")](https://jazdow.pl/plakaty/2025_11.png)
-[![Październik 2025](/plakaty/2025_10.png "Październik 2025")](https://jazdow.pl/plakaty/2025_10.png)
-[![Wrzesień 2025](/plakaty/2025_09.png "Wrzesień 2025")](https://jazdow.pl/plakaty/2025_09.png)
-[![Sierpień 2025](/plakaty/2025_08.png "Sierpień 2025")](https://jazdow.pl/plakaty/2025_08.png)
-[![Lipiec 2025](/plakaty/2025_07.png "Lipiec 2025")](https://jazdow.pl/plakaty/2025_07.png)
-[![Czerwiec 2025](/plakaty/2025_06.png "Czerwiec 2025")](https://jazdow.pl/plakaty/2025_06.png)
-[![Maj 2025](/plakaty/2025_05.png "Maj 2025")](https://jazdow.pl/plakaty/2025_05.png)
-[![Kwiecień 2025](/plakaty/2025_04.png "Kwiecień 2025")](https://jazdow.pl/plakaty/2025_04.png)
-[![Marzec 2025](/plakaty/2025_03.png "Marzec 2025")](https://jazdow.pl/plakaty/2025_03.png)
-[![Luty 2025](/plakaty/2025_02.png "Luty 2025")](https://jazdow.pl/plakaty/2025_02.png)
-[![Grudzień 2024](/plakaty/2024_12.png "Grudzień 2024")](https://jazdow.pl/plakaty/2024_12.png)
+
+[![Kwiecień 2026](/plakaty/2026_04-small.jpg "Kwiecień 2026")](https://jazdow.pl/plakaty/2026_04.png)
+
+[![Marzec 2026](/plakaty/2026_03-small.jpg "Marzec 2026")](https://jazdow.pl/plakaty/2026_03.png)
+
+[![Grudzień 2025](/plakaty/2025_12-small.jpg "Grudzień 2025")](https://jazdow.pl/plakaty/2025_12.png)
+
+[![Listopad 2025](/plakaty/2025_11-small.jpg "Listopad 2025")](https://jazdow.pl/plakaty/2025_11.png)
+
+[![Październik 2025](/plakaty/2025_10-small.jpg "Październik 2025")](https://jazdow.pl/plakaty/2025_10.png)
+
+[![Wrzesień 2025](/plakaty/2025_09-small.jpg "Wrzesień 2025")](https://jazdow.pl/plakaty/2025_09.png)
+
+[![Sierpień 2025](/plakaty/2025_08-small.jpg "Sierpień 2025")](https://jazdow.pl/plakaty/2025_08.png)
+
+[![Lipiec 2025](/plakaty/2025_07-small.jpg "Lipiec 2025")](https://jazdow.pl/plakaty/2025_07.png)
+
+[![Czerwiec 2025](/plakaty/2025_06-small.jpg "Czerwiec 2025")](https://jazdow.pl/plakaty/2025_06.png)
+
+[![Maj 2025](/plakaty/2025_05-small.jpg "Maj 2025")](https://jazdow.pl/plakaty/2025_05.png)
+
+[![Kwiecień 2025](/plakaty/2025_04-small.jpg "Kwiecień 2025")](https://jazdow.pl/plakaty/2025_04.png)
+
+[![Marzec 2025](/plakaty/2025_03-small.jpg "Marzec 2025")](https://jazdow.pl/plakaty/2025_03.png)
+
+[![Luty 2025](/plakaty/2025_02-small.jpg "Luty 2025")](https://jazdow.pl/plakaty/2025_02.png)
+
+[![Styczeń 2025](/plakaty/2025_01-small.jpg "Styczeń 2025")](https://jazdow.pl/plakaty/2025_01.png)
+
+[![Grudzień 2024](/plakaty/2024_12-small.jpg "Grudzień 2024")](https://jazdow.pl/plakaty/2024_12.png)
+
+[![Listopad 2024](/plakaty/2024_11-small.jpg "Listopad 2024")](https://jazdow.pl/plakaty/2024_11.png)
+
+[![Październik 2024](/plakaty/2024_10-small.jpg "Październik 2024")](https://jazdow.pl/plakaty/2024_10.png)
+
+[![Wrzesień 2024](/plakaty/2024_09-small.jpg "Wrzesień 2024")](https://jazdow.pl/plakaty/2024_09.png)
+
+[![Sierpień 2024](/plakaty/2024_08-small.jpg "Sierpień 2024")](https://jazdow.pl/plakaty/2024_08.png)
+
+[![Lipiec–Sierpień 2024](/plakaty/2024_07-08-small.jpg "Lipiec–Sierpień 2024")](https://jazdow.pl/plakaty/2024_07-08.png)
+
+[![Lipiec 2024](/plakaty/2024_07-small.jpg "Lipiec 2024")](https://jazdow.pl/plakaty/2024_07.png)
+
+[![Marzec 2024](/plakaty/2024_03-small.jpg "Marzec 2024")](https://jazdow.pl/plakaty/2024_03.png)
+
+[![Luty 2024](/plakaty/2024_02-small.jpg "Luty 2024")](https://jazdow.pl/plakaty/2024_02.png)
+
+[![Styczeń 2024](/plakaty/2024_01-small.jpg "Styczeń 2024")](https://jazdow.pl/plakaty/2024_01.png)
+
+[![Październik 2022](/plakaty/2022_10-small.jpg "Październik 2022")](https://jazdow.pl/plakaty/2022_10.png)
