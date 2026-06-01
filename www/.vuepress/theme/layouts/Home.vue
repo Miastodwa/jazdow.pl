@@ -5,8 +5,8 @@ main
 		oj-intro
 		.content
 			.row.a
-				a.banner-plakat(href="https://jazdow.pl/plakaty/2026_05.png" target="_blank" rel="noopener")
-					img(src="/plakaty/2026_05-small.png" alt="Aktualny plakat zbiorczy")
+				a.banner-plakat(href="https://jazdow.pl/plakaty/2026_06.png" target="_blank" rel="noopener")
+					img(src="/plakaty/2026_06-small.png" alt="Aktualny plakat zbiorczy")
 			.row.b
 				oj-card(v-for="(card, i) in $page.frontmatter.cards"
 				:key="i"
