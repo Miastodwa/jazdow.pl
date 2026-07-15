@@ -6,6 +6,11 @@ tldr: Tutaj znajdziesz sprawozdania merytoryczne i finansowe Partnerstwa Otwarty
   dziedzictwa i rozwoju Osiedla Jazdów.
 generic: true
 ---
+## 2025
+
+### [bilans i rachunek 2025](/sprawozdania/2025_finansowe.pdf)
+### [informacje uzupełniające 2025](/sprawozdania/2025_dodatkowe.pdf)
+
 ## 2024
 
 ### [bilans i rachunek 2024](/sprawozdania/2024_finansowe.pdf)
