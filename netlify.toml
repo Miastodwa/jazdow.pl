@@ -11,3 +11,24 @@
 	from = "/pl/pomoc"
 	to = "/wesprzyj"
 	status = 301
+
+# sprawozdania 2024 i 2025 rozbite na osobne pliki - stare adresy PDF-ow
+[[redirects]]
+	from = "/sprawozdania/2024_finansowe.pdf"
+	to = "/sprawozdania"
+	status = 301
+
+[[redirects]]
+	from = "/sprawozdania/2024_dodatkowe.pdf"
+	to = "/sprawozdania"
+	status = 301
+
+[[redirects]]
+	from = "/sprawozdania/2025_finansowe.pdf"
+	to = "/sprawozdania"
+	status = 301
+
+[[redirects]]
+	from = "/sprawozdania/2025_dodatkowe.pdf"
+	to = "/sprawozdania"
+	status = 301

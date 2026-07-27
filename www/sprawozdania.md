@@ -8,13 +8,19 @@ generic: true
 ---
 ## 2025
 
-### [bilans i rachunek 2025](/sprawozdania/2025_finansowe.pdf)
-### [informacje uzupełniające 2025](/sprawozdania/2025_dodatkowe.pdf)
+### [sprawozdanie merytoryczne 2025](/sprawozdania/2025_sprawozdanie_merytoryczne_43147.pdf)
+### [wprowadzenie do sprawozdania finansowego 2025](/sprawozdania/2025_wprowadzenie_do_sprawozdania_finansowego_81481.pdf)
+### [bilans 2025](/sprawozdania/2025_bilans_81481.pdf)
+### [rachunek zysków i strat 2025](/sprawozdania/2025_rachunek_zyskow_i_strat_81480.pdf)
+### [informacja dodatkowa 2025](/sprawozdania/2025_informacja_dodatkowa_81482.pdf)
 
 ## 2024
 
-### [bilans i rachunek 2024](/sprawozdania/2024_finansowe.pdf)
-### [informacje uzupełniające 2024](/sprawozdania/2024_dodatkowe.pdf)
+### [sprawozdanie merytoryczne 2024](/sprawozdania/2024_sprawozdanie_merytoryczne_36087.pdf)
+### [wprowadzenie do sprawozdania finansowego 2024](/sprawozdania/2024_wprowadzenie_do_sprawozdania_finansowego_70470.pdf)
+### [bilans 2024](/sprawozdania/2024_bilans_70470.pdf)
+### [rachunek zysków i strat 2024](/sprawozdania/2024_rachunek_zyskow_i_strat_70469.pdf)
+### [informacja dodatkowa 2024](/sprawozdania/2024_informacja_dodatkowa_70471.pdf)
 
 ## 2023
 
