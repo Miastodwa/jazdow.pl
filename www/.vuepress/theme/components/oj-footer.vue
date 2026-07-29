@@ -19,7 +19,7 @@
 import markdownIt from 'markdown-it'
 const md = markdownIt({breaks: true})
 
-const socialChars = { facebook: 'b', instagram: 'd', youtube: 'p', linkedin: 'o' }
+const socialChars = { facebook: 'b', instagram: 'd', youtube: 'p', linkedin: 'o', x: 'x' }
 
 export default {
 	name: 'oj-footer',
