@@ -2,6 +2,10 @@
 	command = "yarn build"
 	publish = "www/.vuepress/dist"
 
+# wersja Node-a jest tez w .nvmrc; tu trzymamy ja jawnie, zeby build byl przewidywalny
+[build.environment]
+	NODE_VERSION = "20"
+
 [[redirects]]
 	from = "/wesparcie"
 	to = "/wesprzyj"
