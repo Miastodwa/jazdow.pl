@@ -17,6 +17,10 @@ jobs:
       contents: read
       security-events: write
 
+    env:
+      # bez tego ekstraktor pomija komponenty .vue i widzi tylko dwa pliki .js
+      LGTM_INDEX_FILETYPES: ".vue:HTML"
+
     strategy:
       fail-fast: false
       matrix:
@@ -30,6 +34,7 @@ jobs:
         uses: github/codeql-action/init@v3
         with:
           languages: ${{ matrix.language }}
+          config-file: ./.github/codeql/codeql-config.yml
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3

@@ -1,0 +1,13 @@
+name: "CodeQL – jazdow.pl"
+
+# Caly kod JavaScript i wszystkie komponenty Vue tego projektu leza w
+# www/.vuepress, czyli w katalogu zaczynajacym sie od kropki. Ekstraktor
+# CodeQL domyslnie pomija katalogi ukryte, wiec bez jawnego wskazania sciezki
+# nie znajduje ani jednego pliku zrodlowego i konczy sie bledem
+# "CodeQL could not process any code written in JavaScript/TypeScript".
+paths:
+  - www/.vuepress
+
+paths-ignore:
+  - www/.vuepress/dist
+  - node_modules
