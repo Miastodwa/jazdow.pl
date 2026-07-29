@@ -1,5 +1,8 @@
 const themeConfig = require('./themeConfig')
 
+const HOSTNAME = 'https://jazdow.pl'
+const DEFAULT_IMAGE = '/images/banner.jpg'
+
 module.exports = {
 	title: 'Wolny Jazdów',
 
@@ -42,7 +45,11 @@ module.exports = {
 
 	plugins: {
 		'sitemap': {
-			hostname: 'https://jazdow.pl'
+			hostname: HOSTNAME
+		},
+		[require.resolve('./plugins/og-meta')]: {
+			hostname: HOSTNAME,
+			image: DEFAULT_IMAGE
 		}
 	}
 }
