@@ -7,7 +7,7 @@
 				#subtitles
 					.desc(v-if="event.text" v-html="render(event.text)")
 					.image(v-if="event.photo")
-						img(:src="event.photo.image", :alt="event.title")
+						img(:src="event.photo.image", :alt="event.title", loading="lazy")
 </template>
 
 

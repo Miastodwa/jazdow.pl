@@ -10,7 +10,10 @@
 				h4.address-title {{$site.themeConfig.address[lang].title}}
 				.address-details(v-html="render(this.$site.themeConfig.address[lang].details)")
 		.social
-			a.social-icon(v-for="item in $site.themeConfig.social", :href="item.href", :title="item.type", target="_blank", rel="noopener") {{socialChar(item.type)}}
+			//- litera to glif z fontu ikon; bez aria-hidden czytniki ekranu
+			//- odczytuja ja doslownie ("b", "d", "o"), stad osobna etykieta
+			a.social-icon(v-for="item in $site.themeConfig.social", :href="item.href", :title="socialLabel(item.type)", :aria-label="socialLabel(item.type)", target="_blank", rel="noopener")
+				span(aria-hidden="true") {{socialChar(item.type)}}
 		.links
 			router-link(v-for="link in $site.themeConfig.links[lang]" :key="link.to" :to="link.to") {{link.title}}
 </template>
@@ -20,6 +23,7 @@ import markdownIt from 'markdown-it'
 const md = markdownIt({breaks: true})
 
 const socialChars = { facebook: 'b', instagram: 'd', youtube: 'p', linkedin: 'o', x: 'x' }
+const socialNames = { facebook: 'Facebook', instagram: 'Instagram', youtube: 'YouTube', linkedin: 'LinkedIn', x: 'X' }
 
 export default {
 	name: 'oj-footer',
@@ -31,7 +35,8 @@ export default {
 	},
 	methods: {
 		render(str){ return md.render(str) },
-		socialChar(type){ return socialChars[type] || type }
+		socialChar(type){ return socialChars[type] || type },
+		socialLabel(type){ return socialNames[type] || type }
 	}
 }
 </script>

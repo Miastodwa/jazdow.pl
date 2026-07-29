@@ -3,7 +3,9 @@
 		article.content
 			section.photos
 				.photo(v-for="(image, i) in $page.frontmatter.images", :class="'p'+i", :style="styles['shift'+i]")
-					img(:src="image")
+					//- zdjecia sa czysto ilustracyjne i nie maja opisow we frontmatterze;
+					//- puste alt sprawia, ze czytniki ekranu je pomijaja zamiast czytac sciezke
+					img(:src="image", alt="", loading="lazy")
 			section.text
 				h1.title {{$page.frontmatter.intro}}
 				oj-expander

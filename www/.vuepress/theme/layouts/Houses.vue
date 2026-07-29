@@ -10,7 +10,7 @@
 				section#main
 					#image-gallery(v-if="$page.frontmatter.images")
 						oj-slider(captions, controls, counter, loop)
-							img(v-for="image in $page.frontmatter.images", :src="image.src", :caption="image.caption")
+							img(v-for="image in $page.frontmatter.images", :src="image.src", :caption="image.caption", :alt="image.caption", loading="lazy")
 					#content
 						Content.house-body
 

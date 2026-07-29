@@ -40,6 +40,16 @@ module.exports = {
 				linkify: true
 			})
 			md.use(require('markdown-it-footnote'))
+
+			// obrazki z tresci sa praktycznie zawsze ponizej pierwszego ekranu;
+			// przegladarka i tak laduje od razu te, ktore sa widoczne
+			const renderImage = md.renderer.rules.image
+			md.renderer.rules.image = (tokens, idx, options, env, self) => {
+				tokens[idx].attrSet('loading', 'lazy')
+				return renderImage
+					? renderImage(tokens, idx, options, env, self)
+					: self.renderToken(tokens, idx, options)
+			}
 		}
 	},
 
