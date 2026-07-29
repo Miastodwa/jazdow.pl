@@ -4,7 +4,9 @@ fontface($font-family, $path, $weight = 400, $fontstyle = normal)
 		font-family $font-family
 		font-weight $weight
 		font-style $fontstyle
-		src url($path+'.woff') format('woff'), url($path+'.ttf') format('truetype'), url($path+'.eot?#iefix') format('embedded-opentype')
+		font-display swap
+		// woff2 obsluguja wszystkie przegladarki od 2016, woff zostaje jako zapas
+		src url($path+'.woff2') format('woff2'), url($path+'.woff') format('woff')
 
 grid-guide(columns = 3, gut = 2rem, wide = 1200px, pad = 2rem, cc = rgba(black, .05), gc = transparent)
 	&:after
