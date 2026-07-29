@@ -5,7 +5,6 @@
 		#events-view
 			.intro
 				h1.title {{$page.frontmatter.title}}
-			fb-events
 			.intro
 				Content#tldr
 			.calendar-illustration
@@ -14,7 +13,6 @@
 
 
 <script>
-import FbEvents from '../components/fb-events'
 import OjMenu from '../components/oj-menu'
 import OjFooter from '../components/oj-footer'
 
@@ -23,7 +21,7 @@ export default {
 	name: "article-view",
 
 	components: {
-		FbEvents, OjMenu, OjFooter
+		OjMenu, OjFooter
 	}
 }
 </script>

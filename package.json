@@ -1,23 +1,20 @@
 {
+  "name": "jazdow.pl",
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
-    "dev": "vuepress dev www",
-    "build": "vuepress build www"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "delay": "^4.4.0",
-    "moment": "^2.27.0",
-    "stickybits": "^3.7.7",
-    "vue-in-viewport-mixin": "^2.0.0"
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev www",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build www"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "lost": "^8.3.1",
-    "postcss-preset-env": "^6.7.0",
-    "pug": "^3.0.0",
-    "pug-plain-loader": "^1.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "postcss-preset-env": "^6.7.2",
+    "pug": "^3.0.4",
+    "pug-plain-loader": "^1.1.0",
     "rupture": "^0.7.1",
-    "vue-markdown": "^2.2.4",
-    "vuepress": "^1.5.2",
+    "vuepress": "^1.9.10",
     "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
