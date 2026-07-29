@@ -10,4 +10,7 @@ All templates are located in [www/.vuepress](www/.vuepress) folder.
 
 Vue components are written using `Pug` and `stylus`
 
-The markdown content can be edited using [Netlify CMS](https://www.netlifycms.org/)
+Content is edited directly in the Markdown files — through the GitHub web
+interface or a pull request. The Netlify CMS panel that used to live at
+`/admin` was removed: it pointed at a repository that no longer exists and
+depended on Netlify Identity, which the site is moving away from.
