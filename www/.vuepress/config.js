@@ -1,7 +1,7 @@
 const themeConfig = require('./themeConfig')
 
 const HOSTNAME = 'https://jazdow.pl'
-const DEFAULT_IMAGE = '/images/banner.jpg'
+const DEFAULT_IMAGE = '/images/logo-wj.png'
 
 module.exports = {
 	title: 'Wolny Jazdów',
