@@ -19,7 +19,8 @@ module.exports = {
 	},
 
 	head: [
-		['link', { rel: 'icon', href: '/favicon.ico' }],
+		['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
+		['link', { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' }],
 		['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
 		['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
 		['meta', { name: 'theme-color', content: '#6ba568' }],
