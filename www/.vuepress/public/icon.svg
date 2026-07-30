@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Wolny Jazdów">
+  <rect width="512" height="512" fill="#6ba568"/>
+  <g fill="#ffffff">
+    <polygon points="160,188 256,132 352,188"/>
+    <polygon points="160,284 256,228 352,284"/>
+    <polygon points="160,380 256,324 352,380"/>
+  </g>
+</svg>
