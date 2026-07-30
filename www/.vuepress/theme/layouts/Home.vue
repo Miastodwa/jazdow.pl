@@ -30,19 +30,7 @@ export default {
 
 	layout: 'home',
 
-	components: {OjMenu, OjIntro, OjCard, OjFaqCard, OjEventsMini, OjFooter},
-
-	mounted(){
-		if (window.netlifyIdentity) {
-			window.netlifyIdentity.on("init", user => {
-				if (!user) {
-					window.netlifyIdentity.on("login", () => {
-						document.location.href = "/admin/"
-					})
-				}
-			})
-		}
-	}
+	components: {OjMenu, OjIntro, OjCard, OjFaqCard, OjEventsMini, OjFooter}
 
 }
 </script>
