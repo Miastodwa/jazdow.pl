@@ -21,3 +21,51 @@ body
 	// grid-guide(12, $gutter, $grid-width, $gutter)
 *
 	box-sizing border-box
+
+// ! DOSTEPNOSC (A07, A09 z AUDIT.md)
+
+// Widoczny pierscien focusu z klawiatury
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible
+	outline 3px solid $oj-violet
+	outline-offset 2px
+	border-radius 2px
+
+// Tekst tylko dla czytnikow ekranu
+.sr-only
+	position absolute
+	width 1px
+	height 1px
+	padding 0
+	margin -1px
+	overflow hidden
+	clip rect(0 0 0 0)
+	white-space nowrap
+	border 0
+
+// Link "przejdz do tresci" — widoczny dopiero po fokusie z klawiatury
+.skip-link
+	position absolute
+	left 1rem
+	top -3rem
+	z-index 10000
+	padding .5rem 1rem
+	background $oj-violet
+	color white
+	text-decoration none
+	border-radius 0 0 4px 4px
+	transition top .15s ease
+	&:focus
+		top 0
+
+// Redukcja ruchu (A08)
+@media (prefers-reduced-motion: reduce)
+	*
+		animation-duration .001ms !important
+		animation-iteration-count 1 !important
+		transition-duration .001ms !important
+		scroll-behavior auto !important

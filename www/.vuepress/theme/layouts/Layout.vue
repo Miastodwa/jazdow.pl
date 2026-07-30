@@ -1,7 +1,7 @@
 <template lang="pug">
 .default
 	oj-menu
-	main
+	main#main-content(tabindex="-1")
 		.page-view
 			.intro
 				h1.title {{$page.frontmatter.title}}

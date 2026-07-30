@@ -1,10 +1,11 @@
 <template lang="pug">
-	.oj-menu
-		a.icon(@click="toggleMenu()", :class="{on: mobileMenu}") menu
-		nav
+	header.oj-menu
+		a.skip-link(href="#main-content") {{skipLabel}}
+		button.icon(type="button", ref="toggle", @click="toggleMenu()", :class="{on: mobileMenu}", :aria-expanded="mobileMenu ? 'true' : 'false'", aria-controls="main-nav", :aria-label="mobileMenu ? closeLabel : menuLabel") menu
+		nav(:aria-label="navLabel")
 			router-link.home(:to="$localePath", :title="$siteTitle")
 				img.logo(:src="logo", :alt="$siteTitle")
-			.items(:class="{on: mobileMenu}")
+			.items#main-nav(:class="{on: mobileMenu}")
 				router-link(v-for="item in $site.themeConfig.mainMenu[lang]", :key="item.href", :to="item.href") {{item.title}}
 				router-link.lang-switch(:to="langSwitch.to") {{langSwitch.name}}
 </template>
@@ -23,6 +24,11 @@ export default {
 	computed: {
 		lang(){ return this.$lang.substring(0, 2) },
 		logo(){ return require('../assets/ui/logo-wj.png') },
+		isEn(){ return this.lang === 'en' },
+		skipLabel(){ return this.isEn ? 'Skip to content' : 'Przejdź do treści' },
+		menuLabel(){ return this.isEn ? 'Open menu' : 'Otwórz menu' },
+		closeLabel(){ return this.isEn ? 'Close menu' : 'Zamknij menu' },
+		navLabel(){ return this.isEn ? 'Main' : 'Główne' },
 		langSwitch(){
 			return {
 				to: this.$lang === 'pl-PL' ? '/en/' : '/',
@@ -37,14 +43,22 @@ export default {
 		},
 		closeMenu(){
 			this.mobileMenu = false
+		},
+		onKeydown(e){
+			if (e.key === 'Escape' && this.mobileMenu) {
+				this.closeMenu()
+				this.$refs.toggle && this.$refs.toggle.focus()
+			}
 		}
 	},
 	watch: {
 		mobileMenu(next){
 			if (next) {
-				return document.body.classList.add('menu-on')
+				document.body.classList.add('menu-on')
+				document.addEventListener('keydown', this.onKeydown)
 			} else {
-				return document.body.classList.remove('menu-on')
+				document.body.classList.remove('menu-on')
+				document.removeEventListener('keydown', this.onKeydown)
 			}
 		},
 		$route(){
@@ -53,6 +67,7 @@ export default {
 	},
 	beforeDestroy(){
 		document.body.classList.remove('menu-on')
+		document.removeEventListener('keydown', this.onKeydown)
 	}
 }
 </script>
@@ -92,12 +107,15 @@ nav
 	a
 		text-decoration: none
 
-a.icon
+button.icon
 	display none
 	position fixed
 	top .5rem
 	right 1rem
 	z-index 9999
+	background transparent
+	border none
+	font-family $Lemur
 	color $oj-green-free
 	text-transform uppercase
 	font-size 1rem
