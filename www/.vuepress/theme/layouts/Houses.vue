@@ -1,7 +1,7 @@
 <template lang="pug">
 .default
 	oj-menu
-	main
+	main#main-content(tabindex="-1")
 		#view-house
 			header#header
 				h1#org-name {{$page.frontmatter.title}}
@@ -10,7 +10,7 @@
 				section#main
 					#image-gallery(v-if="$page.frontmatter.images")
 						oj-slider(captions, controls, counter, loop)
-							img(v-for="image in $page.frontmatter.images", :src="image.src", :caption="image.caption")
+							img(v-for="image in $page.frontmatter.images", :src="image.src", :caption="image.caption", :alt="image.caption")
 					#content
 						Content.house-body
 

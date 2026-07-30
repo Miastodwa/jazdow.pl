@@ -3,9 +3,10 @@
 		article.content
 			section.photos
 				.photo(v-for="(image, i) in $page.frontmatter.images", :class="'p'+i", :style="styles['shift'+i]")
-					img(:src="image")
+					img(:src="image", alt="")
 			section.text
-				h1.title {{$page.frontmatter.intro}}
+				h1.sr-only Wolny Jazdów
+				p.hero-lead {{$page.frontmatter.intro}}
 				oj-expander
 					Content.extended
 </template>
@@ -40,7 +41,11 @@ export default {
 	},
 
 	mounted() {
-		window.addEventListener('scroll', this.scrollEvents)
+		// Paralaksa tylko gdy uzytkownik nie prosi o ograniczenie ruchu (A08)
+		const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+		if (!reduce) {
+			window.addEventListener('scroll', this.scrollEvents)
+		}
 	},
 
 	destroyed(){
@@ -86,6 +91,13 @@ export default {
 	+below(700px)
 		max-width 40rem
 		margin 6rem auto 0
+	.hero-lead
+		font-family $extra_font_family
+		font-size 1.8rem
+		font-weight 700
+		line-height 1.4em
+		letter-spacing .02em
+		margin-bottom 1em
 .extended
 	display block
 	hyphens auto
