@@ -265,6 +265,12 @@
 <style scoped lang='stylus'>
 @import '../styles/component'
 $oj-map-dark = $oj-green-free
+// Kolory mapy ogrodniczej — dekoracyjne, celowo jasniejsze niz zielen tekstu
+// ($oj-green-free jest teraz przyciemniona pod kontrast, A02). Tokeny zamiast
+// rozsypanych literalow (punkt 9 sesji 2 / U02 z AUDIT.md).
+$oj-map-green = #6ba568
+$oj-map-yellow = #f7e98b
+$oj-map-yellow-hover = #ffe954
 
 #oj-map
 	display block
@@ -326,19 +332,19 @@ $oj-map-dark = $oj-green-free
 	padding 0 1rem
 svg
 	.house
-		stroke #6ba568
+		stroke $oj-map-green
 		stroke-linejoin bevel
 		stroke-width 0.5px
 		&.open
 			cursor pointer
-			fill #f7e98b
+			fill $oj-map-yellow
 			&:hover
-				fill #ffe954
+				fill $oj-map-yellow-hover
 		&.closed
 			fill white
 
 	.house-number, text
-		fill #6ba568
+		fill $oj-map-green
 		font-family SC, Monaco, monospace
 		font-size 13px
 		font-weight 300
