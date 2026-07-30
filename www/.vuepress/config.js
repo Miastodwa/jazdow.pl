@@ -37,6 +37,17 @@ module.exports = {
 				linkify: true
 			})
 			md.use(require('markdown-it-footnote'))
+
+			// Obrazki z tresci sa niemal zawsze ponizej pierwszego ekranu — lazy
+			// oszczedza transfer, decoding=async nie blokuje watku (P04 z AUDIT.md).
+			const renderImage = md.renderer.rules.image
+			md.renderer.rules.image = (tokens, idx, options, env, self) => {
+				tokens[idx].attrSet('loading', 'lazy')
+				tokens[idx].attrSet('decoding', 'async')
+				return renderImage
+					? renderImage(tokens, idx, options, env, self)
+					: self.renderToken(tokens, idx, options)
+			}
 		}
 	},
 
