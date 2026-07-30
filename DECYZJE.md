@@ -72,13 +72,14 @@ Rozważano usunięcie Netlify Identity + CMS (P06 + R08). **Decyzja: panel `/adm
 
 **Sesja nie zmieniła żadnego pliku treści, URL-a ani konfiguracji.** Wynik: [`ARCHITEKTURA.md`](ARCHITEKTURA.md) — dokument do akceptacji przed sesją 4.
 
-**⚠️ Brak danych z Google Search Console.** Prosiłem o dostęp na początku sesji, nie otrzymałem. Rekomendacje podziału/scalania stron opierają się wyłącznie na strukturze treści; trzy z nich (`/wspolpraca/`, `/opp/`, kolejność menu) oznaczono w dokumencie jako wymagające weryfikacji danymi.
+**⚠️ Google Search Console nie jest zainstalowane na tej stronie** (potwierdzone przez właściciela). To nie jest kwestia braku dostępu — dane o ruchu **nie istnieją i nie powstaną**, dopóki serwis nie zostanie zweryfikowany. Rekomendacje podziału/scalania stron opierają się wyłącznie na strukturze treści; trzy z nich (`/wspolpraca/`, `/opp/`, kolejność menu) oznaczono jako niemożliwe do zweryfikowania bez danych. Odnotowane w dokumencie jako **znalezisko A6** wraz z instrukcją wdrożenia (zasób typu Domena + weryfikacja rekordem TXT w DNS, żeby przetrwała ewentualną migrację hostingu w sesji 7).
 
 **Cztery znaleziska ważniejsze niż jakikolwiek podział treści** (opis i dowody w `ARCHITEKTURA.md §0`):
 - **A1 🔴** — wszystkie **16 linków do domków na mapie daje 404** (`/3-6/` zamiast `/domki/3-6/`). Mapa jest jedyną drogą do domków, więc cała sekcja (19 stron) jest praktycznie niedostępna. Sesja 1 tego nie wykryła, bo skan obejmował tylko linki markdown, nie pola `link:` we frontmatterze.
 - **A2 🔴** — **10 plików jest niewidocznych w CMS**, w tym `dialog.md` (pierwsza pozycja menu) i `wspolpraca.md`. Przyczyna: `filter: {field: generic}` w kolekcji „PL Pages" + pliki poza kolekcjami (`projekty/`, `baza-wiedzy/`).
 - **A3** — **9 z 10 angielskich stron domków to kopie polskich bajt w bajt** (nieprzetłumaczone): duplicate content i polski tekst pod angielskim adresem.
 - **A4** — nawigacja nie odzwierciedla serwisu: 9 pozycji poza nawigacją globalną, a `pytania`/`historia`/`wspolzarzadzanie` dostępne **wyłącznie** z kafelków strony głównej.
+- **A6** — **serwis nie jest zweryfikowany w Google Search Console.** Brak jakichkolwiek danych o zapytaniach i indeksacji; nie da się też sprawdzić, czy Google poprawnie odczytuje `sitemap.xml`, `canonical` i dane strukturalne **dodane w sesji 2** — czyli nie zmierzymy efektu tamtej pracy. Do zrobienia jako **etap 0** sesji 4 (bez zmian w kodzie), bo dane zbierają się dopiero od momentu weryfikacji.
 
 **Główne rekomendacje:**
 - Struktura katalogów: **najpierw język, potem typ** (`www/pl/`, `www/en/`) — decydujący argument to możliwość usunięcia `filter: generic`, czyli likwidacja przyczyny A2. Kluczowy fakt: 47/49 plików ma `permalink`, więc **pliki można przenosić bez zmiany URL-i** (wymaga testu pilotażowego).

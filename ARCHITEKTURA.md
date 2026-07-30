@@ -4,7 +4,7 @@
 >
 > Data: 2026-07-30. Podstawa: `master` @ `4784c5b`, 49 plików Markdown, produkcja `https://jazdow.pl`.
 >
-> **⚠️ Brak danych o ruchu.** Poprosiłem o dostęp do Google Search Console na początku sesji — nie otrzymałem go. **Wszystkie rekomendacje w §3 (podział/scalanie stron) opierają się wyłącznie na strukturze treści i architekturze informacji, nie na tym, czego ludzie faktycznie szukają.** Trzy rekomendacje oznaczone 🔍 powinny zostać zweryfikowane danymi przed wdrożeniem.
+> **⚠️ Brak danych o ruchu — Google Search Console nie jest zainstalowane na tej stronie** (potwierdzone przez właściciela serwisu). Nie chodzi o brak dostępu: takie dane po prostu nie istnieją i nie powstaną, dopóki serwis nie zostanie zweryfikowany w GSC. **Wszystkie rekomendacje w §3 (podział/scalanie stron) opierają się wyłącznie na strukturze treści i architekturze informacji, nie na tym, czego ludzie faktycznie szukają.** Trzy rekomendacje oznaczone 🔍 pozostaną nieweryfikowalne do czasu zebrania danych. Patrz **§0 / A6** — to samo w sobie jest znaleziskiem.
 
 ---
 
@@ -19,8 +19,19 @@ Podczas rozpoznania wyszły cztery problemy poważniejsze niż jakikolwiek podzi
 | **A3** | **9 z 10 angielskich stron domków to kopie polskich, bajt w bajt** — nieprzetłumaczone. Dla Google to duplicate content, dla czytelnika EN — polski tekst pod angielskim adresem. | 9 z 10 stron EN | `diff www/domki/3-6.md www/en/houses/3-6.md` → identyczne (także 3-8, 3-9, 5a-1, 7-14, 10-8) |
 | **A4** | **Nawigacja nie odzwierciedla serwisu.** `mapa`, `wydarzenia`, `opp`, `archiwum`, `archiwum-dolacz`, `festiwal`, `plakaty`, 19 domków — nie ma ich w menu ani stopce. `pytania`, `historia`, `współzarządzanie` są **wyłącznie** na kafelkach strony głównej: kto trafi z Google na podstronę, nie dotrze do nich nigdy. | 9 pozycji poza nawigacją globalną | graf linków (§3.0) |
 | **A5** | 7 domków linkowanych z mapy **nie ma żadnej strony** (`10-2`, `10-5`, `3-18`, `3-5`, `5a-4`, `7-30`, `8-1`) — te linki byłyby 404 nawet po naprawie prefiksu z A1. | 7 z 16 | `www/mapa.md` vs `ls www/domki/` |
+| **A6** | **Serwis nie jest zweryfikowany w Google Search Console.** Nie ma żadnych danych o zapytaniach, indeksacji ani błędach crawlowania — i nie da się sprawdzić, czy Google poprawnie odczytuje `sitemap.xml`, `canonical`, `hreflang` i dane strukturalne dodane w sesji 2. Każda decyzja o treści i SEO jest podejmowana na ślepo. | cały serwis | potwierdzone przez właściciela |
 
-**Wniosek dla sesji 4:** naprawa A1 (jedna linia × 16) i A2 (dopisanie `generic: true` + poszerzenie kolekcji CMS) daje nieporównanie więcej niż jakikolwiek podział treści. Proponuję zrobić je **przed** restrukturyzacją.
+**Wniosek dla sesji 4:** naprawa A1 (jedna linia × 16) i A2 (dopisanie `generic: true` + poszerzenie kolekcji CMS) daje nieporównanie więcej niż jakikolwiek podział treści. Proponuję zrobić je **przed** restrukturyzacją. Równolegle — A6, bo **dane zbierają się dopiero od momentu weryfikacji**, więc każdy tydzień zwłoki to bezpowrotnie utracone dane porównawcze do zmian z sesji 2.
+
+### Jak domknąć A6 (kilkanaście minut, bez zmian w kodzie)
+
+1. Wejść na [search.google.com/search-console](https://search.google.com/search-console) i dodać zasób typu **Domena** (`jazdow.pl`) — obejmie apex, `www` i wszystkie podścieżki naraz.
+2. Zweryfikować **rekordem TXT w DNS** — to metoda odporna na zmianę hostingu, więc przetrwa ewentualne przejście z Netlify na Cloudflare (sesja 7). Alternatywa (`<meta>` w `head`) wymagałaby zmiany w kodzie i psuła się przy migracji.
+3. Zgłosić sitemapę: `https://jazdow.pl/sitemap.xml` (już istnieje i jest poprawna — 50 adresów).
+4. Sprawdzić w raporcie **Strony**, czy nie ma niespodzianek — szczególnie czy 19 stron domków w ogóle jest zaindeksowanych (przy A1 są odcięte od nawigacji, więc mogą nie być).
+5. Po ~4 tygodniach wrócić do rekomendacji 🔍 z §3 i zweryfikować je danymi.
+
+> Warto też rozważyć **Bing Webmaster Tools** (import jednym kliknięciem z GSC) — dla organizacji pozarządowej to darmowe, dodatkowe źródło danych o zapytaniach.
 
 ---
 
@@ -625,7 +636,7 @@ Do akceptacji pozycja po pozycji. **Nie zmieniam sensu żadnego zdania** — pro
 
 Świadome luki — wymagają Twojej decyzji albo danych:
 
-1. **Brak danych z Search Console** — rekomendacje 🔍 (`/wspolpraca/`, `/opp/`, kolejność menu) opierają się na strukturze, nie na zachowaniu użytkowników. Strona, której nikt nie znajduje, może potrzebować lepszego tytułu, a nie podziału.
+1. **Search Console nie jest zainstalowane** (A6) — rekomendacje 🔍 (`/wspolpraca/`, `/opp/`, kolejność menu) opierają się na strukturze, nie na zachowaniu użytkowników. Strona, której nikt nie znajduje, może potrzebować lepszego tytułu, a nie podziału. **Te trzy pozycje pozostaną nierozstrzygnięte, dopóki nie zbierze się kilka tygodni danych** — instrukcja w §0/A6. Jeśli nie chcesz czekać, można wdrożyć je na podstawie samej struktury i przyjąć ryzyko, że część pracy okaże się niepotrzebna.
 2. **A5 — 7 domków bez stron**: dopisać strony czy usunąć linki z mapy? To decyzja treściowa (czy te domki nadal działają?).
 3. **A3 — angielskie domki**: przetłumaczyć (praca redakcyjna) czy usunąć i przekierować?
 4. **Archiwum plakatów** — 4 opcje w §3.4, decyzja należy do Ciebie.
@@ -640,13 +651,14 @@ Od najwyższego stosunku wartości do ryzyka:
 
 | Etap | Co | Ryzyko | Zależności |
 |---|---|---|---|
+| **0** | **A6** — weryfikacja serwisu w Search Console + zgłoszenie sitemapy (§0/A6) | zerowe (bez zmian w kodzie) | **zrobić jak najszybciej** — dane liczą się dopiero od weryfikacji |
 | **1** | **A1** — naprawa 16 linków z mapy (`link: /domki/…`) + `_redirects` | znikome | — |
 | **2** | **A2** — udostępnienie 10 plików w CMS (`generic: true` + kolekcje) | znikome | — |
 | **3** | Stopka: końcowy slash w 6 linkach (koniec zbędnych 301) | znikome | — |
 | **4** | Redakcja: R6, R8, R13, R14 (duplikaty, nagłówki, literówka) | niskie | akceptacja §6 |
 | **5** | Nowa nawigacja (§4) + pasek aktualności | średnie | decyzja: 2 poziomy czy płasko |
 | **6** | Wydzielenie `/plakaty/` z `/co-robimy/` | średnie | decyzja z §3.4 |
-| **7** | Podział `/wspolpraca/` + przeniesienie koalicji do `/partnerstwo/` | średnie | 🔍 dane GSC |
+| **7** | Podział `/wspolpraca/` + przeniesienie koalicji do `/partnerstwo/` | średnie | 🔍 wymaga danych z etapu 0 (~4 tyg.) **albo** świadomej decyzji bez nich |
 | **8** | `translationKey` + `hreflang` (dług z sesji 2) | średnie | decyzja A3 |
 | **9** | Restrukturyzacja katalogów + przebudowa CMS | **wysokie** | test pilotażowy §1.7 |
 | **10** | Sprzątanie assetów (12 MB) i archiwum plakatów | niskie | decyzja z §3.4 |
