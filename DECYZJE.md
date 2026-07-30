@@ -54,3 +54,14 @@ Zrealizowano poprawki niezależne od struktury treści (URL-e, podział stron, t
 **⚠️ Do zrobienia ręcznie:**
 - **Merge PR-ów** #186–#194 (kolejność dowolna — brak konfliktów; sugerowana: a11y i SEO najpierw). **Nagłówki #190 przetestować na deploy preview pod kątem logowania do CMS/Identity** przed mergem.
 - **Przywrócić zmianę KRS**: `git checkout zmiany-wizualne && git stash pop` (stash: „KRS link WIP"). Nie było jej w żadnym PR-ze Sesji 2.
+
+### Aktualizacja (2026-07-30, po Sesji 2): decyzja o panelu CMS
+
+Rozważano usunięcie Netlify Identity + CMS (P06 + R08). **Decyzja: panel `/admin` ZOSTAJE** i został zaktualizowany.
+
+- **#198** (`fix/cms-panel-decap`): `netlify-cms@^2.0.0` (zarchiwizowany, nieprzypięty) → **Decap CMS 3.15.1** — utrzymywany następca, zapięty na sztywno + Subresource Integrity (hash `sha384` zweryfikowany lokalnie względem pliku z unpkg). Naprawiony `backend.repo`: `Miastodwa/jazdow.pl` → `Jazdow/jazdow.pl` (**R08 zrobione**). README → Decap CMS. Backend (git-gateway + Netlify Identity) bez zmian.
+- **#190** (`chore/security-headers`): chwilowo usunięto z CSP obsługę `/admin` i `identity.netlify.com` (na wcześniejszą prośbę), następnie **cofnięto (revert)** — panel zostaje, więc CSP znów w pełni go wspiera.
+- **#197** (`chore/remove-netlify-cms`): usunięcie panelu — **zostaje OTWARTE jako alternatywa**, parked. Wyklucza się z #198; nie mergować dopóki panel jest używany.
+- **P06** (Identity site-wide) — **świadomie zostaje**: widget potrzebny do logowania. Opcjonalna optymalizacja (ładowanie tylko gdy potrzebny) bez usuwania panelu — na później.
+
+**⚠️ Test na deploy preview przed mergem #198+#190:** `/admin/` — logowanie (Netlify Identity) + zapis (Decap + git-gateway + editorial workflow).

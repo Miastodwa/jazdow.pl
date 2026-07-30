@@ -228,7 +228,7 @@ Legenda statusu: ✅ zamknięte · 🟡 częściowe · ⏭️ odłożone (z powo
 | P01 fonty (display/formaty) | 🟡 | #192 — `font-display: swap` + tylko woff, usunięcie eot/svg/ttf. **woff2 + subsetting** ⏭️ (lokalny npm cache blokuje enkoder) |
 | P04 lazy obrazy | 🟡 | #193 — lazy dla obrazów z treści; `oj-card` = CSS background (poza zakresem); **srcset/WebP** ⏭️ |
 | P05 plakaty | 🟡 | #187 — `width/height` plakatu (CLS); konwersja PNG→WebP + srcset ⏭️ |
-| P06 Netlify Identity na każdej stronie | ⏭️ | wymaga dynamicznego ładowania z Home.vue (CSP #190 blokuje inline) — zależne od merge #187/#189/#190 |
+| P06 Netlify Identity na każdej stronie | ➖ | **świadomie zostaje** — panel CMS pozostaje (Decap, #198), widget Identity potrzebny do logowania redaktorów. Optymalizacja (ładowanie tylko gdy potrzebne) możliwa później bez usuwania panelu |
 | P03 nadmiarowy prefetch | ⏭️ | nie ruszone (P2) |
 
 ### Bezpieczeństwo
@@ -240,7 +240,7 @@ Legenda statusu: ✅ zamknięte · 🟡 częściowe · ⏭️ odłożone (z powo
 | ID | Status | PR / uwaga |
 |----|:---:|-----------|
 | R01 martwe fonty (~145 MB) | ✅ | #191 + #192 — `fonts/` **149 MB → 268 KB** |
-| R08 błędny `repo:` w CMS | ⏭️ | 1-linijkowa poprawka `config.yml`; nie ruszone tej sesji |
+| R08 błędny `repo:` w CMS | ✅ | **#198** — `repo:` `Miastodwa/jazdow.pl` → `Jazdow/jazdow.pl` |
 | R11 gałęzie / PR-y | ✅ | `dialog` usunięty; **#184 zamknięty** (rozbity na mniejsze PR-y), **#182 zmergowany** |
 | R10 `.DS_Store` w deploy | ⏭️ | nie ruszone (P3) |
 | R12/R13 warny builda | ⏭️ | nie ruszone (P3) |
@@ -251,6 +251,20 @@ Legenda statusu: ✅ zamknięte · 🟡 częściowe · ⏭️ odłożone (z powo
 | U02 tokeny (literały koloru) | 🟡 | #194 — kolory mapy jako tokeny. Centralizacja + usunięcie nieużywanych zmiennych w `variables.styl` ⏭️ (kolizja z #187, po jego merge) |
 | U01 skalowanie fontu na mobile | ⏭️ | nie ruszone (P2) |
 | U03 wydarzenia tylko na FB | ⏭️ | zmiana treści/architektury → sesje 3/4 |
+
+### Panel CMS — decyzja: ZOSTAJE (zaktualizowany)
+
+Rozważano pełne usunięcie Netlify Identity + CMS (#197). **Decyzja użytkownika: panel zostaje** i został zaktualizowany.
+
+| Element | Status | PR / uwaga |
+|---|:---:|---|
+| Silnik CMS | ✅ | **#198** — `netlify-cms@^2.0.0` (zarchiwizowany, nieprzypięty) → **Decap CMS 3.15.1** (pinned + Subresource Integrity, hash zweryfikowany) |
+| `repo:` (R08) | ✅ | **#198** — Miastodwa → Jazdow |
+| CSP dla `/admin` | ✅ | **#190** — blok `/admin/*` + `identity.netlify.com` (przywrócone po chwilowym usunięciu — revert) |
+| README | ✅ | #198 — wskazuje Decap CMS zamiast Netlify CMS |
+| Usunięcie panelu | ⏭️ parked | **#197** — otwarte jako alternatywa; **nie mergować** dopóki panel jest używany (wyklucza się z #198) |
+
+**⚠️ Do przetestowania na deploy preview:** wejście na `/admin/`, logowanie przez Netlify Identity, załadowanie kolekcji i zapis (Decap + git-gateway + editorial workflow).
 
 ### Metryki „przed" → „po" (stan zintegrowany 9 PR-ów)
 
@@ -276,14 +290,14 @@ Legenda statusu: ✅ zamknięte · 🟡 częściowe · ⏭️ odłożone (z powo
 | Lighthouse / axe | nie mierzone | **nadal nie mierzone** (brak narzędzi — do sesji z Lighthouse CI) |
 
 ### Odłożone świadomie (z powodem)
-- **P06** (Netlify Identity site-wide) — czysta naprawa wymaga dynamicznego ładowania widgetu z `Home.vue`, bo CSP (#190) blokuje inline; zależne od merge #187/#189/#190. Do zrobienia zaraz po nich.
+- **P06** (Netlify Identity site-wide) — **świadomie zostaje**: panel CMS pozostaje (Decap, #198), a widget Identity jest potrzebny do logowania. Ewentualna optymalizacja (ładowanie widgetu tylko gdy potrzebny) bez usuwania panelu — opcjonalny follow-up.
 - **R02** (147 MB PDF w `wiedza/`) — wymaga kompresji PDF (narzędzia) lub decyzji o hostowaniu poza repo. Największa pozostała pozycja wagowa.
 - **woff2 + subsetting polskich diakrytyków** — lokalny npm cache w złym stanie blokuje instalację enkodera (`ttf2woff2`/`woff2_compress`/fonttools niedostępne). Łatwy follow-up.
 - **srcset / WebP** dla plakatów i okładek — wymaga generowania wariantów; miniatury `*-small.jpg` już istnieją do podłączenia.
 - **hreflang** (S04) — wymaga kompletnej mapy URL PL↔EN i tłumaczeń → sesje 3/4.
 - **Centralizacja tokenów + usunięcie nieużywanych zmiennych** (`variables.styl`) — kolizja z #187; po jego merge.
-- **R08** (`repo: Miastodwa`→`Jazdow` w `config.yml`), **R10** (`.DS_Store`), **CodeQL fail** (istnieje branch `fix/codeql`), **P03** (prefetch), **U01** (skalowanie fontu) — drobne/P2–P3, nie ruszone.
+- **R10** (`.DS_Store`), **CodeQL fail** (istnieje branch `fix/codeql`), **P03** (prefetch), **U01** (skalowanie fontu) — drobne/P2–P3, nie ruszone. *(R08 — zrobione w #198.)*
 
 ---
 
-*Sesja 1 (audyt) nie zmieniła kodu. Sesja 2 zrealizowała powyższe w 9 PR-ach (#186–#194) + zamknięcie #184 i merge #182.*
+*Sesja 1 (audyt) nie zmieniła kodu. Sesja 2 zrealizowała powyższe w PR-ach #186–#194 (+ #195 docs), a następnie: #190 (nagłówki, wspiera panel), **#198 (aktualizacja panelu CMS → Decap 3.15.1 + R08)**, #197 (opcjonalne usunięcie panelu — otwarte, parked). Zamknięto #184, zmergowano #182.*
