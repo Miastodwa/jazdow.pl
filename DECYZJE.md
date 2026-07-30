@@ -65,3 +65,28 @@ Rozważano usunięcie Netlify Identity + CMS (P06 + R08). **Decyzja: panel `/adm
 - **P06** (Identity site-wide) — **świadomie zostaje**: widget potrzebny do logowania. Opcjonalna optymalizacja (ładowanie tylko gdy potrzebny) bez usuwania panelu — na później.
 
 **⚠️ Test na deploy preview przed mergem #198+#190:** `/admin/` — logowanie (Netlify Identity) + zapis (Decap + git-gateway + editorial workflow).
+
+---
+
+## 2026-07-30 — Sesja 3: Architektura treści i nawigacja (PROPOZYCJA)
+
+**Sesja nie zmieniła żadnego pliku treści, URL-a ani konfiguracji.** Wynik: [`ARCHITEKTURA.md`](ARCHITEKTURA.md) — dokument do akceptacji przed sesją 4.
+
+**⚠️ Brak danych z Google Search Console.** Prosiłem o dostęp na początku sesji, nie otrzymałem. Rekomendacje podziału/scalania stron opierają się wyłącznie na strukturze treści; trzy z nich (`/wspolpraca/`, `/opp/`, kolejność menu) oznaczono w dokumencie jako wymagające weryfikacji danymi.
+
+**Cztery znaleziska ważniejsze niż jakikolwiek podział treści** (opis i dowody w `ARCHITEKTURA.md §0`):
+- **A1 🔴** — wszystkie **16 linków do domków na mapie daje 404** (`/3-6/` zamiast `/domki/3-6/`). Mapa jest jedyną drogą do domków, więc cała sekcja (19 stron) jest praktycznie niedostępna. Sesja 1 tego nie wykryła, bo skan obejmował tylko linki markdown, nie pola `link:` we frontmatterze.
+- **A2 🔴** — **10 plików jest niewidocznych w CMS**, w tym `dialog.md` (pierwsza pozycja menu) i `wspolpraca.md`. Przyczyna: `filter: {field: generic}` w kolekcji „PL Pages" + pliki poza kolekcjami (`projekty/`, `baza-wiedzy/`).
+- **A3** — **9 z 10 angielskich stron domków to kopie polskich bajt w bajt** (nieprzetłumaczone): duplicate content i polski tekst pod angielskim adresem.
+- **A4** — nawigacja nie odzwierciedla serwisu: 9 pozycji poza nawigacją globalną, a `pytania`/`historia`/`wspolzarzadzanie` dostępne **wyłącznie** z kafelków strony głównej.
+
+**Główne rekomendacje:**
+- Struktura katalogów: **najpierw język, potem typ** (`www/pl/`, `www/en/`) — decydujący argument to możliwość usunięcia `filter: generic`, czyli likwidacja przyczyny A2. Kluczowy fakt: 47/49 plików ma `permalink`, więc **pliki można przenosić bez zmiany URL-i** (wymaga testu pilotażowego).
+- Treść: **„zostaw" w 20 z 27 pozycji.** Podział tylko dla `/co-robimy/` (wydzielenie archiwum plakatów — własny cykl życia) i `/wspolpraca/` (organizacja wydarzeń ma własny e-mail i odrębną intencję). Koalicje przeniesione do `/partnerstwo/`. `/pytania/` i `/dialog/` **nie dzielić** — czytane sekwencyjnie.
+- Nawigacja: menu dwupoziomowe (5 pozycji + rozwinięcia) wprowadzające do nawigacji globalnej 9 dziś niedostępnych stron; „List otwarty" **z menu do paska aktualności** z regułą wygaszania (max 6 miesięcy, treść zostaje pod adresem).
+- URL-e: forma kanoniczna **ze slashem** (tak już działa produkcja). **Zero zmian istniejących adresów** — tabela to 2 nowe adresy, 16 napraw martwych linków i potwierdzenie reszty. Stopka: 6 linków bez slasha generuje zbędne 301.
+- Strona **404 nie ma nawigacji** (potwierdzone na buildzie) — ślepy zaułek.
+
+**Do decyzji użytkownika** (`ARCHITEKTURA.md §7`): 7 domków bez stron (dopisać czy odlinkować), angielskie domki (przetłumaczyć czy przekierować), archiwum plakatów (4 opcje), menu dwupoziomowe czy płaskie, czy w ogóle robić restrukturyzację katalogów.
+
+**Proponowana kolejność wdrożenia w sesji 4** (§8): najpierw A1 i A2 — znikome ryzyko, największa wartość; restrukturyzacja katalogów jako ostatnia, po teście pilotażowym.
