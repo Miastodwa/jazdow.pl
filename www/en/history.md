@@ -18,7 +18,7 @@ history:
     date: January - December 2016
     text: 'We are creating a social space management model for the Jazdów area. The
         project is supported by The European Cultural Founda¬tion and other partners.
-        For more information visit [Model](/en/model/).'
+        For more information visit [Model](/en/co-management/).'
     title: Completion of the project „Community Management Model for Jazdów Settlement”
 -   
     date: May - December 2015
