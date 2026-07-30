@@ -1,5 +1,5 @@
  <template lang='pug'>
-#oj-footer
+footer#oj-footer
 	.inner-section
 		.info-columns
 			.contacts
