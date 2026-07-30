@@ -1,10 +1,14 @@
 // font-face – after Bourbon
+// woff wystarcza wszystkim wspieranym przegladarkom; eot(IE)/svg/ttf usuniete.
+// font-display: swap eliminuje FOIT (P01 z AUDIT.md). woff2 do dodania, gdy
+// dostepny enkoder (lokalny npm cache blokuje instalacje) — patrz DECYZJE.md.
 fontface($font-family, $path, $weight = 400, $fontstyle = normal)
 	@font-face
 		font-family $font-family
 		font-weight $weight
 		font-style $fontstyle
-		src url($path+'.woff') format('woff'), url($path+'.ttf') format('truetype'), url($path+'.eot?#iefix') format('embedded-opentype')
+		font-display swap
+		src url($path+'.woff') format('woff')
 
 grid-guide(columns = 3, gut = 2rem, wide = 1200px, pad = 2rem, cc = rgba(black, .05), gc = transparent)
 	&:after
