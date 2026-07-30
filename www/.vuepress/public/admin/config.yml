@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: Miastodwa/jazdow.pl
+  repo: Jazdow/jazdow.pl
   branch: master
   site_domain: cms.netlify.com
   accept_roles: #optional - accepts all users if left out
