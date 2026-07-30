@@ -25,7 +25,7 @@ cards:
     title: HISTORY —
   - caption: community-management of urban space
     cover: /images/cover-model.jpg
-    link: /en/model/
+    link: /en/co-management/
     title: MODEL —
   - caption: Jazdów Partnership
     cover: /images/cover-partnership.jpg
