@@ -14,21 +14,21 @@ Podczas rozpoznania wyszły cztery problemy poważniejsze niż jakikolwiek podzi
 
 | # | Znalezisko | Skala | Dowód |
 |---|---|---|---|
-| **A1** | **Wszystkie 16 linków do domków na mapie prowadzi do 404.** Mapa linkuje do `/3-6/`, a strony są pod `/domki/3-6/`. Mapa jest jedyną drogą do domków — więc **cała sekcja domków (19 stron) jest praktycznie niedostępna**. | 16 martwych linków, 19 stron odciętych | `www/mapa.md` (`link: /3-6/`) vs `permalink: domki/3-6`; `curl` → `/3-6/` = **404**, `/domki/3-6/` = **200** |
+| ~~**A1**~~ | ❌ **ZNALEZISKO BŁĘDNE — WYCOFANE 2026-07-30.** Twierdziłem, że wszystkie 16 linków do domków na mapie daje 404. **To nieprawda: mapa działa poprawnie.** Komponent `oj-map.vue` **nie używa pola `link:`** z frontmattera (0 odwołań) — adres buduje z `house.address`: `$localePath + dir[$lang] + address.replace('/','-') + '/'` → `/domki/3-6/`. Zweryfikowane na produkcji: klik w domek 3-6 na `/mapa/` przenosi do `/domki/3-6/` (200, właściwa treść). Wyciągnąłem wniosek z samego frontmattera i potwierdziłem, że `/3-6/` daje 404 — co jest prawdą, ale ten adres nigdy nie był używany. **Realny problem opisuje A5.** | — | korekta: `oj-map.vue:168`; test na produkcji |
 | **A2** | **10 plików jest niewidocznych w CMS** — redaktor fizycznie nie może ich edytować. W tym `dialog.md`, czyli **pierwsza pozycja menu**, i `wspolpraca.md`. Przyczyna: kolekcja „PL Pages" ma `filter: {field: generic, value: true}`, a te pliki nie mają `generic: true`; dodatkowo `projekty/` i `baza-wiedzy/` leżą poza wszystkimi kolekcjami. | 10 z 49 plików | `www/.vuepress/public/admin/config.yml:83` + brak `generic` we frontmatterze |
 | **A3** | **9 z 10 angielskich stron domków to kopie polskich, bajt w bajt** — nieprzetłumaczone. Dla Google to duplicate content, dla czytelnika EN — polski tekst pod angielskim adresem. | 9 z 10 stron EN | `diff www/domki/3-6.md www/en/houses/3-6.md` → identyczne (także 3-8, 3-9, 5a-1, 7-14, 10-8) |
 | **A4** | **Nawigacja nie odzwierciedla serwisu.** `mapa`, `wydarzenia`, `opp`, `archiwum`, `archiwum-dolacz`, `festiwal`, `plakaty`, 19 domków — nie ma ich w menu ani stopce. `pytania`, `historia`, `współzarządzanie` są **wyłącznie** na kafelkach strony głównej: kto trafi z Google na podstronę, nie dotrze do nich nigdy. | 9 pozycji poza nawigacją globalną | graf linków (§3.0) |
-| **A5** | 7 domków linkowanych z mapy **nie ma żadnej strony** (`10-2`, `10-5`, `3-18`, `3-5`, `5a-4`, `7-30`, `8-1`) — te linki byłyby 404 nawet po naprawie prefiksu z A1. | 7 z 16 | `www/mapa.md` vs `ls www/domki/` |
+| **A5** 🔴 | **TO JEST PRAWDZIWY BŁĄD (po wycofaniu A1).** Wszystkie 16 domków na mapie jest klikalnych, ale **7 nie ma strony i kończy się na 404**: `3-5`, `3-18`, `5a-4`, `7-30`, `8-1`, `10-2`, `10-5`. Czyli **działało 9 z 16 kliknięć w mapę**. ✅ **Naprawione w sesji 4 (PR #201)** — 6 stron-szablonów + usunięcie wpisu 7/30; obecnie 15 klikalnych domków, 15 ma stronę. | 7 z 16 | `curl` → `/domki/3-5/` = 404, `/domki/3-6/` = 200 |
 | **A6** | **Serwis nie jest zweryfikowany w Google Search Console.** Nie ma żadnych danych o zapytaniach, indeksacji ani błędach crawlowania — i nie da się sprawdzić, czy Google poprawnie odczytuje `sitemap.xml`, `canonical`, `hreflang` i dane strukturalne dodane w sesji 2. Każda decyzja o treści i SEO jest podejmowana na ślepo. | cały serwis | potwierdzone przez właściciela |
 
-**Wniosek dla sesji 4:** naprawa A1 (jedna linia × 16) i A2 (dopisanie `generic: true` + poszerzenie kolekcji CMS) daje nieporównanie więcej niż jakikolwiek podział treści. Proponuję zrobić je **przed** restrukturyzacją. Równolegle — A6, bo **dane zbierają się dopiero od momentu weryfikacji**, więc każdy tydzień zwłoki to bezpowrotnie utracone dane porównawcze do zmian z sesji 2.
+**Wniosek dla sesji 4:** naprawa A5 (6 stron-szablonów — ✅ zrobione, PR #201) i A2 (dopisanie `generic: true` + poszerzenie kolekcji CMS) daje nieporównanie więcej niż jakikolwiek podział treści. Proponuję zrobić je **przed** restrukturyzacją. Równolegle — A6, bo **dane zbierają się dopiero od momentu weryfikacji**, więc każdy tydzień zwłoki to bezpowrotnie utracone dane porównawcze do zmian z sesji 2.
 
 ### Jak domknąć A6 (kilkanaście minut, bez zmian w kodzie)
 
 1. Wejść na [search.google.com/search-console](https://search.google.com/search-console) i dodać zasób typu **Domena** (`jazdow.pl`) — obejmie apex, `www` i wszystkie podścieżki naraz.
 2. Zweryfikować **rekordem TXT w DNS** — to metoda odporna na zmianę hostingu, więc przetrwa ewentualne przejście z Netlify na Cloudflare (sesja 7). Alternatywa (`<meta>` w `head`) wymagałaby zmiany w kodzie i psuła się przy migracji.
 3. Zgłosić sitemapę: `https://jazdow.pl/sitemap.xml` (już istnieje i jest poprawna — 50 adresów).
-4. Sprawdzić w raporcie **Strony**, czy nie ma niespodzianek — szczególnie czy 19 stron domków w ogóle jest zaindeksowanych (przy A1 są odcięte od nawigacji, więc mogą nie być).
+4. Sprawdzić w raporcie **Strony**, czy nie ma niespodzianek — szczególnie czy strony domków są zaindeksowane (7 z nich do niedawna dawało 404 — A5).
 5. Po ~4 tygodniach wrócić do rekomendacji 🔍 z §3 i zweryfikować je danymi.
 
 > Warto też rozważyć **Bing Webmaster Tools** (import jednym kliknięciem z GSC) — dla organizacji pozarządowej to darmowe, dodatkowe źródło danych o zapytaniach.
@@ -253,7 +253,7 @@ collections:
 │
 └─ POZA NAWIGACJĄ  ✗ dostępne tylko przez wyszukiwarkę albo bezpośredni link
     ├─ /mapa/                        ✗ ← a to jest brama do całego katalogu domków
-    │   └─ 16 linków do domków       ✗✗ WSZYSTKIE 404 (A1)
+    │   └─ 16 klikalnych domków      ⚠️ 7 z nich → 404 (A5); mapa sama działa poprawnie
     ├─ /domki/3-6/ …  (9 stron)      ✗ osierocone
     ├─ /wydarzenia/                  ✗
     ├─ /opp/                         ✗ (1,5% podatku — treść sezonowa)
@@ -276,7 +276,7 @@ collections:
 /
 ├─ Osiedle                            ▾ „chcę zobaczyć, przyjść, dowiedzieć się co to jest"
 │   ├─ /mapa/                         mapa + wejście do katalogu domków
-│   │   └─ /domki/3-6/ …              ✅ linki naprawione (A1)
+│   │   └─ /domki/3-6/ …              ✅ komplet stron (A5 naprawione, PR #201)
 │   ├─ /historia/
 │   └─ /pytania/                      ✅ wchodzi do nawigacji globalnej
 │
@@ -333,8 +333,8 @@ Stosuję kryteria z briefu. Dzielę tylko wtedy, gdy zachodzi ≥1 warunek: **od
 | `/pytania/` | 1 958 / 20 | pierwszy raz na Jazdowie | poznawcza | **Zostaw** | Wzorcowy FAQ czytany sekwencyjnie/wyszukiwaniem. Podział na 20 stron byłby szkodliwy | + spis kotwic na górze; do menu (§4) |
 | `/dialog/` | 3 586 / 3 | media, władze, sympatycy | kampania | **Zostaw treść, przepisz strukturę** | Treść kampanijna, czytana sekwencyjnie → nie dzielić. Ale 3 586 słów na 3 nagłówkach to ściana tekstu; 2 z 3 H2 to tylko linki do PDF | + śródtytuły H2/H3; z menu → pasek aktualności (§4.2) |
 | `/sprawozdania/` | 124 / 32 | darczyńcy, urzędy, OPP | weryfikacja | **Przepisz** | 124 słowa i **32 nagłówki** — każdy PDF jest H3. To lista, nie hierarchia. Szkodzi czytnikom ekranu i konspektowi | H2 = rok, pod nim **lista** linków (nie H3) |
-| `/mapa/` | 9 | zwiedzający | „gdzie co jest" | **Napraw (A1)** 🔴 | 16 linków → 404. Krytyczne | `link: /3-6/` → `link: /domki/3-6/` ×16 |
-| `/domki/*` (9) | 145–283 | zwiedzający | katalog | **Zostaw + podłącz** | Treść w porządku; problem = osierocenie (A1). `3-20` ma **0 słów** — uzupełnić albo wyłączyć | bez zmian po naprawie mapy |
+| `/mapa/` | 9 | zwiedzający | „gdzie co jest" | **✅ Naprawione (A5)** | Mapa działała poprawnie; brakowało 7 stron docelowych. PR #201: 6 szablonów + usunięcie wpisu 7/30 | 15 klikalnych domków, 15 ma stronę |
+| `/domki/*` (9→15) | 145–283 | zwiedzający | katalog | **Zostaw** | Treść w porządku. Osierocenie dotyczy nawigacji globalnej (A4), nie mapy. `3-20` ma **0 słów** — uzupełnić albo wyłączyć (R13) | +6 szablonów z PR #201 |
 | — 7 brakujących domków | — | — | — | **Uzupełnij lub odlinkuj** (A5) | `10-2`, `10-5`, `3-18`, `3-5`, `5a-4`, `7-30`, `8-1` linkowane z mapy, nie mają stron | decyzja: dopisać strony albo usunąć `link:` |
 | `/partnerstwo/` | 154 / 0 | instytucje, partnerzy | „kim jesteście" | **Scal (przyjmij treść)** | Bardzo krótka, w stopce. Naturalny dom dla koalicji z `/wspolpraca/` (Sieć Lokalnych Gospodarzy, Okrągły Stół, Miasto Wspólna Sprawa, MAL, re:Kreators) | rozbudowana o sekcję „Sieci i koalicje" |
 | `/opp/` | 144 / 0 | podatnicy | 1,5% | **Zostaw** 🔍 | Krótka, ale to osobna intencja **sezonowa** i osobno linkowana (kampanie, PIT). Scalenie z `/wesprzyj/` odebrałoby jej samodzielny adres | + `updated`; usunąć duplikat z `/wesprzyj/` |
@@ -453,7 +453,7 @@ Dobra nawigacja to nie tylko menu. Propozycje powiązań (dziś nie istnieją):
 | `/co-robimy/` | `/baza-wiedzy/`, `/archiwum/` | pogłębienie tematu |
 | `/historia/` | `/archiwum/`, `wiedza/*.pdf` | materiały źródłowe |
 | `/wesprzyj/` | `/sprawozdania/`, `/opp/`, `/regulamin-darowizn/` | wiarygodność przed darowizną |
-| `/mapa/` | `/domki/*` | **naprawa A1** |
+| `/mapa/` | `/domki/*` | działa już przez mapę; warto dodać też listę tekstową domków (dostępność, SEO) |
 | `/domki/*` | `/mapa/`, sąsiednie domki | powrót i eksploracja |
 | `/pytania/` | `/wspolpraca/`, `/obywatelstwo/`, `/wesprzyj/` | FAQ jako rozdroże |
 | `/dialog/` | `/historia/`, `/wspolzarzadzanie/` | kontekst sporu |
@@ -503,7 +503,7 @@ Legenda typu: **=** bez zmian · **301** przekierowanie stałe · **NOWY** nowy 
 | `/polityka-prywatnosci/` | `/polityka-prywatnosci/` | — | **=** |
 | `/2017-mieszkania2030-silne-wspierajace-sie-spolecznosci/` | bez zmian | długi, ale działa i jest zaindeksowany | **=** |
 | `/domki/3-6/` … (9 stron) | bez zmian | — | **=** |
-| **`/3-5/`, `/3-6/`, `/3-8/`, `/3-9/`, `/3-12/`, `/3-18/`, `/3-20/`, `/5a-1/`, `/5a-4/`, `/7-14/`, `/7-30/`, `/8-1/`, `/8-2/`, `/10-2/`, `/10-5/`, `/10-8/`** | `/domki/<numer>/` | **A1 — 16 martwych linków z mapy.** Poprawiamy `link:` w źródle; **dodatkowo** 301 na wypadek linków z zewnątrz | **NAPRAWA + 301** |
+| ~~`/3-5/`, `/3-6/` … (16 adresów bez prefiksu)~~ | — | ❌ **WYCOFANE wraz z A1.** Te adresy nigdy nie były używane przez mapę, więc nie ma czego przekierowywać. Przekierowania **niepotrzebne** | **anulowane** |
 | `/en/` … `/en/privacy-policy/` | bez zmian | — | **=** |
 | `/en/houses/*` (10) | do decyzji (A3) | jeśli usuwamy → 301 na `/domki/<numer>/` | **= lub 301** |
 | `/wesparcie` | `/wesprzyj/` | istniejące przekierowanie | **301** (jest) |
@@ -521,23 +521,8 @@ Nowe wpisy do dopisania (16 domków). Bez łańcuchów: każdy stary adres trafi
 **`www/.vuepress/public/_redirects`** (działa na Netlify **i** Cloudflare Pages — plik jeszcze nie istnieje, do utworzenia):
 
 ```
-# Domki: adresy z mapy bez prefiksu /domki/ (A1) — jeden skok do celu
-/3-5      /domki/3-5/      301!
-/3-6      /domki/3-6/      301!
-/3-8      /domki/3-8/      301!
-/3-9      /domki/3-9/      301!
-/3-12     /domki/3-12/     301!
-/3-18     /domki/3-18/     301!
-/3-20     /domki/3-20/     301!
-/5a-1     /domki/5a-1/     301!
-/5a-4     /domki/5a-4/     301!
-/7-14     /domki/7-14/     301!
-/7-30     /domki/7-30/     301!
-/8-1      /domki/8-1/      301!
-/8-2      /domki/8-2/      301!
-/10-2     /domki/10-2/     301!
-/10-5     /domki/10-5/     301!
-/10-8     /domki/10-8/     301!
+# (Blok domków WYCOFANY — patrz korekta A1 w §0. Adresy bez prefiksu nigdy nie działały
+#  i nie były używane, więc przekierowania są zbędne. Zostawiam przykład składni.)
 
 # Istniejące (przenieść z netlify.toml dla przenośności)
 /wesparcie   /wesprzyj/   301!
@@ -667,7 +652,7 @@ Od najwyższego stosunku wartości do ryzyka:
 | Etap | Co | Ryzyko | Zależności |
 |---|---|---|---|
 | **0** | **A6** — weryfikacja serwisu w Search Console + zgłoszenie sitemapy (§0/A6) | zerowe (bez zmian w kodzie) | **zrobić jak najszybciej** — dane liczą się dopiero od weryfikacji |
-| **1** | **A1** — naprawa 16 linków z mapy (`link: /domki/…`) + `_redirects` | znikome | — |
+| **1** | ✅ **A5** — 6 stron-szablonów domków + usunięcie wpisu 7/30 (PR #201) | znikome | **zrobione** |
 | **2** | **A2** — udostępnienie 10 plików w CMS (`generic: true` + kolekcje) | znikome | — |
 | **3** | Stopka: końcowy slash w 6 linkach (koniec zbędnych 301) | znikome | — |
 | **4** | Redakcja: R6, R8, R13, R14 (duplikaty, nagłówki, literówka) | niskie | akceptacja §6 |

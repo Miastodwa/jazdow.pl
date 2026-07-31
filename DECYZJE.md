@@ -130,3 +130,27 @@ Siedem pytań z `ARCHITEKTURA.md §7` rozstrzygniętych. **Sam dokument nie jest
 **Uwaga do kolejności:** skoro wybrano pełną restrukturyzację (7), przebuduje ona konfigurację CMS i **naprawi A2 przy okazji**. Żeby jednak redaktor nie był zablokowany na czas przygotowań, warto zastosować doraźną poprawkę A2 (`generic: true` w 5 plikach) od razu — koszt minuty, znika przy restrukturyzacji.
 
 **Rozstrzygnięte wcześniej, nie wracamy:** pliki fontów zostają · panel CMS zostaje na `netlify-cms@2.10.192` · GSC zainstalowane.
+
+---
+
+## 2026-07-30 — KOREKTA: znalezisko A1 było błędne
+
+**Wycofuję znalezisko A1 z `ARCHITEKTURA.md`** („wszystkie 16 linków do domków na mapie daje 404"). Postawiłem je jako znalezisko numer jeden całej sesji 3 — i było nieprawdziwe.
+
+**Jak było naprawdę:** komponent `oj-map.vue` **nie używa pola `link:`** z frontmattera `mapa.md` (zero odwołań w kodzie). Adres docelowy buduje z pola `address`:
+
+```
+$localePath + dir[$lang] + house.address.replace('/','-') + '/'   →  /domki/3-6/
+```
+
+Zweryfikowane na żywo na produkcji: kliknięcie domku 3-6 na `/mapa/` przenosi do `/domki/3-6/`, status 200, właściwa treść. **Mapa działała poprawnie.**
+
+**Skąd błąd:** wyciągnąłem wniosek z samej zawartości frontmattera (`link: /3-6/`) i potwierdziłem, że `/3-6/` zwraca 404 — co jest prawdą, ale ten adres nigdy nie był przez mapę używany. Nie sprawdziłem, czy pole `link:` jest w ogóle czytane przez komponent. To błąd metody: zweryfikowałem dane wejściowe zamiast realnego zachowania.
+
+**Co jest prawdziwym błędem:** znalezisko **A5**. Wszystkie 16 domków było klikalnych, ale **7 nie miało strony i dawało 404** (`3-5`, `3-18`, `5a-4`, `7-30`, `8-1`, `10-2`, `10-5`). Działało **9 z 16** kliknięć.
+
+**Naprawione w PR #201:** 6 stron-szablonów (nazwy i adresy z danych mapy) + usunięcie wpisu 7/30 zgodnie z decyzją. Obecnie **15 klikalnych domków, 15 ma stronę**.
+
+**Konsekwencje dla dokumentu:** wykreślone przekierowania dla 16 adresów bez prefiksu (`/3-6/` itd.) — nigdy nie były używane, nie ma czego przekierowywać. Etap 1 kolejności wdrożenia zmieniony z A1 na A5 (zrobione).
+
+**Wniosek na przyszłość:** przy znaleziskach opartych na konfiguracji/danych — zawsze sprawdzić, czy dane są faktycznie czytane przez kod, i potwierdzić zachowaniem, nie samą treścią pliku.
