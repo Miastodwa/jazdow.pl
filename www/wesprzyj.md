@@ -6,12 +6,6 @@ generic: true
 ---
 Wolny Jazdów utrzymuje się w głównie z dobrowolnych zbiórek swoich członków, gości i fanów. Jeśli podoba Ci się to co robimy i chcesz pomóc nam dalej chronić i rozwijać Osiedle Jazdów, to możesz to zrobić na kilka sposobów.
 
-### Patronite.pl/jazdow - stały patronat
-
-Dołącz do społeczności Patronite i korzystaj z przestrzeni domku fińskiego na stałe! Dołączając jesteś także na bieżąco z wszystkimi wydarzeniami Wolnego Jazdowa.
-
-➡️ [patronite.pl/jazdow](https://patronite.pl/jazdow)
-
 ## Bądź na bieżąco
 
 Zapraszamy do:
