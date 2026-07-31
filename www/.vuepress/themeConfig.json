@@ -74,33 +74,33 @@
   "links": {
     "pl": [
       {
-        "to": "/partnerstwo",
+        "to": "/partnerstwo/",
         "title": "Partnerstwo"
       },
       {
-        "to": "/statut",
+        "to": "/statut/",
         "title": "Statut"
       },
       {
-        "to": "/regulamin",
+        "to": "/regulamin/",
         "title": "Regulamin"
       },
       {
-        "to": "/sprawozdania",
+        "to": "/sprawozdania/",
         "title": "Sprawozdania"
       },
       {
-        "to": "/regulamin-darowizn",
+        "to": "/regulamin-darowizn/",
         "title": "Regulamin Darowizn"
       },
       {
-        "to": "/polityka-prywatnosci",
+        "to": "/polityka-prywatnosci/",
         "title": "Polityka Prywatności"
       }
     ],
     "en": [
       {
-        "to": "/en/privacy-policy",
+        "to": "/en/privacy-policy/",
         "title": "Privacy Policy"
       }
     ]
