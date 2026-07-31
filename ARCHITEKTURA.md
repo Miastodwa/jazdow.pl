@@ -643,7 +643,7 @@ Do akceptacji pozycja po pozycji. **Nie zmieniam sensu żadnego zdania** — pro
 > | 1 | Dane z Search Console | **GSC zainstalowane** po sesji. Rekomendacje 🔍 czekają na ~2–4 tyg. danych. |
 > | 2 | 7 domków bez stron (A5) | **`7-30` — usunąć link z mapy.** Dla `10-2`, `10-5`, `3-18`, `3-5`, `5a-4`, `8-1` — **utworzyć puste pliki-szablony** do późniejszego uzupełnienia treścią. |
 > | 3 | Angielskie domki (A3) | **Przetłumaczyć.** Wersje robocze przygotowuje Claude, publikacja **wyłącznie po przejrzeniu i akceptacji** — to opisy cudzych organizacji. |
-> | 4 | Archiwum plakatów | **Rok bieżący + archiwum zbiorcze + konwersja do WebP** (wariant C z §3.4 połączony z kompresją z wariantu B). |
+> | 4 | Archiwum plakatów | **Rok bieżący + archiwum zbiorcze, BEZ konwersji formatu** (wariant C z §3.4). Pliki pozostają w PNG — świadoma decyzja, waga nie jest tu problemem. |
 > | 5 | Menu | **Dwupoziomowe** (5 pozycji nadrzędnych z rozwinięciami, §4.1). |
 > | 6 | Restrukturyzacja katalogów | **Pełna** — `www/pl/`, `www/en/` (§1.3). **Warunek: test pilotażowy z §1.7 przed przeniesieniem reszty.** |
 >
