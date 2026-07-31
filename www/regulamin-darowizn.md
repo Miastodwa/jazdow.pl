@@ -1,6 +1,7 @@
 ---
 permalink: regulamin-darowizn
 title: Regulamin Darowizn
+generic: true
 ---
 
 ## § 1. Postanowienia ogólne

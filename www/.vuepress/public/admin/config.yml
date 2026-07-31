@@ -102,6 +102,29 @@ collections:
         widget: hidden
         default: true
 
+  # Projekty i baza wiedzy leza w podkatalogach, wiec kolekcja "PL Pages"
+  # (folder: www/) ich nie widzi. Bez tych dwoch kolekcji redaktor nie mial
+  # jak ich edytowac — patrz znalezisko A2 w ARCHITEKTURA.md.
+  - label: PL Projekty
+    name: projekty_pl
+    folder: www/projekty
+    create: true
+    fields:
+      - { label: Permalink, name: permalink, widget: string }
+      - { label: Title, name: title, widget: string }
+      - { label: TLDR, name: tldr, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - label: PL Baza wiedzy
+    name: baza_wiedzy_pl
+    folder: www/baza-wiedzy
+    create: true
+    fields:
+      - { label: Permalink, name: permalink, widget: string }
+      - { label: Title, name: title, widget: string }
+      - { label: TLDR, name: tldr, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
   - label: PL Domki
     name: houses_pl
     folder: www/domki
