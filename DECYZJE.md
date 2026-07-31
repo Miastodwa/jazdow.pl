@@ -110,3 +110,23 @@ Stan po decyzji:
 **Konsekwencja dla metryk:** wcześniejszy zapis w `AUDIT.md §7` o „`public/` 385 MB → 237 MB" był nieaktualny i został poprawiony. Faktyczna waga `public/` pozostaje ~385 MB (fonty 149 MB + `wiedza/` 147 MB + `images/` 43 MB + `plakaty/` 38 MB).
 
 Powiązane, wciąż otwarte: **R02** (147 MB PDF-ów w `wiedza/`, w tym jeden plik 96 MB) — osobna sprawa, nieobjęta tą decyzją.
+
+---
+
+## 2026-07-30 — Decyzje kierunkowe przed sesją 4
+
+Siedem pytań z `ARCHITEKTURA.md §7` rozstrzygniętych. **Sam dokument nie jest jeszcze zaakceptowany** (PR #200 otwarty) — poniższe decyzje są wiążące kierunkowo, reszta czeka na uwagi.
+
+| # | Decyzja | Konsekwencja |
+|---|---|---|
+| 1 | **ARCHITEKTURA.md — jeszcze nie zaakceptowana** | Sesja 4 realizuje wyłącznie to, co jednoznacznie uzgodnione. Nawigacja i podział stron czekają. |
+| 2 | **Sesja 4 rusza teraz** — część niezależna od danych GSC | A1, A2, stopka, poprawki redakcyjne, domki. |
+| 3 | **Domki bez stron:** `7-30` → usunąć link z mapy; `10-2`, `10-5`, `3-18`, `3-5`, `5a-4`, `8-1` → **puste pliki-szablony** | Mapa przestaje prowadzić do 404; 6 stron czeka na treść od organizacji. |
+| 4 | **Angielskie domki: przetłumaczyć.** Wersje robocze przygotowuje Claude | ⚠️ **Publikacja tylko po przejrzeniu** — to opisy cudzych organizacji, nie nasza treść. PR do akceptacji zdanie po zdaniu. |
+| 5 | **Plakaty: rok bieżący + archiwum zbiorcze + konwersja WebP** | `/plakaty/` = 12 ostatnich miesięcy, starsze na podstronie archiwum; 38 MB → ~4 MB. |
+| 6 | **Menu: dwupoziomowe** (5 pozycji + rozwinięcia) | Wprowadza do nawigacji 9 dziś niedostępnych stron. Wymaga obsługi klawiatury i podlist zwiniętych na mobile. |
+| 7 | **Katalogi: pełna restrukturyzacja** (`www/pl/`, `www/en/`) | Usuwa przyczynę A2 (`filter: generic`). **Warunek: test pilotażowy — przenieść 1 plik, potwierdzić, że URL się nie zmienił, dopiero potem reszta.** |
+
+**Uwaga do kolejności:** skoro wybrano pełną restrukturyzację (7), przebuduje ona konfigurację CMS i **naprawi A2 przy okazji**. Żeby jednak redaktor nie był zablokowany na czas przygotowań, warto zastosować doraźną poprawkę A2 (`generic: true` w 5 plikach) od razu — koszt minuty, znika przy restrukturyzacji.
+
+**Rozstrzygnięte wcześniej, nie wracamy:** pliki fontów zostają · panel CMS zostaje na `netlify-cms@2.10.192` · GSC zainstalowane.
