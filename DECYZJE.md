@@ -91,3 +91,19 @@ Rozważano usunięcie Netlify Identity + CMS (P06 + R08). **Decyzja: panel `/adm
 **Do decyzji użytkownika** (`ARCHITEKTURA.md §7`): 7 domków bez stron (dopisać czy odlinkować), angielskie domki (przetłumaczyć czy przekierować), archiwum plakatów (4 opcje), menu dwupoziomowe czy płaskie, czy w ogóle robić restrukturyzację katalogów.
 
 **Proponowana kolejność wdrożenia w sesji 4** (§8): najpierw A1 i A2 — znikome ryzyko, największa wartość; restrukturyzacja katalogów jako ostatnia, po teście pilotażowym.
+
+---
+
+## 2026-07-30 — Decyzja: pliki fontów zostają w repozytorium (R01 zamknięte)
+
+**PR #191 („usunięcie ~148 MB martwych fontów") został zamknięty świadomą decyzją. Nie proponować tego ponownie.**
+
+Stan po decyzji:
+- **#192 pozostaje zmergowany** — `@font-face` w `mixins.styl`/`typography.styl` wskazuje wyłącznie 4 realnie używane pliki (`Lemur-Regular`, `Lemur-Bold`, `SC-300`, `oj-icons`) w formacie `woff`, z `font-display: swap`. Definicje dla `eot`/`ttf`/`svg` i nieużywanej rodziny HK zostały usunięte.
+- **Pliki fontów zostają**: `www/.vuepress/public/fonts/` = 149 MB (rodziny SS, SF, HK, P, M1, M2 + fonty w formacie SVG + nieużywane wagi Lemura).
+
+**Co to znaczy w praktyce:** nieużywane pliki nadal są w repozytorium i kopiowane do `dist/` przy każdym buildzie, ale **żaden z nich nie jest pobierany przez przeglądarkę** — nic nie wskazuje na nie ani CSS, ani HTML. Z punktu widzenia szybkości strony dla użytkownika sprawa jest zamknięta; pozostaje wyłącznie waga repozytorium i czas wdrożenia.
+
+**Konsekwencja dla metryk:** wcześniejszy zapis w `AUDIT.md §7` o „`public/` 385 MB → 237 MB" był nieaktualny i został poprawiony. Faktyczna waga `public/` pozostaje ~385 MB (fonty 149 MB + `wiedza/` 147 MB + `images/` 43 MB + `plakaty/` 38 MB).
+
+Powiązane, wciąż otwarte: **R02** (147 MB PDF-ów w `wiedza/`, w tym jeden plik 96 MB) — osobna sprawa, nieobjęta tą decyzją.
