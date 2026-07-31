@@ -35,7 +35,7 @@ Dziennik decyzji projektowych dla jazdow.pl.
 
 Zrealizowano poprawki niezależne od struktury treści (URL-e, podział stron, tłumaczenia **nietknięte** — sesje 3/4). Efekt: **9 PR-ów (#186–#194)**, każdy z osobnym buildem; wszystkie 9 scala się razem bez konfliktów. Pełny status znalezisk i metryki „przed/po" w [`AUDIT.md §7`](AUDIT.md).
 
-**Zamknięte (✅):** ikony social (SVG+aria), kontrast zieleni 2.9→4.79:1, menu z klawiatury, skip link + landmarki, focus ring, reduced-motion, alt-y, `<h1>` home, martwy link `/en/model/`, unikalne opisy, Open Graph/Twitter, JSON-LD NGO, canonical, ikony/manifest/theme-color, usunięcie `generator`, nagłówki bezpieczeństwa (netlify.toml + `_headers`), `font-display: swap`, usunięcie ~148 MB martwych fontów (149 MB→268 KB), lazy obrazów z treści, tokeny kolorów mapy.
+**Zamknięte (✅):** ikony social (SVG+aria), kontrast zieleni 2.9→4.79:1, menu z klawiatury, skip link + landmarki, focus ring, reduced-motion, alt-y, `<h1>` home, martwy link `/en/model/`, unikalne opisy, Open Graph/Twitter, JSON-LD NGO, canonical, ikony/manifest/theme-color, usunięcie `generator`, nagłówki bezpieczeństwa (netlify.toml + `_headers`), `font-display: swap` + ograniczenie `@font-face` do 4 realnie używanych plików, lazy obrazów z treści, tokeny kolorów mapy. *(Uwaga — korekta: usunięcie samych plików fontów **nie zostało wykonane**, #191 zamknięty świadomą decyzją. Patrz wpis „pliki fontów zostają w repozytorium" na końcu dokumentu.)*
 
 **Rozstrzygnięte PR-y (punkt 8):** `#184` (chore/fonty) **zamknięty** — rozbity na mniejsze, tematyczne PR-y (OG → #189, fonty → #191/#192, lazy → #193); jego `og-meta.js` kolidowałby z #189. `#182` (dependabot js-yaml) **zmergowany** (deploy preview przechodził). Gałąź `dialog` usunięta z origin.
 
@@ -61,7 +61,8 @@ Rozważano usunięcie Netlify Identity + CMS (P06 + R08). **Decyzja: panel `/adm
 
 - **#198** (`fix/cms-panel-decap`): `netlify-cms@^2.0.0` (zarchiwizowany, nieprzypięty) → **Decap CMS 3.15.1** — utrzymywany następca, zapięty na sztywno + Subresource Integrity (hash `sha384` zweryfikowany lokalnie względem pliku z unpkg). Naprawiony `backend.repo`: `Miastodwa/jazdow.pl` → `Jazdow/jazdow.pl` (**R08 zrobione**). README → Decap CMS. Backend (git-gateway + Netlify Identity) bez zmian.
 - **#190** (`chore/security-headers`): chwilowo usunięto z CSP obsługę `/admin` i `identity.netlify.com` (na wcześniejszą prośbę), następnie **cofnięto (revert)** — panel zostaje, więc CSP znów w pełni go wspiera.
-- **#197** (`chore/remove-netlify-cms`): usunięcie panelu — **zostaje OTWARTE jako alternatywa**, parked. Wyklucza się z #198; nie mergować dopóki panel jest używany.
+- **#197** (`chore/remove-netlify-cms`): usunięcie panelu — **ZAMKNIĘTY** (panel zostaje, więc alternatywa nieaktualna).
+- **#198 ostatecznie cofnięty (#199).** Migracja na Decap 3.15.1 **zepsuła logowanie na produkcji**: Decap odpytywał `api.github.com` bezpośrednio, bez tokena i z pominięciem git-gateway → limit anonimowy 60/h → **403**. Panel wrócił na `netlify-cms@^2.0.0` (wersja 2.10.192, ostatnia). Przy okazji cofnęła się poprawka `repo:` — **R08 znów otwarte** (`config.yml` wskazuje `Miastodwa/jazdow.pl`, co jest starą nazwą tego samego repo, więc działa, ale jest mylące). Wniosek na przyszłość: **każdą zmianę CMS testować na deploy preview przed mergem**, nigdy prosto na produkcji.
 - **P06** (Identity site-wide) — **świadomie zostaje**: widget potrzebny do logowania. Opcjonalna optymalizacja (ładowanie tylko gdy potrzebny) bez usuwania panelu — na później.
 
 **⚠️ Test na deploy preview przed mergem #198+#190:** `/admin/` — logowanie (Netlify Identity) + zapis (Decap + git-gateway + editorial workflow).
@@ -72,7 +73,9 @@ Rozważano usunięcie Netlify Identity + CMS (P06 + R08). **Decyzja: panel `/adm
 
 **Sesja nie zmieniła żadnego pliku treści, URL-a ani konfiguracji.** Wynik: [`ARCHITEKTURA.md`](ARCHITEKTURA.md) — dokument do akceptacji przed sesją 4.
 
-**⚠️ Google Search Console nie jest zainstalowane na tej stronie** (potwierdzone przez właściciela). To nie jest kwestia braku dostępu — dane o ruchu **nie istnieją i nie powstaną**, dopóki serwis nie zostanie zweryfikowany. Rekomendacje podziału/scalania stron opierają się wyłącznie na strukturze treści; trzy z nich (`/wspolpraca/`, `/opp/`, kolejność menu) oznaczono jako niemożliwe do zweryfikowania bez danych. Odnotowane w dokumencie jako **znalezisko A6** wraz z instrukcją wdrożenia (zasób typu Domena + weryfikacja rekordem TXT w DNS, żeby przetrwała ewentualną migrację hostingu w sesji 7).
+**⚠️ Search Console — stan: zainstalowane po sesji.** W trakcie sesji 3 GSC **nie było wdrożone** (znalezisko **A6**), więc wszystkie rekomendacje podziału/scalania stron powstały wyłącznie na podstawie struktury treści. Właściciel **zainstalował GSC bezpośrednio po sesji** — dane zaczną się zbierać od momentu weryfikacji (GSC nie pokazuje historii wstecz), więc pierwsze sensowne odczyty za ~2–4 tygodnie.
+
+Trzy rekomendacje oznaczone 🔍 (`/wspolpraca/`, `/opp/`, kolejność menu) pozostają **nierozstrzygnięte do czasu zebrania danych**. Dostępne od razu, jeszcze przed zapytaniami: raport **Strony → Indeksowanie** — pozwoli sprawdzić, czy 19 stron domków w ogóle jest zaindeksowanych (przy A1 są odcięte od nawigacji) i czy `en/houses/*` nie jest oznaczone jako duplikat (A3).
 
 **Cztery znaleziska ważniejsze niż jakikolwiek podział treści** (opis i dowody w `ARCHITEKTURA.md §0`):
 - **A1 🔴** — wszystkie **16 linków do domków na mapie daje 404** (`/3-6/` zamiast `/domki/3-6/`). Mapa jest jedyną drogą do domków, więc cała sekcja (19 stron) jest praktycznie niedostępna. Sesja 1 tego nie wykryła, bo skan obejmował tylko linki markdown, nie pola `link:` we frontmatterze.
