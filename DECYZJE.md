@@ -35,7 +35,7 @@ Dziennik decyzji projektowych dla jazdow.pl.
 
 Zrealizowano poprawki niezależne od struktury treści (URL-e, podział stron, tłumaczenia **nietknięte** — sesje 3/4). Efekt: **9 PR-ów (#186–#194)**, każdy z osobnym buildem; wszystkie 9 scala się razem bez konfliktów. Pełny status znalezisk i metryki „przed/po" w [`AUDIT.md §7`](AUDIT.md).
 
-**Zamknięte (✅):** ikony social (SVG+aria), kontrast zieleni 2.9→4.79:1, menu z klawiatury, skip link + landmarki, focus ring, reduced-motion, alt-y, `<h1>` home, martwy link `/en/model/`, unikalne opisy, Open Graph/Twitter, JSON-LD NGO, canonical, ikony/manifest/theme-color, usunięcie `generator`, nagłówki bezpieczeństwa (netlify.toml + `_headers`), `font-display: swap`, usunięcie ~148 MB martwych fontów (149 MB→268 KB), lazy obrazów z treści, tokeny kolorów mapy.
+**Zamknięte (✅):** ikony social (SVG+aria), kontrast zieleni 2.9→4.79:1, menu z klawiatury, skip link + landmarki, focus ring, reduced-motion, alt-y, `<h1>` home, martwy link `/en/model/`, unikalne opisy, Open Graph/Twitter, JSON-LD NGO, canonical, ikony/manifest/theme-color, usunięcie `generator`, nagłówki bezpieczeństwa (netlify.toml + `_headers`), `font-display: swap` + ograniczenie `@font-face` do 4 realnie używanych plików, lazy obrazów z treści, tokeny kolorów mapy. *(Uwaga — korekta: usunięcie samych plików fontów **nie zostało wykonane**, #191 zamknięty świadomą decyzją. Patrz wpis „pliki fontów zostają w repozytorium" na końcu dokumentu.)*
 
 **Rozstrzygnięte PR-y (punkt 8):** `#184` (chore/fonty) **zamknięty** — rozbity na mniejsze, tematyczne PR-y (OG → #189, fonty → #191/#192, lazy → #193); jego `og-meta.js` kolidowałby z #189. `#182` (dependabot js-yaml) **zmergowany** (deploy preview przechodził). Gałąź `dialog` usunięta z origin.
 
@@ -61,7 +61,96 @@ Rozważano usunięcie Netlify Identity + CMS (P06 + R08). **Decyzja: panel `/adm
 
 - **#198** (`fix/cms-panel-decap`): `netlify-cms@^2.0.0` (zarchiwizowany, nieprzypięty) → **Decap CMS 3.15.1** — utrzymywany następca, zapięty na sztywno + Subresource Integrity (hash `sha384` zweryfikowany lokalnie względem pliku z unpkg). Naprawiony `backend.repo`: `Miastodwa/jazdow.pl` → `Jazdow/jazdow.pl` (**R08 zrobione**). README → Decap CMS. Backend (git-gateway + Netlify Identity) bez zmian.
 - **#190** (`chore/security-headers`): chwilowo usunięto z CSP obsługę `/admin` i `identity.netlify.com` (na wcześniejszą prośbę), następnie **cofnięto (revert)** — panel zostaje, więc CSP znów w pełni go wspiera.
-- **#197** (`chore/remove-netlify-cms`): usunięcie panelu — **zostaje OTWARTE jako alternatywa**, parked. Wyklucza się z #198; nie mergować dopóki panel jest używany.
+- **#197** (`chore/remove-netlify-cms`): usunięcie panelu — **ZAMKNIĘTY** (panel zostaje, więc alternatywa nieaktualna).
+- **#198 ostatecznie cofnięty (#199).** Migracja na Decap 3.15.1 **zepsuła logowanie na produkcji**: Decap odpytywał `api.github.com` bezpośrednio, bez tokena i z pominięciem git-gateway → limit anonimowy 60/h → **403**. Panel wrócił na `netlify-cms@^2.0.0` (wersja 2.10.192, ostatnia). Przy okazji cofnęła się poprawka `repo:` — **R08 znów otwarte** (`config.yml` wskazuje `Miastodwa/jazdow.pl`, co jest starą nazwą tego samego repo, więc działa, ale jest mylące). Wniosek na przyszłość: **każdą zmianę CMS testować na deploy preview przed mergem**, nigdy prosto na produkcji.
 - **P06** (Identity site-wide) — **świadomie zostaje**: widget potrzebny do logowania. Opcjonalna optymalizacja (ładowanie tylko gdy potrzebny) bez usuwania panelu — na później.
 
 **⚠️ Test na deploy preview przed mergem #198+#190:** `/admin/` — logowanie (Netlify Identity) + zapis (Decap + git-gateway + editorial workflow).
+
+---
+
+## 2026-07-30 — Sesja 3: Architektura treści i nawigacja (PROPOZYCJA)
+
+**Sesja nie zmieniła żadnego pliku treści, URL-a ani konfiguracji.** Wynik: [`ARCHITEKTURA.md`](ARCHITEKTURA.md) — dokument do akceptacji przed sesją 4.
+
+**⚠️ Search Console — stan: zainstalowane po sesji.** W trakcie sesji 3 GSC **nie było wdrożone** (znalezisko **A6**), więc wszystkie rekomendacje podziału/scalania stron powstały wyłącznie na podstawie struktury treści. Właściciel **zainstalował GSC bezpośrednio po sesji** — dane zaczną się zbierać od momentu weryfikacji (GSC nie pokazuje historii wstecz), więc pierwsze sensowne odczyty za ~2–4 tygodnie.
+
+Trzy rekomendacje oznaczone 🔍 (`/wspolpraca/`, `/opp/`, kolejność menu) pozostają **nierozstrzygnięte do czasu zebrania danych**. Dostępne od razu, jeszcze przed zapytaniami: raport **Strony → Indeksowanie** — pozwoli sprawdzić, czy 19 stron domków w ogóle jest zaindeksowanych (przy A1 są odcięte od nawigacji) i czy `en/houses/*` nie jest oznaczone jako duplikat (A3).
+
+**Cztery znaleziska ważniejsze niż jakikolwiek podział treści** (opis i dowody w `ARCHITEKTURA.md §0`):
+- **A1 🔴** — wszystkie **16 linków do domków na mapie daje 404** (`/3-6/` zamiast `/domki/3-6/`). Mapa jest jedyną drogą do domków, więc cała sekcja (19 stron) jest praktycznie niedostępna. Sesja 1 tego nie wykryła, bo skan obejmował tylko linki markdown, nie pola `link:` we frontmatterze.
+- **A2 🔴** — **10 plików jest niewidocznych w CMS**, w tym `dialog.md` (pierwsza pozycja menu) i `wspolpraca.md`. Przyczyna: `filter: {field: generic}` w kolekcji „PL Pages" + pliki poza kolekcjami (`projekty/`, `baza-wiedzy/`).
+- **A3** — **9 z 10 angielskich stron domków to kopie polskich bajt w bajt** (nieprzetłumaczone): duplicate content i polski tekst pod angielskim adresem.
+- **A4** — nawigacja nie odzwierciedla serwisu: 9 pozycji poza nawigacją globalną, a `pytania`/`historia`/`wspolzarzadzanie` dostępne **wyłącznie** z kafelków strony głównej.
+- **A6** — **serwis nie jest zweryfikowany w Google Search Console.** Brak jakichkolwiek danych o zapytaniach i indeksacji; nie da się też sprawdzić, czy Google poprawnie odczytuje `sitemap.xml`, `canonical` i dane strukturalne **dodane w sesji 2** — czyli nie zmierzymy efektu tamtej pracy. Do zrobienia jako **etap 0** sesji 4 (bez zmian w kodzie), bo dane zbierają się dopiero od momentu weryfikacji.
+
+**Główne rekomendacje:**
+- Struktura katalogów: **najpierw język, potem typ** (`www/pl/`, `www/en/`) — decydujący argument to możliwość usunięcia `filter: generic`, czyli likwidacja przyczyny A2. Kluczowy fakt: 47/49 plików ma `permalink`, więc **pliki można przenosić bez zmiany URL-i** (wymaga testu pilotażowego).
+- Treść: **„zostaw" w 20 z 27 pozycji.** Podział tylko dla `/co-robimy/` (wydzielenie archiwum plakatów — własny cykl życia) i `/wspolpraca/` (organizacja wydarzeń ma własny e-mail i odrębną intencję). Koalicje przeniesione do `/partnerstwo/`. `/pytania/` i `/dialog/` **nie dzielić** — czytane sekwencyjnie.
+- Nawigacja: menu dwupoziomowe (5 pozycji + rozwinięcia) wprowadzające do nawigacji globalnej 9 dziś niedostępnych stron; „List otwarty" **z menu do paska aktualności** z regułą wygaszania (max 6 miesięcy, treść zostaje pod adresem).
+- URL-e: forma kanoniczna **ze slashem** (tak już działa produkcja). **Zero zmian istniejących adresów** — tabela to 2 nowe adresy, 16 napraw martwych linków i potwierdzenie reszty. Stopka: 6 linków bez slasha generuje zbędne 301.
+- Strona **404 nie ma nawigacji** (potwierdzone na buildzie) — ślepy zaułek.
+
+**Do decyzji użytkownika** (`ARCHITEKTURA.md §7`): 7 domków bez stron (dopisać czy odlinkować), angielskie domki (przetłumaczyć czy przekierować), archiwum plakatów (4 opcje), menu dwupoziomowe czy płaskie, czy w ogóle robić restrukturyzację katalogów.
+
+**Proponowana kolejność wdrożenia w sesji 4** (§8): najpierw A1 i A2 — znikome ryzyko, największa wartość; restrukturyzacja katalogów jako ostatnia, po teście pilotażowym.
+
+---
+
+## 2026-07-30 — Decyzja: pliki fontów zostają w repozytorium (R01 zamknięte)
+
+**PR #191 („usunięcie ~148 MB martwych fontów") został zamknięty świadomą decyzją. Nie proponować tego ponownie.**
+
+Stan po decyzji:
+- **#192 pozostaje zmergowany** — `@font-face` w `mixins.styl`/`typography.styl` wskazuje wyłącznie 4 realnie używane pliki (`Lemur-Regular`, `Lemur-Bold`, `SC-300`, `oj-icons`) w formacie `woff`, z `font-display: swap`. Definicje dla `eot`/`ttf`/`svg` i nieużywanej rodziny HK zostały usunięte.
+- **Pliki fontów zostają**: `www/.vuepress/public/fonts/` = 149 MB (rodziny SS, SF, HK, P, M1, M2 + fonty w formacie SVG + nieużywane wagi Lemura).
+
+**Co to znaczy w praktyce:** nieużywane pliki nadal są w repozytorium i kopiowane do `dist/` przy każdym buildzie, ale **żaden z nich nie jest pobierany przez przeglądarkę** — nic nie wskazuje na nie ani CSS, ani HTML. Z punktu widzenia szybkości strony dla użytkownika sprawa jest zamknięta; pozostaje wyłącznie waga repozytorium i czas wdrożenia.
+
+**Konsekwencja dla metryk:** wcześniejszy zapis w `AUDIT.md §7` o „`public/` 385 MB → 237 MB" był nieaktualny i został poprawiony. Faktyczna waga `public/` pozostaje ~385 MB (fonty 149 MB + `wiedza/` 147 MB + `images/` 43 MB + `plakaty/` 38 MB).
+
+Powiązane, wciąż otwarte: **R02** (147 MB PDF-ów w `wiedza/`, w tym jeden plik 96 MB) — osobna sprawa, nieobjęta tą decyzją.
+
+---
+
+## 2026-07-30 — Decyzje kierunkowe przed sesją 4
+
+Siedem pytań z `ARCHITEKTURA.md §7` rozstrzygniętych. **Sam dokument nie jest jeszcze zaakceptowany** (PR #200 otwarty) — poniższe decyzje są wiążące kierunkowo, reszta czeka na uwagi.
+
+| # | Decyzja | Konsekwencja |
+|---|---|---|
+| 1 | **ARCHITEKTURA.md — jeszcze nie zaakceptowana** | Sesja 4 realizuje wyłącznie to, co jednoznacznie uzgodnione. Nawigacja i podział stron czekają. |
+| 2 | **Sesja 4 rusza teraz** — część niezależna od danych GSC | A1, A2, stopka, poprawki redakcyjne, domki. |
+| 3 | **Domki bez stron:** `7-30` → usunąć link z mapy; `10-2`, `10-5`, `3-18`, `3-5`, `5a-4`, `8-1` → **puste pliki-szablony** | Mapa przestaje prowadzić do 404; 6 stron czeka na treść od organizacji. |
+| 4 | **Angielskie domki: przetłumaczyć.** Wersje robocze przygotowuje Claude | ⚠️ **Publikacja tylko po przejrzeniu** — to opisy cudzych organizacji, nie nasza treść. PR do akceptacji zdanie po zdaniu. |
+| 5 | **Plakaty: rok bieżący + archiwum zbiorcze, BEZ konwersji formatu** | `/plakaty/` = 12 ostatnich miesięcy, starsze na podstronie archiwum. Pliki zostają w PNG (38 MB) — konwersji nie robimy. |
+| 6 | **Menu: dwupoziomowe** (5 pozycji + rozwinięcia) | Wprowadza do nawigacji 9 dziś niedostępnych stron. Wymaga obsługi klawiatury i podlist zwiniętych na mobile. |
+| 7 | **Katalogi: pełna restrukturyzacja** (`www/pl/`, `www/en/`) | Usuwa przyczynę A2 (`filter: generic`). **Warunek: test pilotażowy — przenieść 1 plik, potwierdzić, że URL się nie zmienił, dopiero potem reszta.** |
+
+**Uwaga do kolejności:** skoro wybrano pełną restrukturyzację (7), przebuduje ona konfigurację CMS i **naprawi A2 przy okazji**. Żeby jednak redaktor nie był zablokowany na czas przygotowań, warto zastosować doraźną poprawkę A2 (`generic: true` w 5 plikach) od razu — koszt minuty, znika przy restrukturyzacji.
+
+**Rozstrzygnięte wcześniej, nie wracamy:** pliki fontów zostają · panel CMS zostaje na `netlify-cms@2.10.192` · GSC zainstalowane.
+
+---
+
+## 2026-07-30 — KOREKTA: znalezisko A1 było błędne
+
+**Wycofuję znalezisko A1 z `ARCHITEKTURA.md`** („wszystkie 16 linków do domków na mapie daje 404"). Postawiłem je jako znalezisko numer jeden całej sesji 3 — i było nieprawdziwe.
+
+**Jak było naprawdę:** komponent `oj-map.vue` **nie używa pola `link:`** z frontmattera `mapa.md` (zero odwołań w kodzie). Adres docelowy buduje z pola `address`:
+
+```
+$localePath + dir[$lang] + house.address.replace('/','-') + '/'   →  /domki/3-6/
+```
+
+Zweryfikowane na żywo na produkcji: kliknięcie domku 3-6 na `/mapa/` przenosi do `/domki/3-6/`, status 200, właściwa treść. **Mapa działała poprawnie.**
+
+**Skąd błąd:** wyciągnąłem wniosek z samej zawartości frontmattera (`link: /3-6/`) i potwierdziłem, że `/3-6/` zwraca 404 — co jest prawdą, ale ten adres nigdy nie był przez mapę używany. Nie sprawdziłem, czy pole `link:` jest w ogóle czytane przez komponent. To błąd metody: zweryfikowałem dane wejściowe zamiast realnego zachowania.
+
+**Co jest prawdziwym błędem:** znalezisko **A5**. Wszystkie 16 domków było klikalnych, ale **7 nie miało strony i dawało 404** (`3-5`, `3-18`, `5a-4`, `7-30`, `8-1`, `10-2`, `10-5`). Działało **9 z 16** kliknięć.
+
+**Naprawione w PR #201:** 6 stron-szablonów (nazwy i adresy z danych mapy) + usunięcie wpisu 7/30 zgodnie z decyzją. Obecnie **15 klikalnych domków, 15 ma stronę**.
+
+**Konsekwencje dla dokumentu:** wykreślone przekierowania dla 16 adresów bez prefiksu (`/3-6/` itd.) — nigdy nie były używane, nie ma czego przekierowywać. Etap 1 kolejności wdrożenia zmieniony z A1 na A5 (zrobione).
+
+**Wniosek na przyszłość:** przy znaleziskach opartych na konfiguracji/danych — zawsze sprawdzić, czy dane są faktycznie czytane przez kod, i potwierdzić zachowaniem, nie samą treścią pliku.

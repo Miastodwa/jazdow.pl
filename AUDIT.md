@@ -239,7 +239,7 @@ Legenda statusu: ✅ zamknięte · 🟡 częściowe · ⏭️ odłożone (z powo
 ### Higiena kodu / repo
 | ID | Status | PR / uwaga |
 |----|:---:|-----------|
-| R01 martwe fonty (~145 MB) | ✅ | #191 + #192 — `fonts/` **149 MB → 268 KB** |
+| R01 martwe fonty (~145 MB) | 🟡 / ➖ | **#192 zmergowany** — `@font-face` ładuje już tylko 4 realnie używane pliki (Lemur Regular/Bold, SC-300, oj-icons); usunięto `ttf`/`eot`/`svg` z definicji. **#191 (usunięcie samych plików) — ZAMKNIĘTY świadomą decyzją: pliki fontów zostają w repo.** Skutek: ~147 MB nieużywanych fontów nadal jest w repozytorium i trafia do `dist/`, ale **żaden z nich nie jest pobierany przez przeglądarkę** — realny transfer do użytkownika bez zmian. Nie wracać do tego tematu. |
 | R08 błędny `repo:` w CMS | ✅ | **#198** — `repo:` `Miastodwa/jazdow.pl` → `Jazdow/jazdow.pl` |
 | R11 gałęzie / PR-y | ✅ | `dialog` usunięty; **#184 zamknięty** (rozbity na mniejsze PR-y), **#182 zmergowany** |
 | R10 `.DS_Store` w deploy | ⏭️ | nie ruszone (P3) |
@@ -270,8 +270,8 @@ Rozważano pełne usunięcie Netlify Identity + CMS (#197). **Decyzja użytkowni
 
 | Metryka | Przed (Sesja 1) | Po (Sesja 2) |
 |---|---|---|
-| `public/` łącznie | **385 MB** | **237 MB** |
-| w tym `fonts/` | **149 MB** | **268 KB** |
+| `public/` łącznie | **385 MB** | **385 MB** (bez zmian — patrz niżej) |
+| w tym `fonts/` | **149 MB** | **149 MB** — pliki zostają świadomą decyzją (#191 zamknięty). Zmieniło się co innego: `@font-face` wskazuje teraz **tylko 4 pliki** zamiast wszystkich formatów, więc **przeglądarka nie pobiera już ani jednego zbędnego fontu** |
 | w tym `wiedza/` (PDF) | 147 MB | 147 MB (⏭️ R02 nie ruszone) |
 | Ikony social (a11y) | litery `b/d/o/p/x` | inline SVG + `aria-label` |
 | Kontrast zieleni tekstu | 2.9:1 (❌ AA) | **4.79:1** (✅ AA) |
