@@ -11,3 +11,18 @@ All templates are located in [www/.vuepress](www/.vuepress) folder.
 Vue components are written using `Pug` and `stylus`
 
 The markdown content can be edited using [Netlify CMS](https://www.netlifycms.org/)
+
+## License
+
+This repository is dual-licensed — see [LICENSE.md](LICENSE.md) for the full terms.
+
+- **Source code** (theme, configuration, build scripts) — [MIT](LICENSE.md#1-kod-źródłowy--licencja-mit).
+- **Editorial content** (Markdown texts and the organisation's own informational graphics) —
+  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): attribution to
+  Partnerstwo Otwarty Jazdów with a link to https://jazdow.pl, non-commercial use only,
+  derivative works under the same licence. For commercial use, contact wolny@jazdow.pl.
+
+**Excluded from both licences** (separate permission required): the logo and visual identity,
+photographs and video in `www/.vuepress/public/images/` and `dyplomacja/`, event posters in
+`plakaty/`, the bundled fonts in `fonts/`, the organisational PDFs in `dokumenty/` and
+`sprawozdania/`, and third-party dependencies.
