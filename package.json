@@ -1,7 +1,7 @@
 {
   "name": "jazdow.pl",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev www",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build www && node scripts/postbuild.js"
