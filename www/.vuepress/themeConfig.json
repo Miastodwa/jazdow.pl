@@ -96,12 +96,20 @@
       {
         "to": "/polityka-prywatnosci",
         "title": "Polityka Prywatności"
+      },
+      {
+        "to": "/polityka-ochrony-dobrostanu/",
+        "title": "Polityka Ochrony Dobrostanu"
       }
     ],
     "en": [
       {
         "to": "/en/privacy-policy",
         "title": "Privacy Policy"
+      },
+      {
+        "to": "/polityka-ochrony-dobrostanu/",
+        "title": "Code of Conduct (PL)"
       }
     ]
   },

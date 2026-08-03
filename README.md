@@ -12,9 +12,17 @@ Vue components are written using `Pug` and `stylus`
 
 The markdown content can be edited using [Netlify CMS](https://www.netlifycms.org/)
 
+## Code of Conduct
+
+The project follows the organisation's **Polityka Ochrony Dobrostanu** (Welfare Protection
+Policy) — see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), full text at
+[jazdow.pl/polityka-ochrony-dobrostanu](https://jazdow.pl/polityka-ochrony-dobrostanu/).
+Reports go to zaufanie@jazdow.pl.
+
 ## License
 
 This repository is dual-licensed — see [LICENSE.md](LICENSE.md) for the full terms.
+The MIT text for the code is in [LICENSE](LICENSE).
 
 - **Source code** (theme, configuration, build scripts) — [MIT](LICENSE.md#1-kod-źródłowy--licencja-mit).
 - **Editorial content** (Markdown texts and the organisation's own informational graphics) —
