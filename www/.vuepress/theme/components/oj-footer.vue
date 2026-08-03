@@ -15,6 +15,8 @@ footer#oj-footer
 			router-link(v-for="link in $site.themeConfig.links[lang]" :key="link.to" :to="link.to") {{link.title}}
 		.license
 			a(:href="license.href", target="_blank", rel="noopener") {{license.title}}
+			span.separator(aria-hidden="true") ·
+			a(href="https://www.netlify.com", target="_blank", rel="noopener") This site is powered by Netlify
 </template>
 
 <script>
@@ -170,4 +172,9 @@ export default {
 		margin-top 1rem
 		a
 			font-size 1rem
+		.separator
+			display inline-block
+			margin 0 0.5rem
+			font-size 1rem
+			color $oj-green-free
 </style>
