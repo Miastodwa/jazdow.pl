@@ -18,8 +18,9 @@ This repository is dual-licensed — see [LICENSE.md](LICENSE.md) for the full t
 
 - **Source code** (theme, configuration, build scripts) — [MIT](LICENSE.md#1-kod-źródłowy--licencja-mit).
 - **Editorial content** (Markdown texts and the organisation's own informational graphics) —
-  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), with attribution to
-  Partnerstwo Otwarty Jazdów and a link to https://jazdow.pl.
+  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): attribution to
+  Partnerstwo Otwarty Jazdów with a link to https://jazdow.pl, non-commercial use only,
+  derivative works under the same licence. For commercial use, contact wolny@jazdow.pl.
 
 **Excluded from both licences** (separate permission required): the logo and visual identity,
 photographs and video in `www/.vuepress/public/images/` and `dyplomacja/`, event posters in

@@ -39,25 +39,30 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## 2. Treści — licencja CC BY-SA 4.0
+## 2. Treści — licencja CC BY-NC-SA 4.0
 
 Dotyczy: tekstów w plikach Markdown (`www/**/*.md`) oraz własnych grafik informacyjnych
 Partnerstwa, o ile przy konkretnym materiale nie zaznaczono inaczej.
 
 Materiały te są dostępne na licencji
-[Creative Commons Uznanie autorstwa – Na tych samych warunkach 4.0 Międzynarodowe (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.pl).
+[Creative Commons Uznanie autorstwa – Użycie niekomercyjne – Na tych samych warunkach 4.0 Międzynarodowe (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl).
 
-Oznacza to, że możesz je kopiować, rozpowszechniać, przerabiać i wykorzystywać komercyjnie,
-pod warunkiem że:
+Oznacza to, że możesz je kopiować, rozpowszechniać i przerabiać, pod warunkiem że:
 
 - **podasz autorstwo** — wskażesz Partnerstwo Otwarty Jazdów jako źródło i podlinkujesz
   https://jazdow.pl oraz licencję,
-- **zachowasz warunki** — utwory zależne udostępnisz na tej samej licencji (CC BY-SA 4.0).
+- **nie użyjesz ich komercyjnie** — wykorzystanie nastawione głównie na uzyskanie
+  korzyści majątkowej lub wynagrodzenia wymaga odrębnej zgody Partnerstwa,
+- **zachowasz warunki** — utwory zależne udostępnisz na tej samej licencji
+  (CC BY-NC-SA 4.0).
 
 Sugerowana formuła oznaczenia:
 
 > Źródło: [Partnerstwo Otwarty Jazdów](https://jazdow.pl), licencja
-> [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.pl)
+> [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pl)
+
+Chcesz wykorzystać treści komercyjnie? Napisz na [wolny@jazdow.pl](mailto:wolny@jazdow.pl) —
+zgody udzielamy indywidualnie.
 
 ## Wyłączenia
 
@@ -92,8 +97,9 @@ Pytania o wykorzystanie materiałów: [wolny@jazdow.pl](mailto:wolny@jazdow.pl)
 This repository is dual-licensed. **Source code** (VuePress theme, configuration, build
 scripts) is available under the **MIT License**. **Editorial content** (Markdown texts and
 the organisation's own informational graphics) is available under
-**[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)**, with attribution to
-Partnerstwo Otwarty Jazdów and a link to https://jazdow.pl.
+**[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)** — attribution to
+Partnerstwo Otwarty Jazdów with a link to https://jazdow.pl, non-commercial use only, and
+derivative works under the same licence. For commercial use, contact wolny@jazdow.pl.
 
 The following are **excluded** from both licences and require separate permission: the
 organisation's logo and visual identity, photographs and video (rights held by their
