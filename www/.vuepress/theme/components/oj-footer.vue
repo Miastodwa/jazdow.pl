@@ -13,6 +13,8 @@ footer#oj-footer
 			a.social-icon(v-for="item in $site.themeConfig.social", :key="item.type", :href="item.href", :aria-label="socialLabel(item.type)", target="_blank", rel="noopener", v-html="socialIcon(item.type)")
 		.links
 			router-link(v-for="link in $site.themeConfig.links[lang]" :key="link.to" :to="link.to") {{link.title}}
+		.license
+			a(:href="license.href", target="_blank", rel="noopener") {{license.title}}
 </template>
 
 <script>
@@ -39,12 +41,28 @@ const socialIcons = {
 	x: svg('M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z')
 }
 
+// Informacja o licencji repozytorium (LICENSE.md): kod MIT, tresci CC BY-NC-SA 4.0.
+// Trzymane w komponencie, jak socialLabels - to stala informacja, nie dane redakcyjne.
+const licenseNotice = {
+	pl: {
+		title: 'Licencja: kod MIT, treści CC BY-NC-SA 4.0',
+		href: 'https://github.com/Jazdow/jazdow.pl/blob/master/LICENSE.md'
+	},
+	en: {
+		title: 'Licence: MIT code, CC BY-NC-SA 4.0 content',
+		href: 'https://github.com/Jazdow/jazdow.pl/blob/master/LICENSE.md'
+	}
+}
+
 export default {
 	name: 'oj-footer',
 
 	computed: {
 		lang(){
 			return this.$lang.substring(0, 2)
+		},
+		license(){
+			return licenseNotice[this.lang] || licenseNotice.pl
 		}
 	},
 	methods: {
@@ -146,4 +164,10 @@ export default {
 		margin-top 2.5rem
 		a
 			font-size 1.2rem
+
+	// LICENSE
+	.license
+		margin-top 1rem
+		a
+			font-size 1rem
 </style>
