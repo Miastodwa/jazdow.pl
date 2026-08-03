@@ -97,17 +97,17 @@ Celem wprowadzenia Polityki w POJ jest przeciwdziałanie przemocy, dyskryminacji
 
 ## Rozdział III. Obowiązki osób zatrudnionych
 
-### § 10.
+### § 9.
 
 Osoby zatrudnione zobowiązane są do powstrzymywania się od zachowań o charakterze przemocy, dyskryminacji, molestowania seksualnego i mobbingu, a także innych niepożądanych zachowań w miejscu pracy, wobec innych osób zatrudnionych i współpracujących, a także do kierowania się zasadą poszanowania godności w tych relacjach.
 
-### § 11.
+### § 10.
 
 Osoby wchodzące w skład kadry kierowniczej, mają obowiązek analizowania zachowań zarówno osób którymi zarządzają, jak również współpracujących, pod kątem przestrzegania zasady równego traktowania i przeciwdziałania mobbingowi, przemocy, oraz bezzwłocznego zgłoszenia Organizacji sytuacji, co do której mają podejrzenie, że mogą nosić znamiona przemocy, dyskryminacji, molestowania seksualnego, mobbingu i innych niepożądanych zachowań w miejscu pracy.
 
 ## Rozdział IV. Postępowanie wyjaśniające w sprawach o przemoc, dyskryminację, molestowanie seksualne i mobbing oraz tryb składania skarg
 
-### § 12.
+### § 11.
 
 1. Każda osoba zatrudniona, która uważa, że doświadczyła jakiejkolwiek formy przemocy, dyskryminacji, molestowania seksualnego, mobbingu lub innych niepożądanych zachowań w miejscu pracy, uprawniona jest do powiadomienia o tym fakcie Organizacji i złożenia skargi do osoby pełniącej funkcję Osoby Zaufania ([zaufanie@jazdow.pl](mailto:zaufanie@jazdow.pl)).
 2. Osobę Zaufania powołuje Zarząd POJ.
@@ -122,7 +122,7 @@ Osoby wchodzące w skład kadry kierowniczej, mają obowiązek analizowania zach
 
    b) poweźmie informacje od osoby zatrudnionej, której zgłaszane sytuacje noszące znamiona przemocy, dyskryminacji czy mobbingu bezpośrednio nie dotyczą, ale oceni je jako wysoce prawdopodobne.
 
-### § 13.
+### § 12.
 
 1. Osoba Zaufania, każdorazowo w terminie nie dłuższym niż 14 dni od wpłynięcia skargi zwołuje Komisję, której zadaniem jest obiektywne rozpatrzenie zgłoszenia, ustalenie czy zgłoszenie jest zasadne i czy wystąpiło lub występuje zjawisko przemocy, dyskryminacji, w tym molestowania seksualnego, mobbingu lub inne niepożądane zachowanie w miejscu pracy.
 2. W skład Komisji wchodzą następujące osoby:
@@ -145,9 +145,9 @@ Osoby wchodzące w skład kadry kierowniczej, mają obowiązek analizowania zach
 8. Oświadczenia, o których mowa w ust. 6-7, przechowuje się w aktach sprawy.
 9. Akta sprawy przechowuje Osoba Zaufania w miejscu, do którego nie mają dostępu inne osoby.
 
-### § 14.
+### § 13.
 
-1. Komisja rozpoczyna postępowanie bez zbędnej zwłoki, nie później niż w ciągu 14 dni od dnia zwołania. Komisja rozpatruje skargę i przygotowuje dokument „Protokół z przebiegu postępowania wraz z zaleceniami Komisji”, o którym mowa w § 15 w terminie nie dłuższym niż 21 dni. W szczególnie skomplikowanych sprawach Komisja może wydłużyć postępowanie maksymalnie o kolejne 14 dni, informując strony postępowania o przyczynach zaistniałego stanu rzeczy.
+1. Komisja rozpoczyna postępowanie bez zbędnej zwłoki, nie później niż w ciągu 14 dni od dnia zwołania. Komisja rozpatruje skargę i przygotowuje dokument „Protokół z przebiegu postępowania wraz z zaleceniami Komisji”, o którym mowa w § 14 w terminie nie dłuższym niż 21 dni. W szczególnie skomplikowanych sprawach Komisja może wydłużyć postępowanie maksymalnie o kolejne 14 dni, informując strony postępowania o przyczynach zaistniałego stanu rzeczy.
 2. Postępowanie przed Komisją prowadzone jest z poszanowaniem praw i ze szczególną dbałością o ochronę dóbr osobistych wszystkich uczestników postępowania.
 3. Komisja decyduje o zakończeniu postępowania bez rozstrzygnięcia merytorycznego, jeżeli:
 
@@ -164,7 +164,7 @@ Osoby wchodzące w skład kadry kierowniczej, mają obowiązek analizowania zach
 8. W przypadku odmowy złożenia podpisu przez którąkolwiek ze stron postępowania, fakt ten Komisja odnotowuje w protokole.
 9. W przypadku braku zwykłej większości głosów decyduje głos Przewodniczącego/ej Komisji.
 
-### § 15.
+### § 14.
 
 1. Z prac Komisji sporządzany jest dokument „Protokół z przebiegu postępowania wraz z zaleceniami Komisji”, który podpisują wszyscy członkowie/inie Komisji.
 2. Dokument, o którym mowa w ust. 1, sporządzony jest przez wyznaczonego przez Przewodniczącego/cą członka/inię Komisji i zawiera w szczególności:
@@ -181,29 +181,29 @@ Osoby wchodzące w skład kadry kierowniczej, mają obowiązek analizowania zach
 
    f) ewentualne rekomendacje w przedmiocie działań naprawczych do podjęcia przez Organizację, w tym mających zmierzać do skutecznej ochrony dobrostanu w Organizacji w przyszłości.
 
-   g) uzasadnienie nie podjęcia decyzji w przypadku zaistnienia okoliczności, o których mowa w § 14 ust. 3.
+   g) uzasadnienie nie podjęcia decyzji w przypadku zaistnienia okoliczności, o których mowa w § 13 ust. 3.
 
-2\. Niezwłocznie po zakończeniu postępowania Przewodniczący/a przekazuje zalecenia Komisji do Organizacji.
+3. Niezwłocznie po zakończeniu postępowania Przewodniczący/a przekazuje zalecenia Komisji do Organizacji.
 
-### § 16.
+### § 15.
 
 1. Organizacja, nie później niż w ciągu 14 dni od dnia przekazania przez Przewodniczącego/cą Komisji zaleceń Komisji, podejmuje działania zmierzające do wyeliminowania stwierdzonych nieprawidłowości i przeciwdziała ich powtórzeniu.
 2. W stosunku do osób, wobec których stwierdzono, że dopuściły się przemocy, dyskryminacji, molestowania seksualnego, mobbingu lub innych niepożądanych zachowań w miejscu pracy, Organizacja podejmuje działania dyscyplinujące, które może stanowić w szczególności zakończenie współpracy.
 3. Organizacja, stosując działania dyscyplinujące, kieruje się zasadą proporcjonalności wobec zaistniałego naruszenia.
 4. Przewodniczący/a Komisji jest odpowiedzialny/a za przygotowanie pisemnego komunikatu informującego strony o rezultacie zakończonego postępowania wyjaśniającego.
 
-### § 17.
+### § 16.
 
 1. Skorzystanie ze skargi nie może być podstawą niekorzystnego traktowania, a także nie może powodować jakichkolwiek negatywnych konsekwencji dla osoby zgłaszającej skargę oraz osoby/osób ją wspierającej/wspierających.
 2. Odpowiedzialności dyscyplinarnej podlegają osoby, które w ocenie Komisji pomawiają o przemoc, dyskryminację, w tym molestowanie seksualne czy mobbing.
 
 ## Rozdział V. Przepisy końcowe
 
-### § 18.
+### § 17.
 
 1. Organizacja może wprowadzać zmiany w przedmiotowej Polityce, po konsultacji projektu zmian z osobami zatrudnionymi, w terminie, który daje szansę zabrania głosu możliwie wszystkim osobom zatrudnionym.
 2. Organizacja uwzględnia propozycje osób zatrudnionych zgłoszone w trakcie konsultacji, o których mowa w ust. 1, jeśli można je uznać za obiektywnie racjonalne i wypełniające kryteria efektywnej prewencji antyprzemocowej, antydyskryminacyjnej lub antymobbingowej w miejscu pracy.
 
-### § 19.
+### § 18.
 
 Organizacja przy zatrudnianiu nowych osób zobowiązana jest do zapoznania ich z Polityką niezwłocznie po nawiązaniu stosunku pracy lub podjęciu współpracy.
