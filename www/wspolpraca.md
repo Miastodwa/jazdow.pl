@@ -1,6 +1,7 @@
 ---
 permalink: wspolpraca
 title: Współpraca
+generic: true
 ---
 
 Wolny Jazdów to miejsce międzysektorowych współprac – otwarte na wspólne tworzenie wydarzeń kulturalnych, projektów społecznych, działań artystycznych, edukacyjnych i sąsiedzkich. Od lat tworzymy przestrzeń, w której spotykają się organizacje społeczne, osoby artystyczne, aktywistyczne, mieszkanki i mieszkańcy, instytucje publiczne, inicjatywy oddolne oraz partnerzy biznesowi.

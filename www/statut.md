@@ -1,6 +1,7 @@
 ---
 permalink: statut
 title: Statut
+generic: true
 ---
 **[Statut Związku Stowarzyszeń Partnerstwo Otwarty Jazdów](/dokumenty/ZS-POJ_statut.pdf)**
 

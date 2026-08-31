@@ -2,6 +2,7 @@
 permalink: opp
 title: 🌱 Zasadź swoje 1.5% na Wolnym Jazdowie
 tldr: Partnerstwo Otwarty Jazdów Związek Stowarzyszeń - KRS 0000737179
+generic: true
 ---
 ![OPP baner górny](/images/opp-baner.png "OPP baner górny")
 

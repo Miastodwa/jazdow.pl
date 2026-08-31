@@ -1,6 +1,7 @@
 ---
 permalink: dialog
 title: Listy otwarte
+generic: true
 ---
 
 ![flaga czerwona](/images/flag-red.png "flaga czerwona")
