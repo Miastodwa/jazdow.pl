@@ -5,7 +5,7 @@ tldr: Co robimy? Czym się zajmujemy?
 generic: true
 ---
 
-[![Sierpień 2026](/plakaty/2026_08-small.jpg "Sierpień 2026")](https://jazdow.pl/plakaty/2026_08.png)
+[![Sierpień 2026](/plakaty/2026_09-small.jpg "Sierpień 2026")](https://jazdow.pl/plakaty/2026_09.png)
 
 ## [Lista wydarzeń na Facebooku](https://facebook.com/jazdow/events/)
 ### 1. [Oprowadzania po Osiedlu Jazdów](#oprowadzania-po-osiedlu-jazdow)
@@ -67,6 +67,8 @@ Opiekunki i Opiekunowie Czytelni: Hania, Klaudia, Karola, Magda, Mikołaj, Nemo,
 **Najbliższe terminy otwarcia Czytelni [znajdziesz na liście bieżących wydarzeń](https://www.facebook.com/jazdow/events).**
 
 ## Plakaty zbiorcze
+
+[![Wrzesień 2026](/plakaty/2026_09.png "Wrzesień 2026")](https://jazdow.pl/plakaty/2026_09.png)
 
 [![Sierpień 2026](/plakaty/2026_08.png "Sierpień 2026")](https://jazdow.pl/plakaty/2026_08.png)
 
