@@ -6,7 +6,7 @@
 			oj-intro
 			.content
 				.row.a
-					a.banner-plakat(href="https://jazdow.pl/plakaty/2026_08.png" target="_blank" rel="noopener")
+					a.banner-plakat(href="https://jazdow.pl/plakaty/2026_09.png" target="_blank" rel="noopener")
 						img(src="/plakaty/aktualny_plakat.png" width="1890" height="870" alt="Plakat z aktualnymi wydarzeniami na Osiedlu Jazdów – otwórz pełną wersję")
 				.row.b
 					oj-card(v-for="(card, i) in $page.frontmatter.cards"
